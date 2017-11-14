@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>黑板完整版</title>
+
+</head>
+
+<body>
+
+<canvas id="cvs"></canvas>
+
+</body>
+</html>
+
+<script>
+
+
+// 1 初始化设置;
+var cvs=document.querySelector("#cvs");
+
+var ctx=cvs.getContext("2d");
+
+cvs.width=window.innerWidth;
+
+cvs.height=window.innerHeight;
+
+var state=0;  // 0 什么都不做  1 绘制  2 搽除;
+
+var lastX;
+
+var lastY;
+
+var length=0;
+
+var w=50;
+
+var h=50;
+
+
+//2 鼠标按下事件 
+cvs.onmousedown=function(e){
+	
+	lastX=e.offsetX;
+	lastY=e.offsetY;
+	
+	if(e.button==0){
+	    state=1;
+		ctx.beginPath();
+		
+	}else if(e.button==2){
+	    state=2;	
+	}
+	
+}
+
+// 3鼠标移动事件;
+cvs.onmousemove=function(e){
+	
+	if(state==1){
+		
+		paint(e); // 绘制
+		
+	}else if(state==2){
+		
+	    eraser(e);	//删除
+		
+	}
+	
+}
+
+
+// 4 绘制
+
+function paint(e){
+	
+	ctx.lineCap="round";
+	ctx.lineJoin="round";
+	ctx.lineWidth=16;
+	
+	ctx.strokeStyle="green";
+	
+	ctx.moveTo(lastX,lastY);
+	ctx.lineTo(e.offsetX,e.offsetY);
+	
+	ctx.stroke();
+	
+	length+=Math.sqrt(Math.pow(e.offsetX-lastX,2)+Math.pow(e.offsetY-lastY,2));
+	
+	lastX=e.offsetX;
+	lastY=e.offsetY;
+	
+}
+
+// 5 鼠标弹起事件
+
+cvs.onmouseup=function(){
+	state=0;
+	console.log("length="+length);
+	length=0;
+	lastX=lastY=undefined;
+	return false;
+	
+}
+
+
+// 6 搽除
+
+function eraser(e){
+	
+	var x=e.offsetX-w/2;
+	var y=e.offsetY-h/2;
+	
+    ctx.clearRect(x,y,w,h);
+		
+}
+
+
+</script>

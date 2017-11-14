@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<style>
+			*{margin:0;padding:0;}
+			body{
+				background:#f5f8f9;
+				font:14px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+				font-weight: 300;
+			}
+			.banner{
+				height: 500px;
+				background-color: #38b7ea;
+				line-height: 500px;
+				color: #fff;
+				font-size: 50px;
+				text-align: center;
+			}
+			.change_blue:hover,.change_blue:hover a{
+				background:#38b7ea;
+				color:#fff;
+				cursor: pointer;
+
+			}
+			.item{
+				border: 1px #dddddd solid;
+				font-size: 13px;
+			}
+			.item a{
+				text-decoration: none;
+				color:#212529;
+				display: block;
+				height:100%;
+				width:100%;
+			}
+			.container>.row{
+				padding-top:40px;
+			}
+			.item>dt{
+				text-align: center;
+				height: 130px;
+				background-color:#fff;
+				padding-top:15px;
+			}
+			.item>dt>img{
+				height: 100px;
+			}
+			
+			.item>dd>p{
+				font-size: 18px;
+				height: 48px;
+				line-height: 48px;
+				text-align: center;
+				margin-bottom:0;
+				/*border-bottom: 1px #ccc solid;*/
+			}
+			.item>dd{
+				margin-bottom:0;
+			}
+			.item input{
+				border:none;
+				color: #fff;
+				width: 100px;
+				height: 30px;
+				display: block;
+				border-radius: 20px;
+				font-size: 14px;
+				line-height: 30px;
+				text-align: center;
+				margin: 10px auto 10px;
+				background: #38b7ea;
+				cursor: pointer;
+			}
+			.item input:hover{
+				background:#49c8fb;
+				transition: all .5s;
+			}
+			.mybtn{
+				height: 50px;
+				text-align: center;
+			}
+			
+			.text1,.text2{
+				margin: 0;
+			}
+			
+			.text1{
+				text-align: center;
+			}
+			
+			.text1>div{
+				padding:8px 0;
+				border-top:1px solid #ccc;
+			}
+			.text1 .center{
+				border-left:1px solid #ccc;
+				border-right:1px solid #ccc;
+			}
+			.text2{
+				text-align: center;
+			}
+			.text2 .border_right{
+				border-right:1px solid #ccc;
+			}
+			.text2>div{
+				border-top:1px solid #ccc;
+				padding:15px 0;
+				border-bottom: none;
+				line-height: 1em;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+
+
+		<div class="banner">
+			 火星时代web前端+全栈工程师
+		</div>
+		<!-- <div class="text">
+			电话:010-886868558  &nbsp;&nbsp; 网址: www.hxsd.com 
+		</div> -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/file_type_html.svg"></dt>
+						<dd>
+							<p>HTML与CSS网站开发</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+								
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/file_type_markdown.svg"></dt>
+						<dd>
+							<p>Markdown</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+								
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/file_type_js.svg"></dt>
+						<dd>
+							<p>JavaScript编程语言</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+								
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/DOM.jpg"></dt>
+						<dd>
+							<p>BOM与DOM操作</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+								
+							</div>
+						</dd>
+					</dl>
+				</div>
+				
+
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/jq.jpg" style="height:100px;"></dt>
+						<dd>
+							<p>jQuery</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+								
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/es6.jpg"></dt>
+						<dd>
+							<p>ES6</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+								
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/vue.jpg"></dt>
+						<dd>
+							<p>Vue前端框架</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+								
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/react.svg"></dt>
+						<dd>
+							<p>React前端框架</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/game.jpg"></dt>
+						<dd>
+							<p>动效交互与游戏</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="courses/animate/index.html" target="_blank">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/fwq.jpg"></dt>
+						<dd>
+							<p>网络服务器搭建</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/file_type_php.svg"></dt>
+						<dd>
+							<p>PHP</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/mysql.jpg"></dt>
+						<dd>
+							<p>MySql数据库</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/laravel.jpg"></dt>
+						<dd>
+							<p>Laravel</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/redis.jpg"></dt>
+						<dd>
+							<p>Redis非关系数据库</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/file_type_git.svg"></dt>
+						<dd>
+							<p>Git团队协同开发</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/file_type_gulp.svg"></dt>
+						<dd>
+							<p>Gulp构建工具</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/webpack.svg"></dt>
+						<dd>
+							<p>Webpack模块工具</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/bt.png"></dt>
+						<dd>
+							<p>响应式与Bootstrap</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/yd.jpg"></dt>
+						<dd>
+							<p>移动端项目</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<div class="col-md-3">
+					<dl class="item">
+						<dt><img src="images/wcj.jpg"></dt>
+						<dd>
+							<p>微信小程序</p>
+							<div class="mybtn">
+								<input type="button" value="教学讲义" class="" />
+							</div>
+							<div class="row text1">
+								<div class="col-md-4 change_blue">
+									<a href="##">40<br>课时</a>
+								</div>
+								<div class="col-md-4 change_blue center">
+									<a href="##">16<br>案例</a>
+								</div>
+								<div class="col-md-4 change_blue">
+									<a href="##">13<br>核心知识</a>
+								</div>
+							</div>
+							<div class="row text2">
+								<div class="col-md-6 change_blue border_right">
+									教学计划
+								</div>
+								<div class="col-md-6 change_blue">
+									相关资料
+								</div>
+
+							</div>
+						</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

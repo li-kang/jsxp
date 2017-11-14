@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+
+<title>transiton过渡动画</title>
+
+<style>
+
+*{ margin:0; padding:0;}
+
+ul{ list-style:none;}
+
+#box{ height:200px;width:200px;   position:absolute;left:0;top:0;right:0;
+bottom:0;margin:auto; cursor:pointer;   transform-style:preserve-3d; perspective:3000px; transform:rotateX(30deg) rotateY(30deg); transform-origin:center; animation:roll 5s infinite;}
+
+#box li{ width:200px; height:200px; position:absolute; left:0; top:0;  }
+#box li:nth-child(1){ background-color:rgba(240,87,90,0.49); transform:rotateX(0deg) translateZ(100px)}
+#box li:nth-child(2){ background-color:rgba(211,118,241,0.51) ;transform:rotateX(90deg) translateZ(100px)}
+#box li:nth-child(3){ background-color:rgba(158,236,87,0.55); transform:rotateX(180deg) translateZ(100px)}
+#box li:nth-child(4){ background-color:rgba(234,143,243,0.46);transform:rotateX(270deg) translateZ(100px)}
+#box li:nth-child(5){ background-color:rgba(191,151,235,0.60);transform:rotateY(90deg) translateZ(100px)}
+#box li:nth-child(6){ background-color:rgba(229,229,87,0.58);transform:rotateY(270deg) translateZ(100px)}
+
+
+@keyframes roll{
+    0%{ transform:rotateX(0deg) rotateY(0deg); }
+	100%{ transform: rotateX(360deg) rotateY(360deg)}	
+}
+
+</style>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+
+</head>
+
+<body>
+
+<ul id="box">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+</body>
+</html>

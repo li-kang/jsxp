@@ -1,0 +1,142 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>图片聚拢效果</title>
+
+<style>
+
+.box{
+	width:980px;
+	height:500px;
+	background:gray;
+	}
+
+.center{
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+	}
+	
+.pic{
+	width:100%;
+	height:100%;
+	position:relative;
+	}
+	
+.item{
+    position:absolute;
+	
+}
+
+
+</style>
+<script src="js/jquery-3.1.0.min.js"></script>
+<script>
+
+$(function(){
+    
+	// 初始化
+	
+	var xNum=25;
+	var yNum=15;
+	
+	
+	init();
+	
+	var isDevergent=true; // devergent 散开的;
+	
+	
+	$("body").click(function(){
+	
+	    if(isDevergent){
+		     together();	
+		}else{
+		     devergent();	
+		}
+	    
+	    isDevergent=!isDevergent;
+		
+	});
+	
+	
+	// 聚拢 
+	
+	function together(){
+	    
+		$(".item").each(function(index, element) {
+             $(this).css({
+			      "transform":"translate(0,0)",
+				  "opacity":1	 
+			 })
+        });	
+		
+	}
+	
+	
+	// 图片分散 
+	
+	function devergent(){
+		
+		$(".item").each(function(index, element) {
+              var  range=3000  // [-3000,3000);
+			  var  rx=Math.random()*range*2-range;
+			  var  ry=Math.random()*range*2-range;
+			  $(this).css({
+				  "transform":"translate("+rx+"px,"+ry+"px)",
+				  "opacity":0
+			  });
+        });
+		
+	}
+	
+	
+	// 初始化
+	function init(){
+		
+		$(".pic").empty();
+		
+		var pic=$(".pic");
+		var w=980/xNum;
+		var h=500/yNum;
+		
+		for(var x=0;x<xNum;x++){
+			
+			for(var y=0;y<yNum;y++){
+				
+				var t=Math.random()*3+2;
+				
+				$("<div class='item'></div>")
+				.width(w)
+				.height(h)
+				.css({
+					left:w*x,
+					top:h*y,
+				    "background-image":"url(img/1.jpg)",
+					"background-position":(-w)*x+"px "+(-h)*y+"px",
+					"transition":"transform "+t+"s,opacity "+t+"s"
+				})
+				.appendTo(pic);
+
+			}
+			
+		}
+		
+	}
+	
+	
+		
+});
+</script>
+</head>
+
+<body>
+<div class="box center">
+    <div class="pic"></div>
+</div>
+</body>
+</html>

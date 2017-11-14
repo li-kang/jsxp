@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			
+			body{
+				font-family: "微软雅黑";
+				background-color: #faf8f9;
+			}
+			
+			*{
+				margin: 0;
+				padding: 0;
+				box-sizing:border-box;
+			}
+			
+			ul{
+				list-style: none;
+			}
+			
+			.wrap{
+				width:1476px;
+				margin: 0 auto;
+			}
+			
+			a{
+				color:black;
+				text-decoration: none;
+			}
+			
+			
+			.list a{
+				font-size:18px;
+				
+			}
+			
+			.title{
+				font-size: 30px;
+				font-weight: normal;
+				text-align: center;
+				height: 100px;
+				line-height: 100px;
+				border-bottom: 1px #A8A8A8 solid;
+				margin-bottom: 40px;
+			}
+			
+			.list>dl{
+				width:330px;
+				height: 330px;
+				background-color: #fff;
+				border-radius: 8px;
+				float: left;
+				margin-right: 45px;
+				margin-bottom: 45px;
+				padding:18px;
+			}
+			
+			.list>.last{
+				margin-right: 0;
+			}
+			
+			.list>dl>a>dd{
+				width:300px;
+				height: 200px;
+				overflow: hidden;
+			}
+			
+			.list>dl>a>dd>span{
+				display: block;
+				width:300px;
+				height: 200px;
+				background-size: cover;
+				transition: transform 0.5s;
+			}
+			
+			.list>dl:hover>a>dd>span{
+				transform: scale(1.2);
+			}
+			
+			
+			.list>dl>a>dt{
+				height: 50px;
+				line-height: 50px;
+				font-weight: normal;
+				color: #333;
+			}
+			
+			.item1{
+				background: url(img/item_01.jpg);
+			}
+			
+			.item1{
+				background: url(img/item_01.jpg);
+			}
+			
+			.item2{
+				background: url(img/item_02.jpg);
+			}
+			
+			.item3{
+				background: url(img/item_03.jpg);
+			}
+			
+			.item4{
+				background: url(img/item_04.jpg);
+			}
+			
+			.item5{
+				background: url(img/item_05.jpg);
+			}
+			
+			.item6{
+				background: url(img/item_06.jpg);
+			}
+			
+			.item7{
+				background: url(img/item_07.jpg);
+			}
+			
+			.item8{
+				background: url(img/item_08.jpg);
+			}
+			
+			.item9{
+				background: url(img/item_09.jpg);
+			}
+			
+			.item10{
+				background: url(img/item_10.jpg);
+			}
+			
+			.item11{
+				background: url(img/item_11.jpg);
+			}
+			
+			.item12{
+				background: url(img/item_12.jpg);
+			}
+			
+			.item13{
+				background: url(img/item_13.jpg);
+			}
+			
+			.item14{
+				background: url(img/item_14.jpg);
+			}
+			
+			.item15{
+				background: url(img/item_15.jpg);
+			}
+			
+			.item16{
+				background: url(img/item_16.jpg);
+			}
+			
+			.nav li{
+				float: left;
+				height: 100px;
+				line-height: 100px;
+				
+			}
+			
+			.nav{
+				border-bottom:3px #E8E8E8 solid;
+				margin-bottom: 40px;
+			}
+			
+			.nav li a{
+				display: inline-block;
+				padding:0 30px;
+				font-size:30px;
+				font-weight: normal;
+				color: #515151;
+				font-family:"arial narrow";
+			}
+			
+			.nav li a.active{
+				border-bottom: 3px #515151 solid;
+				background-color: rgba(0,0,0,.1);
+			}
+			
+			.clearfix:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<ul class="nav clearfix">
+				 <li><a href="index.html" class="active">课堂案例</a></li>
+				 <li><a href="#">教学笔记</a></li>
+				 <li><a href="#">知识清单</a></li>
+				 <li><a href="#">同步资料</a></li>
+				 <li><a href="#">原创声明</a></li>
+			</ul>
+			<div class="list">
+				
+					<dl>
+						<a href="./ycyc_1.html">
+						<dd><span class="item1"></span></dd>
+						<dt>[项目1] 延迟隐藏</dt>
+						</a>
+						<p>使用了jQuery的animate动画实现，使用递归和延迟函数两种方式实现</p>
+					</dl>
+					
+					<dl>
+						<a href="./jlfs_2.html">
+						<dd><span class="item2"></span></dd>
+						<dt>[项目2] 图片聚拢与分散</dt>
+						</a>
+						<P>使用js随机函数，通过transform变形动画和transition过渡动画实现</P>
+					</dl>
+					
+					<dl>
+						<a href="./zpq_3.html">
+						<dd><span class="item3"></span></dd>
+						<dt>[项目3] 照片墙</dt>
+						</a>
+						<p>使用函数封装思想，jquery结合变形动画，过渡动画实现</p>
+					</dl>
+					
+					<dl class="last">
+						<a href="./4-sfq.html">
+						<dd><span class="item4"></span></dd>
+						<dt>[项目4] 手风琴动画</dt>
+						</a>
+						<p>交互dom结构设计，结合变形动画</p>
+					</dl>
+					
+					<dl>
+						<a href="lft_5.html">
+						<dd><span class="item5"></span></dd>
+						<dt>[项目5] 立方体</dt>
+						</a>
+						<p>3D变形与旋转技术的应用</p>
+					</dl>
+					
+					<dl>
+						<a href="./6.html">
+						<dd><span class="item6"></span></dd>
+						<dt>[项目6] 立体banner</dt>
+						</a>
+						<p>3D旋转结合keyframes关键帧动画</p>
+					</dl>
+					
+					<dl>
+						<a href="./7_xzcft.html">
+						<dd><span class="item7"></span></dd>
+						<dt>[项目7] 旋转的长方体</dt>
+						</a>
+						<p>3D变形与3D旋转技术的应用</p>
+					</dl>
+					
+					<dl class="last">
+						<a href="./8_qgxz.html">
+						<dd><span class="item8"></span></dd>
+						<dt>[项目8] 切割旋转</dt>
+						</a>
+						<p>jquery实现3D组合dom结构拼装，并使用过渡延迟动画实现3d切割旋转</p>
+					</dl>
+					
+					<dl>
+						<a href="9.html">
+						<dd><span class="item9"></span></dd>
+						<dt>[项目9] 网格文字</dt>
+						</a>
+						<p>使用canvase技术实现网格画布，根据二维矩阵来进行文字绘制</p>
+					</dl>
+					
+					<dl>
+						<a href="./10.html">
+						<dd><span class="item10"></span></dd>
+						<dt>[项目10] 闪烁的星星</dt>
+						</a>
+						<p>使用构造函数产生星星数据，通过定时器刷新绘制产生闪烁的效果</p>
+					</dl>
+					
+					<dl>
+						<a href="./11.html">
+						<dd><span class="item11"></span></dd>
+						<dt>[项目11] 圆环进度条</dt>
+						</a>
+						<p>动态改变参数，来绘制不同位置与弧度的圆弧线</p>
+					</dl>
+					
+					<dl class="last">
+						<a href="./12.html">
+						<dd><span class="item12"></span></dd>
+						<dt>[项目12] 黑板</dt>
+						</a>
+						<p>鼠标事件，结合canvas绘制连续的线条来产生黑板粉笔效果</p>
+					</dl>
+					
+					<dl>
+						<a href="13.html">
+						<dd><span class="item13"></span></dd>
+						<dt>[项目13] svg地图</dt>
+						</a>
+						<p>svg绘制不规则形状，通过jq事件来实现省份多选</p>
+					</dl>
+					
+					<dl>
+						<a href="./14.html">
+						<dd><span class="item14"></span></dd>
+						<dt>[项目14] 自动签名</dt>
+						</a>
+						<p>使用点划线的图案范式来定义虚线，并对svg线条使用过渡动画</p>
+					</dl>
+					
+					<dl>
+						<a href="./15.html">
+						<dd><span class="item15"></span></dd>
+						<dt>[项目15] svg时钟</dt>
+						</a>
+						<p>使用svg的方式实现时钟效果</p>
+					</dl>
+					
+					<dl class="last">
+						<a href="./16.html">
+						<dd><span class="item16"></span></dd>
+						<dt>[项目16] 贪吃蛇</dt>
+						</a>
+						<p>canvas动画的综合项目，实现贪吃蛇的完整交互动效</p>
+					</dl>
+				
+			</div>
+		</div>
+	</body>
+</html>
