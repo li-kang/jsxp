@@ -1,0 +1,622 @@
+.focus .warp {
+    float: left;
+    width: 210px;
+    position: relative;
+}
+
+.focus .popup {
+    width: 999px;
+    min-height: 465px;
+    position: absolute;
+    background: #f7f7f7;
+    border: 1px solid #b61d1d;
+    top: -1px;
+    left: 209px;
+    z-index: 2;
+
+    display: none;
+}
+
+.focus .popup .left {
+    float: left;
+    padding: 20px 0 0 20px;
+    width: 750px;
+}
+
+.focus .popup .brands a {
+    float: left;
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 32px 0 9px;
+    background: #7c7171;
+    margin-right: 10px;
+    position: relative;
+    font-size: 12px;
+    color: #fff;
+}
+
+.focus .popup .brands i {
+    position: absolute;
+    top: 1px;
+    right: 0;
+    width: 23px;
+    height: 23px;
+    background: #5c5251;
+    text-align: center;
+    font-family: "Consolas", sans-serif;
+    font-size: 13px;
+}
+
+.focus .popup .brands .active {
+    background: #c81623;
+}
+
+.focus .popup .brands .active i {
+    background: #b1191a;
+}
+
+.focus .popup .brands a:hover {
+    background: #c81623;
+}
+
+.focus .popup .brands a:hover i {
+    background: #b1191a;
+}
+
+.focus .popup .menu {
+    padding-top: 6px;
+}
+
+.focus .popup .menu dl {
+    padding-top: 10px;
+}
+
+.focus .popup .menu dt {
+    float: left;
+    width: 84px;
+    position: relative;
+    text-align: right;
+}
+
+.focus .popup .menu dt a {
+    font-size: 12px;
+    font-weight: bold;
+    padding-right: 30px;
+    height: 21px;
+    line-height: 21px;
+    display: inline-block;
+    width: 54px;
+    overflow: hidden;
+}
+
+.focus .popup .menu dt i {
+    position: absolute;
+    top: 0;
+    right: 17px;
+    font-size: 13px;
+    font-family: "Consolas", sans-serif;
+}
+
+.focus .popup .menu dd {
+    float: left;
+    width: 622px;
+    border-bottom: 1px solid #f2f2f2;
+    margin-bottom: 2px;
+}
+
+.focus .popup .menu dd a {
+    padding: 0 8px;
+    border-left: 1px solid #e5e5e5;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+    float: left;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.focus .popup .right1 {
+    float: right;
+    padding: 20px 19px 0 0;
+    width: 168px;
+}
+
+.focus .popup .section {
+    display: none;
+    position: relative;
+    z-index: 5;
+}
+
+.focus .popup .active {
+    display: block;
+    position: relative;
+    z-index: 5;
+}
+
+.focus .popup .section .right1 ul {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.focus .popup .section .right1 li {
+    width: 83px;
+    height: 35px;
+    float: left;
+    overflow: hidden;
+    margin: 0 1px 1px 0;
+}
+
+.focus .popup .section .right1 li a {
+    height: 35px;
+    width: 83px;
+    display: inline-block;
+}
+
+.focus .popup .right1 .pic {
+    width: 168px;
+    height: 134px;
+    overflow: hidden;
+    margin-bottom: 1px;
+}
+
+.focus .nav_list {
+    width: 209px;
+    height: 466px;
+    background: #c81623;
+    border-left: 1px solid #b61d1d;
+    position: relative;
+    z-index: 5;
+}
+
+.focus .nav_list li {
+    line-height: 31px;
+    height: 31px;
+    position: relative;
+}
+
+.focus .nav_list li:hover {
+    background: #fff;
+}
+
+.focus .nav_list li:hover h3 {
+    color: #c81623;
+}
+
+.focus .nav_list li:hover a {
+    color: #c81623;
+}
+
+.focus .nav_list li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.focus .nav_list li a:hover {
+    text-decoration: underline;
+}
+
+.focus .nav_list li h3 {
+    font-size: 14px;
+    color: #fff;
+    font-weight: normal;
+    width: 165px;
+    height: 31px;
+    overflow: hidden;
+    padding-left: 9px;
+}
+
+.focus .nav_list li i {
+    font-family: "Consolas", sans-serif;
+    position: absolute;
+    right: 12px;
+    top: 0;
+    font-style: normal;
+    color: #fff;
+    height: 31px;
+    line-height: 31px;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.focus .banner {
+    float: left;
+    margin: 12px 10px 0;
+    width: 730px;
+    height: 454px;
+    position: relative;
+}
+
+.focus .banner ul {
+
+}
+
+.focus .banner li {
+    float: left;
+}
+
+#b04 {
+    width: 640px;
+}
+
+#b04 .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    margin-left: 310px;
+}
+
+#b04 .dots li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+
+#b04 .dots li.active {
+    background: #fff;
+    opacity: 1;
+}
+
+#b04 .arrow {
+    position: absolute;
+    top: 200px;
+}
+
+#b04 #al {
+    left: 15px;
+}
+
+#b04 #ar {
+    right: 15px;
+}
+
+.focus .right {
+    float: right;
+    width: 250px;
+}
+
+.focus .right .news {
+    font-size: 12px;
+    color: #666;
+    border: 1px solid #e4e4e4;
+    margin-top: 12px;
+    height: 163px;
+}
+
+.focus .right .news .title {
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px dotted #e8e8e8;
+    padding: 0 15px;
+}
+
+.focus .right .news .title h3 {
+    font-weight: normal;
+}
+
+.focus .right .news ul {
+    padding: 5px 15px 0;
+}
+
+.focus .right .news li {
+    height: 24px;
+    line-height: 24px;
+}
+
+.focus .right .news li a {
+    font-family: '宋体', sans-serif;
+    vertical-align: top;
+}
+
+.focus .right .news li a span {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.focus .right .icon {
+    height: 208px;
+    border: 1px solid #e4e4e4;
+    border-top: none;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.focus .right .icon ul {
+    width: 252px;
+}
+
+.focus .right .icon li {
+    float: left;
+    width: 62px;
+    height: 70px;
+    /*box-sizing: border-box;*/
+    border-bottom: 1px solid #e4e4e4;
+    border-right: 1px solid #e4e4e4;
+    position: relative;
+    text-align: center;
+}
+
+.focus .right .icon li i {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 12px;
+    left: 19px;
+    background: url("../images/57620a6fN77b2b8af.png") no-repeat;
+}
+
+.focus .right .icon li span {
+    display: inline-block;
+    font-size: 12px;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-top: 40px;
+}
+
+.focus .right .pic {
+    margin-top: 5px;
+    height: 75px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.focus .recommend {
+    padding-top: 10px;
+    height: 164px;
+}
+
+.focus .recommend ul {
+    float: left;
+}
+
+.focus .recommend li {
+    float: left;
+    margin-right: 1px;
+    overflow: hidden;
+}
+
+.focus .recommend li a {
+    width: 249px;
+    height: 164px;
+    display: inline-block;
+}
+
+.focus .recommend .last {
+    margin: 0;
+    width: 250px;
+}
+
+.focus .recommend .today {
+    width: 210px;
+    height: 151px;
+    background: url("../images/clock_smart.jpg") no-repeat;
+    float: left;
+    position: relative;
+}
+
+.today #hours, .today #minutes, .today #seconds {
+    position: absolute;
+}
+
+.today #today,.today #recommend_today {
+    color: #ddd;
+    position: absolute;
+    font-weight: bolder;
+    font-size: 18px;
+    transition: all .8s;
+    display: inline-block;
+    top: 100px;
+}
+
+.today #today{
+    opacity: 0;
+    left: 56px;
+
+}
+
+.today #recommend_today{
+    opacity: 1;
+    font-weight: normal;
+    left: 64px;
+}
+
+.today #seconds {
+    height: 42px;
+    width: 42px;
+    border: 8px solid #cacaca;
+    border-radius: 50%;
+    left: 72px;
+    top: 32px;
+}
+
+.today #seconds .box {
+    width: 5px;
+    height: 5px;
+    background: #5e5252;
+    margin: 1px;
+    border-radius: 50%;
+}
+
+.today #minutes {
+    height: 34px;
+    width: 5px;
+    border-radius: 5px;
+    background: transparent;
+    top: 44px;
+    left: 99px;
+    z-index: 5;
+}
+
+.today #hours {
+    height: 20px;
+    width: 5px;
+    border-radius: 7px;
+    background: transparent;
+    top: 51px;
+    left: 99px;
+    z-index: 10;
+}
+
+.today .pointer {
+    height: 70%;
+    width: 100%;
+    background: #fff;
+    border-radius: 40%;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#aaa)); /*谷歌*/
+    background: -moz-linear-gradient(top, #fff, #aaa); /*火狐*/
+    background: -ms-linear-gradient(top, #fff, #aaa); /* IE 10 */
+    background: -webkit-linear-gradient(top, #fff, #aaa); /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #fff, #aaa); /*Opera 11.10+*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#aaa)); /* Safari 4-5, Chrome 1-9*/
+
+}
+
+.like {
+    padding-top: 22px;
+}
+
+.like .title {
+    height: 35px;
+}
+
+.like .title h2 {
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 228px;
+    background: url("../images/homebg.png") no-repeat 85px -91px;
+    color: #343434;
+}
+
+.like .title .replacement {
+    display: block;
+    float: right;
+    font-size: 12px;
+    margin-right: 25px;
+}
+
+.like .title .replacement:hover i {
+    transition: all 60s;
+    transform: rotate(36000deg);
+}
+
+.like .title .replacement i {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background: url("../images/homebg.png") no-repeat -350px -4px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+}
+
+.like .message {
+    height: 232px;
+    border: 1px solid #ededed;
+    border-top: 1px solid #d1d1d1;
+}
+
+.like .message .star {
+    height: 3px;
+    position: relative;
+}
+
+.like .message .star i {
+    width: 365px;
+    height: 5px;
+    position: absolute;
+    right: -2px;
+    top: -3px;
+    background: url("../images/homebg.png") no-repeat 0 -124px;
+    overflow: hidden;
+}
+
+.like .message:hover .star i {
+    display: none;
+}
+
+.like .message .star span {
+    width: 365px;
+    height: 5px;
+    position: absolute;
+    left: 0;
+    top: -3px;
+    background: url("../images/homebg.png") no-repeat 0 -124px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+}
+
+.like .message:hover .star span {
+    opacity: 1;
+    transition: all 1s;
+    left: 845px;
+}
+
+.like .message li {
+    float: left;
+    width: 201px;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.like .message li:hover .pic img {
+    transform: translate(8px, -8px);
+}
+
+.like .message .one {
+    margin-left: -1px;
+    width: 203px;
+}
+
+.like .message li .pic {
+    width: 130px;
+    height: 130px;
+    padding: 0 36px;
+}
+
+.like .message li .text {
+    border-left: 1px solid #e6e6e6;
+    padding: 0 36px;
+    margin-top: 10px;
+}
+
+.like .message li p a {
+    font-size: 12px;
+    font-family: '宋体', sans-serif;
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.like .message li span {
+    line-height: 21px;
+    height: 21px;
+    font-size: 17px;
+    color: #b51d1a;
+    margin-top: 2px;
+    display: block;
+}
+
+.like .message li span i {
+    font-size: 13px;
+}
+
+.like .message li .pic img {
+    transition: all .6s;
+}

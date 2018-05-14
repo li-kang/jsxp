@@ -1,0 +1,153 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>绘制网格</title>
+
+<script>
+
+window.onload=function(){
+	
+	// 1 获取画布
+    var cvs=document.getElementById("cvs");
+	var ctx=cvs.getContext("2d");
+    var r=200; // 钟表半径
+
+	// 2 刻度初始化
+	
+	function init(){
+
+		var num=0;
+		
+		var len;
+		
+		function draw(){
+			
+			var deg=num*Math.PI*2/60;
+			
+			if(num%5==0){
+				ctx.strokeStyle="red";
+				ctx.lineWidth="5";
+				len=15;	
+			}else{
+				ctx.strokeStyle="black";
+				ctx.lineWidth="3";
+				len=8;	
+			}
+			
+			var x1=300+(r-len)*Math.cos(deg);
+			var y1=300-(r-len)*Math.sin(deg);
+			
+			var x2=300+r*Math.cos(deg);
+			var y2=300-r*Math.sin(deg);
+			
+			ctx.beginPath();
+			
+			ctx.moveTo(x1,y1);
+			
+			ctx.lineTo(x2,y2);
+			
+			ctx.closePath();
+			
+			ctx.stroke();	
+			
+			num++;
+			
+		}
+		
+		for(var i=0;i<60;i++){
+			draw();
+		}
+		
+	}
+	
+	
+	// 定时器绘制秒针分针时针
+	
+	function run(){
+		
+		ctx.clearRect(0,0,500,500);
+		
+		// 1 绘制表心
+		ctx.beginPath();
+		ctx.arc(300,300,6,0,Math.PI*2);
+		ctx.closePath();
+		ctx.fill();
+		
+		
+		// 2 绘制刻度
+		init();
+		
+		
+		// 3 获取时间
+		
+		var date=new Date();
+	
+		var h=date.getHours();
+		var m=date.getMinutes();
+		var s=date.getSeconds();
+		
+		console.log(h,m,s);
+		
+		
+		// 4 绘制秒针
+
+		var s_deg=s*Math.PI*2/60-Math.PI/2;
+		var s_x=300+(r-25)*Math.cos(s_deg);
+		var s_y=300+(r-25)*Math.sin(s_deg);
+		
+		ctx.beginPath();
+		ctx.lineWidth=1;
+		ctx.strokeStyle="red";
+		ctx.moveTo(300,300);
+		ctx.lineTo(s_x,s_y);
+		ctx.closePath();
+		ctx.stroke();
+		
+		
+		// 5 绘制分针
+		
+		var m_deg= (m+s/60)*Math.PI*2/60-Math.PI/2;;
+		var m_x=300+(r-40)*Math.cos(m_deg);
+		var m_y=300+(r-40)*Math.sin(m_deg);
+		
+		ctx.beginPath();
+		ctx.strokeStyle="black";
+		ctx.lineWidth="3";
+		ctx.moveTo(300,300);
+		ctx.lineTo(m_x,m_y);
+		ctx.closePath();
+		ctx.stroke();
+		
+		// 6 绘制时针
+		
+		h=h%12;
+		var h_deg=(h+m/60+s/3600)*Math.PI*2/12-Math.PI/2;
+		var h_x=300+(r-70)*Math.cos(h_deg);
+		var h_y=300+(r-70)*Math.sin(h_deg);
+		
+		ctx.beginPath();
+		ctx.lineWidth="6";
+		ctx.lineCap="round";
+		ctx.moveTo(300,300);
+		ctx.lineTo(h_x,h_y);
+		ctx.closePath();
+		ctx.stroke();
+
+	}
+	
+	run();
+	
+	setInterval(run,1000);
+    
+	
+}
+
+</script>
+</head>
+
+<body>
+<canvas id="cvs" width="800" height="800" style="margin: 0 auto;display: block;">您的浏览器不支持canvas</canvas>
+</body>
+</html>

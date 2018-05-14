@@ -1,0 +1,32 @@
+# 留言表
+create table weibo(
+id tinyint(5) unsigned primary key auto_increment,
+title varchar(50) not null,
+cont text not null,
+user tinyint(5) not null,
+time date
+);
+
+insert into weibo values(null,'咨询','请问，你是火星时代的老师吗？','1','2018-1-1');
+insert into weibo values(null,'你好','是的，有什么可以帮助你？','2','2018-1-1');
+insert into weibo values(null,'咨询','我想咨询一下web前端的课程','1','2018-1-12');
+insert into weibo values(null,'回答','您对网站开发有了解吗？','2','2018-1-16');
+insert into weibo values(null,'咨询','我之前了解过一些，是同学推荐我来的','1','2018-1-18');
+insert into weibo values(null,'回答','恩恩，web前端是网站开发的一部分','2','2018-1-21');
+insert into weibo values(null,'回答','现在网站越来越注重页面制作和交互效果','2','2018-1-22');
+insert into weibo values(null,'回答','我先把课表发您看一下','2','2018-1-27');
+insert into weibo values(null,'好的','我先看一下，一会再问','1','2018-1-31');
+insert into weibo values(null,'回答','好的，随时为您提供服务','2','2018-1-1');
+
+
+
+# 用户表
+create table weibo_user(
+id tinyint(5) unsigned primary key auto_increment,
+name varchar(20) not null,
+school varchar(50),
+headpic varchar(50)
+);
+
+insert into weibo_user values(null,'琳达','西安交大','head01.jpg');
+insert into weibo_user values(null,'杰西卡','北理工','head02.jpg');

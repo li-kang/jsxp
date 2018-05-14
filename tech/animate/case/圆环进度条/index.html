@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>圆环进度条</title>
+</head>
+
+<body>
+<canvas id="cvs" width="200" height="200" style="display: block; margin: 0 auto;"></canvas>
+</body>
+</html>
+
+<script>
+
+// 先绘制底部的圆环
+
+var cvs=document.querySelector("#cvs");
+
+var ctx=cvs.getContext("2d");
+
+var w=cvs.width;
+
+var h=cvs.height;
+
+var x=w/2;
+
+var y=h/2;
+
+ctx.lineWidth=16;
+
+var r=Math.min(w,h)/2-ctx.lineWidth/2;
+
+var progress=0;
+var total=5;
+var target=0.4
+
+
+function draw(){
+	
+	 if(progress>total) return;
+	
+	 ctx.clearRect(0,0,w,h); // 清除canvas内容
+	 
+	 // 1 绘制背景圆环
+	 ctx.beginPath();
+	 ctx.strokeStyle="#87CEEB";
+	 ctx.arc(x,y,r,0,Math.PI*2);
+	 ctx.stroke();
+	 
+	 // 2 绘制移动的进度条
+	 var start=Math.PI*3/2*progress/total;
+	 var p=target*progress/total;
+	 var end=Math.PI*2*p+start;
+	 ctx.beginPath();
+	 ctx.lineCap="round";
+	 ctx.strokeStyle="purple";
+	 ctx.arc(x,y,r,start,end);
+	 ctx.stroke();
+	 
+	 ctx.font="25px arial";
+	 var text=(100*p).toFixed(2)+"%";
+	 ctx.fillStyle = "orange"; // 文字颜色
+	 ctx.textAlign = "center"; // 文字水平居中
+	 
+	 
+	 ctx.textBaseline = "middle"; // 文字垂直居中
+	 ctx.fillText(text,x,y);
+	 
+     progress++;
+
+}
+
+
+setInterval(draw,100);
+
+
+</script>

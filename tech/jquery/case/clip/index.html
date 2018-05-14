@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>图片微放大</title>
+<style>
+*{ margin:0; padding:0}
+body{ background: #fff;}
+ul{ list-style:none}
+.clip{ width:482px; padding:0 50px;  height:80px; position:relative; margin:100px auto;}
+.clip .clipCont{ height:80px;border:1px solid #ccc; overflow:hidden}
+.imgList{ position: relative;top:0; left:0}
+.imgList li{float: left;}
+.imgList li img{ width:120px; height:80px;}
+.clip .prevBtn,.clip .nextBtn{ position:absolute; top:50%; width:30px; height:50px; line-height:50px; text-decoration:none; font-size:30px; text-align:center; margin-top:-25px; left:10px;  color:#333}
+.clip .nextBtn{ right:10px; left:auto;}
+
+</style>
+
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script>
+$(function(){
+	var li_w=$('li').width();
+	var li_size=$('.imgList li').size();
+	//定义ul宽度
+	$('.imgList').width(li_w*li_size);
+	
+	//移动计数
+	var n=0;
+	
+	//next
+	$('.nextBtn').click(function(){
+		n++;
+		if(n>=li_size-4) n=li_size-4; //少于4个
+		$('.imgList').animate({"left":-n*li_w});
+	});
+	
+	//prev
+	$('.prevBtn').click(function(){
+		n--;
+		if(n<=0) n=0;
+		$('.imgList').animate({"left":-n*li_w});
+	});
+});
+
+</script>
+</head>
+
+<body>
+<div class="clip">
+	<div class="clipCont">
+    	<ul class="imgList">
+            <li><img src="01.jpg"></li>
+            <li><img src="02.jpg"></li>
+            <li><img src="03.jpg"></li>
+            <li><img src="04.jpg"></li>
+            <li><img src="05.jpg"></li>
+            <li><img src="03.jpg"></li>
+            <li><img src="04.jpg"></li>
+            <li><img src="05.jpg"></li>
+        </ul>
+    </div>
+    <a href="javascript:;" class="prevBtn">&laquo;</a>
+    <a href="javascript:;" class="nextBtn">&raquo;</a>
+
+</div>
+
+
+</body>
+</html>

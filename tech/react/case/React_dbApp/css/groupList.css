@@ -1,0 +1,43 @@
+.listWrapper{
+    position: relative
+  }
+  .listWrapper li{
+    list-style:none;
+    height:100px
+  }
+
+  .listWrapper .main{
+    width:100%;
+    padding-top:30px;
+    position:absolute
+  }
+
+  .listWrapper .img1{
+    width:70px
+  }
+  .listWrapper .img2{
+    width:30px;
+    position: absolute;
+    right:25px;
+    top:50px
+
+  }
+  .listWrapper h3{
+    position: absolute;
+    left:80px;
+    top:30px
+  }
+  .listWrapper .des{
+    position:absolute;
+    top:55px;
+    left:80px;
+    width:40%;
+    height:40px;
+    overflow:hidden;
+    color: #999
+  }
+  .listWrapper .number{
+    position:absolute;
+    top:55px;
+    right:60px;
+  }

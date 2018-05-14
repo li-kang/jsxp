@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{ margin: 0;padding: 0;}
+			body{ background: #fff;}
+			.fl{ float: left;}
+			.fr{ float: right;}
+			#wrap{ width: 600px; height: 300px; background-image: url(images/bj.jpg); background-size: cover;font-family: "楷体"; margin: 100px auto;position: relative;}
+			.top{ height: 50px; padding: 0 10px;}
+			.top img{ width: 50px;}
+			.top .round{ width: 100px; height:50px; float: left;line-height: 50px;font-size: 22px; text-align: center;}
+			.top p{ line-height: 25px; }
+			.p1{ float: left; width: 240px;}
+			.p1 .head{float: left;width: 50px;height: 50px;background: #fff;}
+			.p1 .blod_bar{margin-left: 6px;width: 180px;height: 25px;background: red; position: relative;border-radius: 10px; overflow: hidden;}
+			.p1 .blod{width: 100%;height: 25px;background: yellow; position: absolute; left: 0;top: 0;}
+			.p2{ float: right; width: 240px;}
+			.p2 .head{float: right;width: 50px;height: 50px;background: #fff;}
+			.p2 .blod_bar{margin-right: 6px;width: 180px;height: 25px;background: red; position: relative; border-radius: 10px;overflow: hidden;}
+			.p2 .blod{width: 100%;height: 25px;background: yellow; position: absolute; left: 0;top: 0;}
+			.playerName1{ padding-left: 20px;}
+			.playerName2{ padding-right: 20px; text-align: right;}
+			.mid{ text-align: center; font-size: 40px;line-height: 80px; font-weight: bold; padding-top: 20px;}
+			
+			.bottom{ position: relative; height: 120px;}
+			.bottom img{ width:100px; position: absolute; bottom: 0; left: 0;}
+			.player1,.player2{ width: 100px; height: 100px;}
+			.player1{ position: absolute;top: 10px;left: 20px;}
+			.player2{ position: absolute;top: 10px;right: 20px;}
+			#botMsg{ text-align: center; color: #000; background: rgba(255,255,255,.5);}
+			#btn{ position: absolute; top: 140px; left: 265px;}
+			h1{ position: absolute; top: 50px; left: 0; width: 600px; text-align: center;opacity: .4; font-size: 30px;font-family: "楷体";}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<h1>火星宠物大乐斗</h1>
+			<button type="button" id="btn">开始游戏</button>
+			<div class="top">
+				<div class="p1">
+					<div class="head"><img src="images/p1.png"></div>
+					<div class="fl">
+						<div class="blod_bar">
+							<div class="blod" id="blodP1"></div>
+						</div>
+						<p class="playerName1" id="playerName1"></p>
+					</div>
+				</div>
+				<div class="round" id="round">
+					第0回合
+				</div>
+				<div class="p2">
+					<div class="head"><img src="images/p2.png"></div>
+					<div class="fr">
+						<div class="blod_bar">
+							<div class="blod" id="blodP2"></div>
+						</div>
+						<p class="playerName2" id="playerName2"></p>
+					</div>
+				</div>
+			</div>
+			<div class="mid" id="msg">游戏开始</div>
+			<div class="bottom">
+				<div class="player1"><img src="images/p1.png" id="img1"/></div>
+				<div class="player2"><img src="images/p2.png" id="img2"/></div>
+			</div>
+			<p id="botMsg"></p>
+		</div>
+		
+	</body>
+	<script type="text/javascript">
+		var oP1 = document.getElementById("blodP1");
+		var oP2 = document.getElementById("blodP2");
+		var img1 = document.getElementById("img1");
+		var img2 =document.getElementById("img2");
+		var username1 = document.getElementById("playerName1");
+		var username2 = document.getElementById("playerName2");
+		var player1 = new Player("哈哈",300,username1,img1,oP1);
+		var player2 = new Player("嘿嘿",300,username2,img2,oP2);
+		function Player(name,blod,username,role,blodBar){		//名字,血量,名字DOM,角色DOM,血条DOM
+			this.name = name;
+			this.username = username;
+			this.role = role;
+			this.blodBar = blodBar;
+			this.blod = blod;
+			this.maxBlod = blod;
+			this.dc = 20;
+			this.hurt = 0;
+			this.hit = 60;
+			this.dodge = 30;		//
+			this.random1 = 0;
+			this.mode = 0;
+			this.isHit = 0;
+			this.weapon=[
+				{
+					name:"屠龙刀",
+					minDC:15,
+					maxDC:45,
+				},
+				{
+					name:"折櫈",
+					minDC:8,
+					maxDC:17,
+				},
+				{
+					name:"棒球棍",
+					minDC:10,
+					maxDC:20,
+				},
+				{
+					name:"平底锅",
+					minDC:18,
+					maxDC:22,
+				},
+				{
+					name:"判官笔",
+					minDC:5,
+					maxDC:8,
+				},
+				{
+					name:"接力棒",
+					minDC:6,
+					maxDC:10,
+				},
+				{
+					name:"木剑",
+					minDC:10,
+					maxDC:15,
+				},
+				{
+					name:"木槌",
+					minDC:7,
+					maxDC:12,
+				},
+			];
+			this.skill=[
+				{
+					type:1,
+					name:"如来神掌",
+					dc:0.5,
+					msg:"使用如来神掌，打掉对手一半气血"
+				},
+				{
+					type:1,
+					name:"无影手",
+					dc:0.2,
+					msg:"使用如来神掌，打掉对手20%气血"
+				},
+				{
+					type:0,
+					name:"一阳指",
+					dc:30,
+					msg:"使用一阳指，打掉对手30点气血"
+				},
+				{
+					type:0,
+					name:"黑龙波",
+					dc:50,
+					msg:"使用一阳指，打掉对手50点气血"
+				},
+				
+			];
+		};
+		//初始化
+		Player.prototype.init = function(){
+			this.username.innerHTML = this.name;
+		};
+		//攻击
+		Player.prototype.attect = function(defenser){
+			this.role.style.width = "120%";		//攻击时，角色变大，代表攻击方
+			defenser.role.style.width = "80%";		//
+			this.random1 = Math.random()*10;		//随机发动普通攻击，武器攻击，技能攻击
+			if(this.random1>3 && this.random1 <8 &&this.weapon[0]){	//使用随机武器
+				//产生随机武器,并且从当前兵器库中删除
+				this.mode = this.weapon.splice( parseInt( Math.random()*this.weapon.length),1 )[0]
+				//伤害值等于基础伤害加武器随机伤害
+				this.hurt =this.dc + this.mode.minDC + parseInt( Math.random()*(this.mode.maxDC-this.mode.minDC));
+			}else if(this.random1>8&&this.skill[0]){		//使用随机技能
+				//产生随机武器,并且从当前兵器库中删除
+				this.mode = this.skill.splice( parseInt( Math.random()*this.skill.length),1 )[0]; 
+				if(this.mode.type){
+					this.hurt = defenser.blod*this.mode.dc;
+				}else{
+					this.hurt =  this.dc;
+				}
+			}else{
+				this.mode = {name:"普通攻击"}
+				this.hurt = this.dc
+			}
+			console.log(this.mode)
+			console.log(this.hurt)
+			this.hurt=parseInt(this.hurt);
+			this.attectOver(defenser);
+		};
+		//攻击结束，计算血量
+		Player.prototype.attectOver = function(defenser){
+			//是否命中  hit随机数 -dodge随机数>0;
+			this.isHit = Math.random()*this.hit -  Math.random()*defenser.dodge;
+			if(this.isHit>0){
+				defenser.blod-=this.hurt;
+				if(defenser.blod<=0){defenser.blod=0}
+				html = this.name+"  使用  " + this.mode.name + "，对  "+defenser.name + "  造成"+ this.hurt +"点伤害";
+				defenser.blodPer = defenser.blod / defenser.maxBlod *100
+				defenser.blodBar.style.width = defenser.blodPer+"%"
+				oMsg.innerHTML = this.mode.name;
+				this.roundOver(defenser);
+			}else{
+				html = this.name+"  使用" + this.mode.name + "，但被"+defenser.name+"轻巧的躲开了";
+			}
+			console.log(player1.blod,player2.blod)
+			botMsg.innerHTML = html;
+		};
+		//游戏结束
+		Player.prototype.roundOver = function(defenser){
+			if(defenser.blod<=0){
+				defenser.blod=0;
+				html = this.name+"  WIN !!!!";
+				defenser.role.style.width = "30%"
+				oMsg.innerHTML = html;
+				clearInterval(timer);
+				console.log("结束了")
+			}
+		};
+		var turn =0; //0==>角色1攻击    1==>角色2攻击;
+		var roundNum =0;  //回合数
+		var timer;
+		var oRound = document.getElementById("round");
+		var oMsg = document.getElementById("msg");
+		var botMsg = document.getElementById("botMsg");
+		var oBtn = document.getElementById("btn");
+		oBtn.onclick = begin;
+		function begin(){
+			oBtn.remove();
+			player1.init();
+			player2.init();
+			timer = setInterval(function(){
+				round();
+			},500)
+		}
+		function round(){
+			roundNum++;
+			oRound.innerHTML = "第"+roundNum+"回合"
+			turn = !turn;
+			if(turn){
+				player1.attect(player2);
+			}else{
+				player2.attect(player1);
+			};
+		}
+	</script>
+</html>

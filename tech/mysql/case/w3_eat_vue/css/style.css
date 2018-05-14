@@ -1,0 +1,19 @@
+*{ margin:0; padding:0}
+body{font-size:14px}
+h1,h2,h3,h4,h5,h6{ font-weight:normal}
+ul{ list-style:none}
+i,strong,em{ font-style:normal; font-weight:normal}
+p,dt,dd{ padding:5px 0}
+button{ padding:5px 10px}
+.wrap{ width:500px; padding:20px}
+li{ padding:10px; margin-bottom:20px; background:#efefef; position:relative}
+hr{ margin:50px 0}
+h2,dt{ font-size:24px; font-weight:bold; padding:10px 0}
+h5{ font-size:16px; font-weight:bold}
+h6{font-size:14px; padding:5px 0}
+.cateList p{ font-size:12px; margin-right:80px}
+.cateList .orderBtn{ position:absolute; top:20px; right:20px}
+.shopping_cart{ position:relative}
+.shopping_cart .price{ position:absolute; top:10px; right:10px; font-size:18px;}
+.shopping_cart em{ font-size:24px}
+.clearBtn{ position:absolute; top:10px; right:0;}

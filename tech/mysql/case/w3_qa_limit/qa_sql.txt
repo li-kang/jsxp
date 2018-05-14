@@ -1,0 +1,24 @@
+create table qa_list(
+id tinyint(3) unsigned primary key auto_increment not null,
+title varchar(100) not null,
+star int(60) not null default '1'
+);
+
+
+insert into qa_list values(null,'11111','1');
+insert into qa_list values(null,'22222','6');
+insert into qa_list values(null,'33333','3');
+insert into qa_list values(null,'44444','5');
+insert into qa_list values(null,'55555','10');
+insert into qa_list values(null,'66666','1');
+insert into qa_list values(null,'77777','6');
+insert into qa_list values(null,'88888','3');
+insert into qa_list values(null,'99999','5');
+insert into qa_list values(null,'aaa10','10');
+insert into qa_list values(null,'bbb11','1');
+insert into qa_list values(null,'ccc12','6');
+insert into qa_list values(null,'ddd13','3');
+insert into qa_list values(null,'eee14','5');
+insert into qa_list values(null,'fff15','10');
+insert into qa_list values(null,'ggg16','10');
+insert into qa_list values(null,'hhh17','10');

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+        
+		<style>
+        
+		.gallery{ width:980px; height:500px; position:relative; margin: 0 auto;}
+        .gallery .item{width:196px; height:100px; background:url(../images/10.jpg);  position:absolute;}
+		
+        </style>
+        <script src="../js/jquery-3.1.0.min.js"></script>
+        
+        <script>
+        
+        $(function(){
+			
+			var gallery=$(".gallery");
+		    
+			for(var i=0;i<25;i++){
+				
+				var x=i%5;
+				
+				var y=parseInt(i/5);
+				
+				$("<div class='item'></div>").css("background-position",function(){
+				    return x*(-196)+"px "+y*(-100)+"px";
+				})
+				.css("left",function(){
+					 return x*196+"px";
+				})
+				.css("top",function(){
+				    return y*100+"px";
+				})
+				.appendTo(gallery);
+				
+				
+			}
+			
+			var items=gallery.find(".item");
+			
+			items.click(function(){
+				
+				//$(this).css("opacity","0.2");
+				//$(this).animate({"opacity":"0.2"});
+				//items.animate({"opacity":"0.2"});
+				
+				//items.delay(2000).animate({"opacity":"0.2"});
+				
+				items.each(function(index, element) {
+                     items.eq(index).delay(100*index).animate({"opacity":"0.2"},100);
+                });
+				
+			})
+			
+			
+		})
+        
+        </script>
+        
+	</head>
+    
+	<body>
+		
+        <div class="gallery">
+        
+        </div>
+		 
+	</body>
+</html>

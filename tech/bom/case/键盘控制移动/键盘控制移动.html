@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>键盘控制div移动</title>
+<style>
+*{margin:0;padding:0}
+body{ background: #fff;}
+#box{width:200px;height:200px; padding:20px; border:10px solid #ccc; background:red; position:absolute;top:100px;left:100px;text-align: center;color: #fff; font-size: 16px;}
+</style>
+<script>
+window.onload=function(){
+	var oDiv=document.getElementById('box');
+	//alert(oDiv.offsetHeight)
+	
+	document.onkeydown=function(ev)	{
+		
+		//alert(ev.keyCode)
+		//left	
+		if(ev.keyCode=='37'){
+			var l=oDiv.offsetLeft-10;
+			if(l<0)l=0;
+			oDiv.style.left=l+'px';
+		}
+		
+		//top
+		if(ev.keyCode=='38'){
+			var t=oDiv.offsetTop-10;
+			if(t<0)t=0;
+			oDiv.style.top=t+'px';
+		}
+		//right
+		if(ev.keyCode=='39'){
+			var r=oDiv.offsetLeft+10;
+			if(r>document.documentElement.clientWidth-oDiv.offsetWidth)r=document.documentElement.clientWidth-oDiv.offsetWidth;
+			oDiv.style.left=r+'px';
+		}
+		//bottom
+		if(ev.keyCode=='40'){
+			var b=oDiv.offsetTop+10;
+			if(b>document.documentElement.clientHeight-oDiv.offsetHeight)b=document.documentElement.clientHeight-oDiv.offsetHeight;
+			oDiv.style.top=b+'px';
+		}
+		
+		//alert(oEvent.keyCode);
+		if(ev.keyCode==66 && ev.ctrlKey){//66-b
+			oDiv.style.background='blue';
+		}
+		
+	};	
+	
+};
+</script>
+</head>
+
+<body>
+<div id="box">键盘上下左右控制div移动</div>
+</body>
+</html>

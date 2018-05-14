@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin:0; padding: 0;}
+			p{ margin: 10px;}
+			table{ border: 1px solid #ccc; border-collapse: collapse;}
+			th,td{ border: 1px solid #ccc; padding:5px 10px;}
+		</style>
+	</head>
+	<body>
+		<form id="myform" action="show.php" method="get">
+			
+			<p><label>用户名：<input type="text" name="username" required></label></p>
+			<p>性　别：<label><input type="radio" name="sex" value="m" checked>男</label><label><input type="radio" name="sex" value="w">女</label></p>
+			<p>出　生：<select name="year">
+				<option value="2017">2017</option>
+				<option value="2018" selected>2018</option>
+			</select>年
+			<select name="month">
+				<option value="1" selected>1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>月
+			<select name="day">
+				<option value="1">01</option>
+				<option value="2">02</option>
+				<option value="3">03</option>
+				<option value="4">04</option>
+				<option value="5">05</option>
+				<option value="6">06</option>
+				<option value="7">07</option>
+				<option value="8">08</option>
+				<option value="9">09</option>
+				<option value="10">10</option>
+				<option value="11" selected>11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">39</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+			</select>日
+			</p>
+			<p>爱　好：<label><input type="checkbox" name="hobby[]" value="0">篮球</label> 
+				<label><input type="checkbox" name="hobby[]" value="1" checked>足球</label> 
+				<label><input type="checkbox" name="hobby[]" value="2" checked>游戏</label>
+				<label><input type="checkbox" name="hobby[]" value="3">读书</label>
+			</p>
+			<p>　　　　<button type="submit">同步提交</button> <button id="btn" type="button">ajax异步提交</button></p>
+			
+		</form>
+		
+		<script src="jquery-1.11.3.min.js"></script>
+		
+		<script>
+			$("#btn").click(function(){
+				//表单序列化
+				var form_str=$("#myform").serialize();
+				console.log(form_str);
+				$.get(
+					"ajax.php?"+form_str,
+							
+					function(data){
+						//$(document.body).append(data);
+						//反序列化
+						//data=JSON.parse(data);
+						
+						data=$.parseJSON(data);
+						console.log(data);
+						
+						var html="<table><tr><th>姓名</th><th>性别</th><th>出生</th><th>爱好</th></tr>";
+						html+="<tr>"+
+						"<td>"+data["username"]+"</td>"+
+						"<td>"+(data["sex"]=="m" ? "男" :"女")+"</td>"+
+						"<td>"+data["year"]+"年"+data["month"]+"月"+data["day"]+"日"+"</td>"+
+						"<td>";
+							
+							//循环hobby
+							if(data["hobby"]){
+								for(var i=0; i<data["hobby"].length; i++){
+									html+=data["h_arr"][  data["hobby"][i] ]+" ";
+								}
+							}	
+						html+="</td>"+
+						"</tr>"+
+						"</table>";
+						
+						
+						
+						//输出到页面
+						$(document.body).append(html);
+					}
+				)
+				
+			})
+			
+			
+			
+			
+		</script>
+		
+	</body>
+</html>

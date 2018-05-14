@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{margin:0;padding:0;}
+body{ background: #fff;}
+a{color:#333; text-decoration: none;}
+ul{list-style:none;}
+.wrap{width:353px;overflow:hidden;}
+.content{height: 208px;border: 1px solid #e4e4e4;margin: 50px;position: relative;overflow: hidden;}
+ul{width: 260px;}
+li{float: left;width: 62px;height: 70px;border-bottom: 1px solid #e4e4e4;border-right: 1px solid #e4e4e4;position: relative;}
+li i{background:url(01.png) no-repeat;display:block;width: 25px;height: 25px;position: absolute;top:13px;left: 19px;}
+li:hover a{color:#c81623;}
+span{display: block;height:30px;line-height: 30px;padding-top:40px;text-align: center;font-size: 12px;}
+.er{background-position: 0 -27px;}
+.san{background-position: 0 -52px;}
+.si{background-position: 0 -76px;}
+.wu{background-position: 0 -98px;}
+.liu{background-position: 0 -125px;}
+.qi{background-position: 0 -150px;}
+.ba{background-position: 0 -175px;}
+.jiu{background-position: 0 -200px;}
+.shi{background-position: 0 -225px;}
+.shiyi{background-position: 0 -249px;}
+.shier{background-position: 0 -272px;}
+.popup{background: #ccc;position: absolute;top: 208px;color:#c81623;}
+.dialog{width:260px;height: 210px;}
+.close{float: right;margin-right: 20px;cursor: pointer;}
+</style>
+<script	src="../js/jquery-1.11.3.min.js"></script>
+<script>
+$(function(){
+	var timer,isAnimate=true;
+	
+	//图标hover
+	$(".icon").hover(function(){
+		if(isAnimate){
+			timer=setTimeout(function(){
+				$(".popup").animate({"top":30},200);
+				$(".icon").animate({"top":-40},200);
+			},500);
+			$(".dialog").eq($(this).index()).show().siblings().hide();//显示对应的对话框内容
+		}
+		
+	},function(){
+		isAnimate=true
+		clearTimeout(timer);//避免鼠标误入
+		
+	});
+	
+	//关闭滑动
+	$(".close").click(function(){
+		isAnimate=false;//点击关闭之后鼠标不移出不执行动画
+		$(".popup").animate({"top":208},200);
+		$(".icon").animate({"top":0},200);
+	});		
+
+})
+</script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="content">
+        <ul>
+            <li class="icon"><a href="##"><i></i><span>话费</span></a></li>
+            <li class="icon"><a href="##"><i class="er"></i><span>机票</span></a></li>
+            <li class="icon"><a href="##"><i class="san"></i><span>电影票</span></a></li>
+            <li class="icon"><a href="##"><i class="si"></i><span>游戏</span></a></li>
+            <li><a href="##"><i class="wu"></i><span>彩票</span></a></li>
+            <li><a href="##"><i class="liu"></i><span>加油卡</span></a></li>
+            <li><a href="##"><i class="qi"></i><span>酒店</span></a></li>
+            <li><a href="##"><i class="ba"></i><span>火车票</span></a></li>
+            <li><a href="##"><i class="jiu"></i><span>众筹</span></a></li>
+            <li><a href="##"><i class="shi"></i><span>理财</span></a></li>
+            <li><a href="##"><i class="shiyi"></i><span>礼品卡</span></a></li>
+            <li><a href="##"><i class="shier"></i><span>白条</span></a></li>
+        </ul>
+        <div class="popup">
+            <div class="dialog">话费<i class="close">X</i></div>
+            <div class="dialog">机票<i class="close">X</i></div>
+            <div class="dialog">电影票<i class="close">X</i></div>
+            <div class="dialog">游戏<i class="close">X</i></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

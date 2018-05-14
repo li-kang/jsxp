@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{ margin: 0;padding: 0;}
+			body{ font-size: 14px;background: #fff;}
+			input,button{ border: none;outline: none;}
+			li{ list-style: none;}
+			img{ width: 110%;}
+			#wrap{ width: 800px;height: 500px; background: #eee; margin: 0 auto; position: relative; overflow: hidden;}
+			.barrage{ width: 100%; height: 200px; background: rgba(0,0,0,.3); ; position: absolute; top: 0;left: 0;z-index: 10;display: none;}
+			.barrage p{ opacity: 1;}
+			#wrap a{ padding: 0 10px;line-height: 26px;background: #193F8C; color: #fff; cursor: pointer; position: absolute; top: 5px;right: 10px; z-index: 100;}
+			.item{  position: absolute; top: 0;left: 0; word-break: keep-all; color: #fff; z-index: 20; padding: 0 5px ;; border-radius: 10px;}
+			.btm{ margin: 0 auto;width: 800px;border: 1px #193F8C solid; height: 28px;}
+			.btm input{ width: 590px;  line-height: 28px; float: left; padding-left: 10px;}
+			.btm button{ width: 200px; line-height: 28px;float: left; background: #193F8C; color: #fff; cursor: pointer;}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<a id="onoff">开启弹幕</a>
+			<div class="barrage"></div>
+			<img src="timg.jpg" >
+		</div>
+		<div class="btm">
+			<input type="text" name="txt" id="txt" placeholder="请输入文字" />
+			<button id="btn">发送弹幕</button>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var msgArr = ['火星时代弹幕案例','弹幕效果不错','我和我的小伙伴都惊呆了','66666666666666','效果出来了','火星时代弹幕案例','这个效果还是很简单的','我相信你也可以实现'];
+		var oWrap = document.getElementById("wrap");
+		function Barrage(msg){
+			this.color = ["#fff","#f00","#0f0","#ff0","#f0f","#0ff"];
+			//this.index = 0;
+			this.obj = document.createElement('p');
+			this.obj.className = 'item';
+			this.obj.innerHTML = msg;
+			this.positionL = 0;
+			this.speed = -3-Math.random()*3;		//移动距离
+			//this.obj.top = parseInt( Math.random()*300 );
+			this.obj.left = 900;
+			this.timer = null;
+			this.colorIndex = parseInt( Math.random()*this.color.length );
+			this.init();
+			this.move();
+			
+		};
+		Barrage.index =0
+		Barrage.prototype.init = function(){
+			Barrage.index++;
+			Barrage.index%=10;
+			this.obj.style.top = Barrage.index*20 +"px";
+			this.obj.style.left = this.obj.left +"px";
+			this.obj.style.color = this.color[this.colorIndex];
+			barrage.appendChild(this.obj);
+			return this;
+		}
+		Barrage.prototype.move = function(){
+			var _this = this;
+			_this.timer = setInterval(function(){
+				_this.positionL+=_this.speed;
+				_this.obj.style.left = _this.obj.left + _this.positionL + "px";
+				if(_this.positionL<=-1100){
+					clearInterval(_this.timer);
+					barrage.removeChild(_this.obj);
+				}
+			},30);
+		};
+		//------------------------------------
+		
+		
+		//----------------------------------------------------
+		var oTxt = document.getElementById("txt");
+		var oBtn = document.getElementById("btn");
+		var onOffBtn = document.getElementById("onoff");
+		var barrage = document.querySelector('.barrage');
+		var onOff = true;
+		var initTimer =null
+		onOffBtn.onclick =function(){
+			if(onOff){
+				barrage.style.display = "block";
+				onOffBtn.innerHTML = "关闭弹幕";
+				init();
+				initTimer = setInterval(function(){
+					init()
+				},5000);
+			}else{
+				barrage.style.display = "none";
+				onOffBtn.innerHTML = "开启弹幕";
+				clearInterval(initTimer);
+				/*var items =barrage.getElementsByTagName('p');
+				for(var i=0;i<items.length;i++){
+					barrage.removeChild(items[i])
+				}*/
+			};
+			onOff = !onOff;
+		}
+		function init(){
+			for(var i=0;i<msgArr.length;i++){
+				new Barrage(msgArr[i])
+			}
+		};
+		
+		oBtn.onclick = function(){
+			var oVal =oTxt.value;
+			if(oVal){
+				this.disabled = true;
+				new Barrage(oTxt.value);
+				setTimeout(function(){
+					oBtn.disabled = false
+				},3000)
+			}else{
+				alert('请输入内容')
+			}
+			
+		}
+	</script>
+</html>

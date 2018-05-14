@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>发布说说</title>
+<style>
+*{ margin:0; padding:0}
+ul{ list-style:none}
+.wrap{ width:500px;font-size:14px; margin:50px auto}
+.countTxt{ display:block; text-align:right; padding-bottom:10px;}
+.countTxt em{ font-size: 16px; font-weight: bold; font-style: normal; padding: 0 5px}
+.countTxt .red{ color: red;}
+textarea{ padding:10px; display:block; width:480px; resize:none; height:100px; border:1px solid #ccc; font-size:14px}
+.commonBtn{ height:40px; width:100px; border:1px solid #ccc; margin:10px 0 0 380px}
+hr{ margin:20px 0}
+.talkList li{ border:1px solid #ccc; padding:30px 20px 20px; border-radius:10px; position:relative; margin-bottom:20px}
+.talkList li p{min-height:20px; margin-bottom:10px; word-break:break-all}
+.talkList li .toolsBar{ text-align:right}
+.talkList li .toolsBar span{ margin-left:20px; cursor:pointer}
+.talkList li time{ position:absolute; top:10px; right:15px; color:#ccc; font-size: 12px;}
+.page{text-align: right;}
+.page a{ display: inline-block; width: 30px; height: 30px; text-align: center; border:1px solid #ccc; line-height: 30px; margin-right: 10px;}
+            .page .ac{ background: red; color: #FFF;}
+</style>
+<script src="jquery-1.11.3.min.js"></script>
+<script>
+
+$(function(){
+    
+    //判断是不是中文
+    function isChinese(str){  
+        var reCh=/[u00-uff]/;
+        return !reCh.test(str);
+    };
+    
+    //ul局部添加说说
+    //@argum require    string  onload:页面首次加载  insert:添加新数据    page:分页
+    //@argum cont   string onload:null  insert:新说说文本内容  page:页号
+    function addshuoshuo(require,cont){
+        $.get('doAction.php?a='+require+"&cont="+cont,function(data){
+            //$(document.body).append(data);
+            data=JSON.parse(data);
+            var allpage=data['count'];//总条数
+            var res=data['res']; //三条记录
+            var html='';
+            res.forEach(function(v,i){
+                let {cont,id,ding,cai,time}=v;
+                //es6 模板字符串
+                html+=`<li>
+                    <p>${cont}</p>
+                    <div class="toolsBar" onselectstart="return false" style="-moz-user-select:none">
+                        <span class="ding" data-id="${id}">顶 <b>${ding}</b></span>
+                        <span class="cai" data-id="${id}">踩 <b>${cai}</b></span>
+                    </div>
+                    <time>${time}</time>
+                </li>`;
+            });
+            
+            //ul局部刷新内容
+            $('.talkList').empty().prepend(html);
+            
+            //添加分页号------点击分页号的分页请求,不需要重新计算分页号(因为每次只更新三条数据)
+            if(require!="page"){ 
+                var n=Math.ceil(allpage/3);
+                $('.page').empty();
+                for(var j=1; j<=n; j++){
+                    $('.page').append('<a href="###" class="'+(j==1? "ac":"")+'">'+j+'</a>');    
+                }
+            }
+        })
+    }
+    
+    //页面加载时调用
+    addshuoshuo('onload',null);
+    
+    
+	//文本域 字数统计-------------------------------------
+	$('textarea').keyup(function(){
+		var txtval=$(this).val();
+		$('.commonBtn').prop('disabled',txtval=="" ? true:false ) ;//设定按钮
+		var str_length=0; //初始定义长度为0
+		for(var i=0;i<txtval.length;i++){
+			if(isChinese(txtval.charAt(i))) str_length=str_length+2;//中文为2个字符
+			else str_length=str_length+1;//英文一个字符
+		};
+		str_length=Math.ceil(str_length/2);//中英文相加除2 向下取整数（一个中文+一个英文）
+		var count=140-str_length;
+		if(count<0){
+			$('.countTxt').html('超出<em class="red">'+Math.abs(count)+'</em>字');
+			$('.commonBtn').prop('disabled',true);
+		}else{
+			$('.countTxt').html('您还可以输入<em>'+count+'</em>字');
+		}
+	});
+	
+	//------------------------------------------------------------------------
+	//添加数据
+	$('.commonBtn').click(function(){
+		var txtVal=$('textarea').val();
+		//添加数据
+		addshuoshuo('insert',txtVal);
+		
+		//清空输入框
+		$('textarea').val("");
+		$('.countTxt').html('您还可以输入<em>140</em>字');
+		$('.commonBtn').prop('disabled',true);
+		
+	});
+	
+	//----------------------------------------------------------------
+	//事件委派 顶 踩
+	$('.talkList').on('click','.ding,.cai',function(){
+	    var _this=$(this);
+		var oEm=_this.children('b');
+		var cls=_this.attr('class');
+		var id=_this.attr('data-id');
+		//发送请求
+		$.get("doAction.php?a=dingcai&field="+cls+"&id="+id,function(data){
+		    if(data){
+		        oEm.text(oEm.text()-0+1); //隐性转换类型
+		    }
+		})
+	});
+	
+	//分页操作------------------------------------------------------------
+	$('.page').on('click','a',function(){
+	    var _this=$(this);
+	    var p=_this.text();
+	    _this.addClass('ac').siblings().removeClass('ac');
+	    addshuoshuo('page',p);
+	})
+});
+
+
+
+</script>
+</head>
+
+<body>
+<div class="wrap">
+    <span class="countTxt">您还可以输入<em>140</em>字</span>
+    <textarea></textarea>
+    <button class="commonBtn" disabled type="button">发表说说</button>
+    <hr>
+    <ul class="talkList">
+        <!--<li>
+            <p>adsfa asdf asdf asdf</p>
+            <div class="toolsBar">
+                <span>顶 <b>0</b></span>
+                <span>踩 <b>0</b></span>
+            </div>
+            <time></time>
+        </li>-->
+    </ul>
+    <p class="page"></p>
+
+</div>
+
+
+
+</body>
+</html>

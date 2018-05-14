@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>图片微放大</title>
+<style>
+*{ margin:0; padding:0}
+body{ background: #fff;}
+ul{ list-style:none}
+.imgList{ margin:50px}
+.imgList li{ height:130px; width:200px; position:relative; float:left; margin-right:20px; border:1px solid #333; overflow:hidden}
+.imgList li img{ width:200px;position:absolute; top:0; left:0}
+</style>
+<script src="../js/jquery-1.11.3.min.js"></script>
+
+<script>
+$(function(){
+	$('.imgList li').hover(
+		function(){
+			$(this).children().stop().animate({'left':-10,'top':-10,'width':220},500);
+		},
+		function(){
+			$(this).children().stop().animate({'left':0,'top':0,'width':200},500);
+		}
+	);
+});
+
+</script>
+</head>
+
+<body>
+<ul class="imgList">
+	<li><img src="01.jpg"></li>
+	<li><img src="02.jpg"></li>
+    <li><img src="03.jpg"></li>
+    <li><img src="04.jpg"></li>
+    <li><img src="05.jpg"></li>
+</ul>
+
+
+</body>
+</html>

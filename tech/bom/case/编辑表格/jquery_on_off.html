@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		    *{ margin: 0; padding: 0;}
+		    p,li{height:40px; width: 200px; background:blue; margin-bottom: 20px; color: #fff;}
+		    li{ list-style:none;background: red;}
+		    
+		</style>
+	</head>
+	<body>
+
+	    <div id="box">
+	        <p>hxsd</p>
+	    	<ul>
+	    		<li class="li_a">aaa</li>
+	    		<li>bbb</li>
+	    		<li class="li_c">ccc</li>
+	    		<li>ddd</li>
+	    		<li>eee</li>
+	    	</ul>
+	    </div>
+	    
+	    
+	</body>
+</html>
+<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+	
+	//用on off 绑定事件
+	$("#box").on("click",function(){
+	    alert(4)
+        $(this).off("click")
+    });
+    
+</script>
+    
+    

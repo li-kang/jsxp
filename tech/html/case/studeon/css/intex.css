@@ -1,0 +1,62 @@
+			
+			.banner{height:520px ;background: url(../images/bg.jpg);}
+			
+			.banner dt{height: 254px;line-height: 83px;font-size: 80px;font-family: arial;color: #fff;background: #ed5844;width: 315px;}
+			dd{float: left;}
+			
+			.banner .pic{float: right;padding-top: 35px;}
+			.banner img{width: 630px;height: 387px;}
+			.banner .left{width: 365px;float: left;margin: 98px 0 0 16px;}
+			.banner .text,.text1{width: 365px;background: #ed5844;height:83px;line-height: 83px;font-size: 70px;color: #fff;}
+			.text1{width: 265px;border-bottom:1px solid #fff ;border-top: 1px solid #fff ;}
+			.banner a{width: 51px;height: 27px;background: #fff;float: left;margin:46px 8px 0 0;}
+			.banner a:hover{width: 49px;height: 25px;background: #ed5844;border: 1px solid #f6f1ee;}
+			.banner .active{width: 49px;height: 25px;background: #ed5844;border: 1px solid #f6f1ee;} 
+			
+			.main h2,h3{height: 38px;line-height: 38px;font-size: 15PX;}
+			.main h2{padding-top: 11px;}
+			.main .text{line-height: 20px;font-size: 12px;color: #9a9a9a;}
+			.main .main_2{padding:87px 0 56px 0;border-top: 3px double #ddd;height: 131px;}
+			.main .m_text{border: 1px solid #dedede;width: 1134px;height: 130px;background: #eeeeee;border-left: 5px solid #ed5746;}
+			.main .main_1{height:276px;padding: 70px 0;}
+			.main .border{border-left: 5px solid #ed5746;}
+			.main input{float: right;width: 156px;height: 57px;background: #ed5844 url(../images/windows.png) no-repeat 11px 14px;line-height: 57px;margin:31px 45px 0 0;color: #FFF;font-size: 15px;font-weight: bold;padding-left: 22px;box-shadow: 0 0 10px rgba(0,0,0,.4) inset;border-radius: 4px;}
+			.main .border .m_1{width:900px;float: left;padding:31px 0 0  30px;}
+			.main  .main_6 a{background: url(../images/icon_03.jpg) no-repeat right top;display: block;width: 193px;height: 130px;float: right;float: right;}
+			.main .main_6 .m_text{float: left;width:1134px ;height: 130px;}
+			.main .main_6 .m_text .m_1{width: 900px;}
+			
+			.main .main_3{height: 526px;border-top: 3px double #ddd;position: relative;padding-top: 49px;}
+			.main .main_3 .left{width:247px;height: 442px;padding: 14px;background: #eee;float: left;margin-right:12px ;}
+			.main .main_3 .left img{width: 247px;height: 310px;}
+			.main .title{background: #fff;padding-top: -10px;height: 38px;width: 153px;}
+			.main .main_3 .left h3{height: 43px;line-height: 43px;border-bottom: 1px solid #e7e7e7;}
+			.main .main_3 .last{margin: 0;}
+			.main .main_3 .left .pic{width: 247px;height: 310px;position: relative;}
+			.main .main_3 .icon{height: 27px;width: 248px;position: absolute;left: 0;bottom: 0;}
+			.main .main_3 .web{width: 113px;background: #ed5844;height: 27px;line-height:27px;color: #fff;font-size: 12px;text-align: center;float: left;}
+			.main .main_3 .left a{display: block;height: 27px;width: 27px;background: #f05948;float: right;margin-left: 3px;background: url(../images/s-icons.png) no-repeat -241px -81px;}
+			.main .main_3 .left .er{background-position: -275px -81px;}
+			.main .main_3 h4{position: absolute;left: 0;top: -12px;background: #fff;}
+			.main .main_5{height: 567px;border-top: 3px double #ddd;}
+			.main .main_5 .left img{width: 340px;height: 255px;}
+			.main .main_5 .left{width: 328px;float: left;margin-right:40px;position: relative;}
+			.main .main_5 .left h4{ont-size: 17px;position: absolute;left: 0;top: -12px;background: #fff;}
+			.main .main_5 .left .pic{position: relative;width: 340px;height: 255px;margin-top: 42px;}
+			.main .main_5 .left .icon{width: 86px;height: 41px;float: right;position: absolute;right: 0;bottom: 0;margin-left: 3px;}
+			.main .main_5 .left .pic a{width:42px ;height: 41px;background: url(../images/s-icons.png) no-repeat -240px -122px;display: block;float: left;}
+			.main .main_5 .left .pic .date{background-position: -285px -120px;}
+			.main .main_5 .m5-t{padding:12px 15px 9px 0;border-top: 1px solid #cccccc ;}
+			.main .main_5 .text{height: 23px;float: left;}
+			.main .main_5 .text a{display:block;padding: 31px 0 0 13px;line-height: 23px;color: #020202;}
+			.main .main_5 .right{width: 349px;float: right;padding:0 15px;position: relative;padding-top: 41px;}
+			.main .main_5 .right .top{padding-bottom: 16px;height: 180px;}
+			.main .main_5 .right .t_top{height: 109px;}
+			.main .main_5 .right img{width: 87px;height: 109px;float: left;margin-right: 15px;}
+			.main .main_5 .right h6{font-size: 17px;position: absolute;left: 0;top: -12px;background: #fff;}
+			.main .main_5 .right .r_text{float: left;height: 23px;line-height: 23px;padding-top: 8px;font-size: 15px;}
+			.main .main_5 .right a{float: left;color: #f15431;height: 23px;line-height: 23px;font-size: 15px;}
+			.main .main_5 .right .text{background: url(../images/quotes.png) no-repeat 0 7px;padding-top: 7px;text-indent:3em;}
+			.main .main_5 .right h3{width: 145px;}
+			
+			

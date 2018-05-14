@@ -1,0 +1,77 @@
+
+.public .title {
+    height: 35px;
+    border-bottom: 1px solid #c81623;
+}
+
+.public .title h2 {
+    line-height: 30px;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 40px;
+    float: left;
+    background: url("../images/nva_bg.png") no-repeat 0 -35px;
+    position: relative;
+    font-weight: normal;
+}
+
+.public .title h2 span {
+    color: #fff;
+    font-size: 13px;
+    position: absolute;
+    left: 3px;
+    top: 0;
+    display: block;
+}
+
+.public .title .nav {
+    height: 34px;
+    border: 1px solid #ededed;
+    border-bottom: none;
+    float: right;
+}
+
+.public .title .nav li {
+    height: 32px;
+    line-height: 30px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 3px solid transparent;
+    display: block;
+    margin: -1px 0 0 -1px;
+    float: left;
+    position: relative;
+}
+
+.public .title .nav li a {
+    padding: 0 16px 3px 17px;
+    font-family: '宋体', sans-serif;
+    display: block;
+    font-size: 12px;
+}
+
+.public .title .nav li i {
+    width: 1px;
+    position: absolute;
+    right: -1px;
+    top: 8px;
+    background: #ccc;
+    height: 14px;
+}
+
+.public .title .nav .active {
+    /*box-sizing: border-box;*/
+    border: 1px solid #c81623;
+    border-top-width: 3px;
+    border-bottom-color: #fff;
+    z-index: 5;
+    position: relative;
+}
+
+.public .title .nav .active i {
+    display: none;
+}
+
+.public .icon li a:hover img{
+    transition: all .5s;
+}

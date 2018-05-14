@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>闪烁的星星</title>
+
+<script>
+
+window.onload=function(){
+
+	var cvs=document.getElementById("cvs");	
+	var ctx=cvs.getContext("2d");
+	
+	
+	//1  创建星星的构造函数;
+	
+	function Star(x,y,r,max,c,s){
+		
+		this.x=x;
+		this.y=y;
+		this.radius=r;
+		this._state=true;
+		this.max=max;
+		this.color=c;
+		this.speed=s;
+		
+		this.draw=function(ctx){
+			
+			ctx.beginPath();
+			ctx.fillStyle=this.color;
+			ctx.arc(this.x,this.y,this.radius,0,Math.PI*2);
+			ctx.fill();
+			
+			if(this._state){
+			    this.radius+=this.speed;
+				if(this.radius>this.max){
+				    this._state=false;	
+				}
+			}else{
+				this.radius-=this.speed;
+				if(this.radius<0){
+					this._state=true;
+					this.radius=0;
+				}
+			}
+			
+		}
+		
+    }
+	
+	// 验证
+	/*var s=new Star(50,50,25,50,"red",2);
+	s.draw(ctx);
+	*/
+	
+    // 2 初始化100个小星星;
+	
+	
+	var stars=[];
+	
+	function init(cvs){
+		
+		for(var i=0;i<100;i++){
+			
+			var x=Math.random()*cvs.width;
+		    var y=Math.random()*cvs.height;
+			var r=Math.random()*20+10;
+			
+			var c=randomColor();
+			var max=50;
+			var s=Math.floor(Math.random()*3)+1;
+			
+			var star=new Star(x,y,r,max,c,s);
+			stars.push(star);
+		}
+		
+	}
+	
+	// 验证
+	
+	init(cvs);
+	/*
+	for(var i=0;i<100;i++){
+		stars[i].draw(ctx);
+	}*/
+	
+	// 定时刷新小星星页面;
+	
+	function draw(){
+		
+		ctx.clearRect(0,0,cvs.width,cvs.height);
+		for(var i=0;i<100;i++){
+			stars[i].draw(ctx);
+		}
+		
+	}
+	
+	setInterval(draw,50);
+	
+	
+	// 随机颜色
+	
+	function randomColor(){
+	
+    var r=Math.floor(Math.random()*255);
+    var g=Math.floor(Math.random()*255);
+    var b=Math.floor(Math.random()*255);
+	
+	return "rgb("+r+","+g+","+b+")";
+		
+}
+}
+
+</script>
+</head>
+
+<body>
+
+<canvas id="cvs" width="500" height="500" style="display: block;margin: 0 auto;"></canvas>
+</body>
+</html>

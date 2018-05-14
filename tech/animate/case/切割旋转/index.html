@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>旋转的立方体</title>
+
+<style>
+
+html,body{ height:100%; }
+
+.center{ position:absolute; left:0; top:0; right:0; bottom:0; margin:auto; }
+
+.slide{ width:980px; height:500px; transform-style:preserve-3d; perspective:3000px;  }
+
+.pic{ position:absolute; height:100%; top:0; }
+
+</style>
+
+<script  src="../js/jquery-3.1.0.min.js"></script>
+
+<script>
+
+$(function(){
+   
+   var count=5;
+   
+   // 每个切割块的宽度;
+   var w=$(".slide").width()/count;  
+   
+   // 初始化的切割块; 
+   $(".item").each(function(index, element) {
+	   
+         for(var i=0;i<count;i++){
+			 var delay=i*0.15;
+			 $("<div class='pic'></div>")
+			 .width(w)
+			 .css({
+				  left:i*w+"px",
+				  "background-image":"url(../images/"+index+".jpg)" ,
+				  "background-position":-i*w+"px 0px",
+				  "transform":"rotateX("+index*90+"deg) translateZ(250px)",
+				  "-webkit-transform":"rotateX("+index*90+"deg) translateZ(250px)",
+				  "transition":"transform .5s "+delay+"s"
+			  })
+			 .appendTo(this)
+		 }
+
+   });
+   
+  
+   var num=0;  // 初始没有旋转;
+   
+   function rotate(){
+	   
+	   num++;
+	   
+	   // 让每个pic在原有基础上旋转 num*90;
+	   
+	   $(".item").each(function(index, element) {
+		   
+		    var deg=index*90-num*90;  // index*90 原来的角度 - 旋转的角度;
+			
+            $(this).find(".pic").each(function(index, element) {
+				
+                 $(this).css({
+				     
+					 transform:"rotateX("+deg+"deg) translateZ(250px)",	 
+					 "-webkit-transform":"rotateX("+deg+"deg) translateZ(250px)"	 
+				 });
+				 
+            }); 
+			
+		
+       });
+	   
+	   
+   }
+   
+   $("body").click(function(){
+	    rotate();   
+   });
+   
+	
+});
+</script>
+</head>
+
+<body>
+<div class="slide center">
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+</div>
+</body>
+</html>

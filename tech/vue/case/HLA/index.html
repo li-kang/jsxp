@@ -1,0 +1,67 @@
+<!DOCTYliE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/vue.js"></script>
+    <style>
+        ul{
+            list-style: none;
+            width: 220px;
+            overflow: hidden;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <my-component></my-component>
+    <my-component></my-component>
+    <my-component></my-component>
+    <my-component></my-component>
+    <my-component></my-component>
+</div>
+<template id="tmp">
+    <div>
+        <ul v-for="goods in lists">
+            <li><img :src="goods.address" alt=""/></li>
+            <li>￥{{goods.price}}</li>
+            <li>HLA海澜之家{{goods.name}}2017秋季新品{{goods.description}}</li>
+            <li>近半年有{{goods.num}}条评论</li>
+            <li>海澜之家京东自营旗舰店</li>
+            <li>自营</li>
+        </ul>
+    </div>
+</template>
+</body>
+</html>
+<script>
+    Vue.component('myComponent',{
+        template: '#tmp',
+        data:function(){
+            return {
+                lists: [
+                    {
+                        address: 'HLA1.jpg',
+                        price: 489.00,
+                        name: '时尚棒球领夹克',
+                        description: '外套男HWJAJ3V268A 藏青R8 藏青 175/92A',
+                        num: 1
+                    },
+                    {
+                        address: 'HLA2.jpg',
+                        price: 889.00,
+                        name: '时尚休闲西装',
+                        description: '都市男HWJAJ3V268A 藏蓝B11 藏蓝 180/96A',
+                        num: 3
+                    }
+                ]
+            }
+        }
+    });
+    var app = new Vue({
+        el:'#box',
+        data:{},
+        methods:{},
+    })
+</script>

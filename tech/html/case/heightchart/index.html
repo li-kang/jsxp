@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin:0;padding:0;}
+        body{font-family:"微软雅黑";text-align: center;}
+        .wrap{position: relative;height:700px;overflow: hidden;}
+        .wrap video{width:100%;height:100%;object-fit: cover;}
+        .wrap .modal{height:700px;background:#0e0e0e;opacity:.6;position: absolute;top:0;left:0;width:100%;}
+        .wrap .content{position: absolute;top:0;bottom:0;margin:auto;text-align: center;width:100%;}
+        .wrap .content img{padding-top:90px;}
+        .wrap .content h2{font-size: 40px;color:#fff;font-weight:bold;margin:20px 0 40px;}
+        .wrap .content h3{font-size: 20px;color: #eef1ff;margin:30px 0 50px;}
+        .wrap button{padding:6px 18px;border:none;background:#7c82ff;border:#7c82ff;border-radius:2px;font-size:16px;color:#fff;transition:all .5s;}
+        .wrap button:hover{background:#90ef7f;}
+        .wrap p{text-align: center;font-size:30px;padding-bottom:10px;color:rgb(0,0,0)}
+        .main .main_con{background:url("../images/video_bg02.png") repeat-y center;}
+        .footer .footer_top{background:#eeeeee}
+        .footer .footer_bot{background:#252530}
+    </style>
+    <script>
+        window.onload = function(){
+            var con = document.getElementsByClassName('content')[0];
+
+            //滚轴事件
+            window.onscroll = function(){
+                //获取滚轴高度
+                var st =  window.pageYOffset|| document.documentElement.scrollTop || document.body.scrollTop;
+                //设置透明度
+                con.style.opacity = 1 - st/1e3 ;
+                //设置模糊度
+                con.style.filter = "blur(" + st/90 +"px)" ;
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <video src="../images/images-videoo.mp4" autoplay loop></video>
+    <div class="modal"></div>
+    <div class="content">
+        <img src="../images/hxsd.png" alt="" width="200"><br/>
+        <h2>硕哥让你的样貌变得越来越帅</h2>
+        <h3>老铁们，飞机大炮走一波，感谢社会我大哥送来的小火箭，666，祝你天天开心，心想事成</h3>
+        <button>点击变帅</button>
+    </div>
+</div>
+<div class="main">
+    <div class="main_top"><img src="../images/video_pic01.png" alt="" height="418"></div>
+    <div class="main_con"><img src="../images/video_pic02.png" alt="" height="700"></div>
+    <div class="main_bot"><img src="../images/video_pic04.png" alt="" ></div>
+</div>
+<div class="footer">
+    <div class="footer_top"><img src="../images/video_pic05.png" alt=""></div>
+    <div class="footer_bot"><img src="../images/video_pic06.png" alt=""></div>
+</div>
+</body>
+</html>

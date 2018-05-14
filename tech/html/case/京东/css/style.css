@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img, select {
+    border: none;
+}
+
+input, button, select, textarea {
+    outline: none;
+    border: none;
+}
+
+textarea {
+    resize: none;
+}
+
+body {
+    font-family: "Arial", 'Microsoft YaHei', 'tahoma', 'Hiragino Sans GB', '\\5b8b体', sans-serif;
+}
+
+.inner {
+    width: 1210px;
+    margin: 0 auto;
+    position: relative;
+}
+
+i {
+    font-style: normal;
+    font-family: "Consolas", sans-serif;
+}
+
+a, p, dl, dt, dd, ul, li, textarea, input, select {
+    color: #666;
+}
+
+a:hover {
+    color: #c81623;
+}
+
+.clearFix{
+    *zoom:1;
+}
+
+.clearFix:after{
+    clear: both;
+    content: '200B';
+    font-size: 0;
+    height: 0;
+    display: block;
+}

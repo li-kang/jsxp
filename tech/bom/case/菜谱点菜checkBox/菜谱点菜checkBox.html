@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>checkbox全选</title>
+<style type="text/css">
+	*{ margin: 0; padding: 0;}
+	body{ background: #fff;}
+	table{width: 400px;border: 1px solid #ccc; border-collapse: collapse; margin: 100px auto;}
+	td,th{ padding: 10px;border: 1px solid #ccc; }
+	input{ vertical-align: middle; margin-right: 5px;}
+	caption{ padding-bottom: 20px; font-size: 24px; font-weight: bold;}
+	
+</style>
+<script>
+window.onload=function(){
+	var oBtn=document.getElementsByClassName("chkAllBtn")[0];
+	var aInput=document.getElementsByTagName("tbody")[0].getElementsByTagName('input');
+	var n=0;
+	
+	oBtn.onclick=function(){
+		for(var i=0;i<aInput.length;i++){
+			if(this.checked){
+				aInput[i].checked=true;
+				n=aInput.length;
+			}else{
+				aInput[i].checked=false;
+				n=0;
+			}
+		}
+	};
+	
+	for(var i=0;i<aInput.length;i++){
+		aInput[i].onclick=function(){
+			if(this.checked){
+				n++;
+			}else{
+				n--;
+			};
+			if(n==aInput.length){
+				oBtn.checked=true;
+			}else{
+				oBtn.checked=false;
+			}
+			
+			//this.checked==true ? n++ :n--;
+			//n==aInput.length ? oBtn.checked=true:oBtn.checked=false;	
+		};	
+	}
+	
+};
+</script>
+</head>
+
+<body>
+ 
+<table id="tableA">
+    <caption>今天点个什么菜？</caption>
+    <colgroup>
+        <col width="80px" />
+    </colgroup>
+    <tbody>
+        <tr>
+            <td><input type="checkbox"></td><td>鱼香肉丝</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td><td>宫保鸡丁</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td><td>糖醋鲤鱼</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td><td>红烧肉</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td><td>尖椒肉丝</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td><td>麻辣鸡丝</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td><td>葱爆羊肉</td>
+        </tr>
+    </tbody>
+    <tr>
+        <td><label><input class="chkAllBtn" type="checkbox">全选</label></td><td></td>
+    </tr>
+</table>
+</body>
+</html>

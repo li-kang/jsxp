@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>发布说说</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/vue-resource.js"></script>
+<script src="js/vue-router.js"></script>
+</head>
+
+<body>
+<div id="app" class="wrap">
+    <span class="countTxt" v-html="txt_num">您还可以输入<em></em>字</span>
+    <textarea @keyup="txt_count" v-model="text_cont"></textarea>
+    <button class="commonBtn" @click="insert" type="button" v-bind:disabled="dis_commont" >发表说说</button>
+    <hr>
+    <ul class="talkList">
+        <li v-for="(item,index) in list">
+            <p>{{item.cont}}</p>
+            <div class="toolsBar">
+                <span @click="ding_cai('ding',item.id,index)">顶 <b>{{item.ding}}</b></span>
+                <span @click="ding_cai('cai',item.id,index)">踩 <b>{{item.cai}}</b></span>
+            </div>
+            <time>{{item.time}}</time>
+        </li>
+    </ul>
+    <p class="page">
+        <a href="###" @click="change(item)" :class="{ac:page_index==index? true:false}" v-for="(item,index) in all_page">{{item}}</a>
+    </p>
+</div>
+</body>
+</html>
+
+<script>
+$(function(){
+    var app=new Vue({
+        "el":"#app",
+        "data":{
+            "txt_num":"您还可以输入<em>140</em>字", //字数
+            "text_cont":"", //textarea内容
+            "dis_commont":true, //发表按钮
+            
+            "list":[ //说说列表
+                {
+                   "id":1,
+                   "cont":"abcd",
+                    "ding":3,
+                    "cai":2,
+                    "time":'2017-12-10 18:10:14'
+                },
+                {
+                   "id":2,
+                   "cont":"abcd",
+                    "ding":3,
+                    "cai":2,
+                    "time":'2017-12-10 18:10:14'
+                },
+                {
+                   "id":3,
+                   "cont":"abcd",
+                    "ding":3,
+                    "cai":2,
+                    "time":'2017-12-10 18:10:14'
+                }
+                
+            ],
+            "all_count":32, //总记录数
+            "all_page":0, //分页
+            "page_index":0
+        },
+        
+        //页面初始化
+        created:function(){
+            this.onload();
+        },
+       
+        "methods":{
+            //判断字节
+            "isChinese":function(str){
+                var reCh=/[u00-uff]/;
+                return !reCh.test(str);
+            },
+           
+            //字数统计
+            "txt_count":function(){
+                
+                //发表按钮状态
+                this.dis_commont=this.text_cont==""? true:false;
+                                              
+                //初始定义长度为0
+                var str_length=0; 
+                
+                for(var i=0;i<this.text_cont.length;i++){
+                    if(this.isChinese(this.text_cont.charAt(i))) str_length=str_length+2;//中文为2个字符
+                    else str_length=str_length+1;//英文一个字符
+                };
+                str_length=Math.ceil(str_length/2);//中英文相加除2 向下取整数（一个中文+一个英文）
+                var count=140-str_length;
+                if(count<0){
+                    this.txt_num='已经超出<em class="red">'+Math.abs(count)+'</em>字';
+                }else{
+                    this.txt_num="您还可以输入<em>"+count+"</em>字";
+                }
+            },
+            
+            //页面加载
+            "onload":function(){
+                
+                console.log(this);
+                
+                this.$http.get('doAction.php?a=onload').then(function(data){
+                        //then 里 this 指向的是 vue对象 
+                        console.log(this);
+                        
+                        this.list=data.body.res;//三条记录
+                        this.all_count=data.body.count; //总条数
+                        this.all_page=Math.ceil(this.all_count/3); //分页
+                        this.text_cont="";
+                        //发表按钮状态
+                        this.dis_commont=this.text_cont==""? true:false;
+                    },
+                    function(){
+                        alert("连接失败！");
+                    }
+                )
+            },
+            
+            //插入数据
+            "insert":function(){
+                var _this=this;
+                this.$http.post('doAction.php?a=insert&cont='+this.text_cont).then(
+                    function(data){
+                        this.onload();
+                        this.txt_num="您还可以输入<em>140</em>字";
+                    },
+                    function(){
+                        alert("插入失败！");
+                    }
+                )
+            },
+            
+            
+            //翻页
+            "change":function(i){
+                //索引
+                this.page_index=(i-1);  //i是页号，要-1才是索引
+                this.$http.get('doAction.php?a=page&page='+i).then(
+                    function(data){
+                        this.list=data.body.res;//三条记录
+                    },
+                    function(){
+                        alert("连接失败！");
+                    }
+                )
+            },
+            
+            //顶踩
+            "ding_cai":function(field,id,index){
+                this.$http.post('doAction.php?a=dingcai&field='+field+'&id='+id).then(
+                    function(data){
+                       this.list[index][field]++;
+                    },
+                    function(){
+                        alert("失败！");
+                    }
+                )
+            }
+        }
+    });
+    
+});
+</script>

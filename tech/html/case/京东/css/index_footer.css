@@ -1,0 +1,141 @@
+.footer{
+    margin-top: 22px;
+}
+
+.slogan {
+    height: 94px;
+    width: 100%;
+    background: #f5f5f5;
+    border-top: 0px solid transparent;
+}
+
+.slogan_item {
+    width: 220px;
+    height: 54px;
+    float: left;
+    margin: 20px 80px 20px 0;
+}
+
+.slogan_item_1 {
+    background: url("../images/product_home_1.0.0.png") no-repeat;
+    background-position-y: -130px;
+}
+
+.slogan_item_2 {
+    background: url("../images/product_home_1.0.0.png") no-repeat;
+    background-position-y: -194px;
+}
+
+.slogan_item_3 {
+    background: url("../images/product_home_1.0.0.png") no-repeat;
+    background-position-y: -258px;
+}
+
+.slogan_item_4 {
+    background: url("../images/product_home_1.0.0.png") no-repeat;
+    background-position-y: -322px;
+}
+
+.someLink {
+    background: #fff;
+    width: 100%;
+}
+
+.someLink .top, .someLink .bot {
+    height: 200px;
+}
+
+.someLink a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+.footer .top {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.footer .top dl {
+    width: 199px;
+    height: 100%;
+    float: left;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.footer .top .theRight {
+    margin-left: -44px;
+    padding-left: 22px;
+    background: url("../images/20130330B_1.png") no-repeat;
+    background-position-y: -131px;
+}
+
+.footer .top dt {
+    font-size: 16px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.footer .top dd {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.footer .bot {
+    text-align: center;
+}
+
+.footer .bot .theTop {
+    display: inline-block;
+    margin-top: 6px;
+}
+
+.footer .bot .theTop li {
+    float: left;
+    font-size: 12px;
+    height: 12px;
+    line-height: 12px;
+    padding: 8px 0;
+}
+
+.footer .bot .theTop li span {
+    padding: 0 10px;
+}
+
+.footer .bot p {
+    font-size: 12px;
+    line-height: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.footer .bot p img {
+    float: left;
+    position: relative;
+    left: 225px;
+}
+
+/*103*32*/
+.footer .bot .someLogo {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.footer .bot .someLogo li {
+    width: 99px;
+    height: 28px;
+    float: left;
+    background: #eee;
+    border: 2px solid #eee;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0 6px;
+}
+
+.footer .bot .someLogo li p {
+    line-height: 14px;
+}
+
+.footer .bot .someLogo li img {
+    float: left;
+    margin-right: 5px;
+}

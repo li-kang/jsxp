@@ -1,0 +1,38 @@
+.main{padding-top: 40px;height: 1912px;}
+.main .left{width: 826px;float: left;padding: 0 30px 0 14px;}
+.main h5{height: 26px;line-height: 26px;font-size: 18px;}
+.main .left .text_1{height: 43px;line-height: 43px;font-size: 13px;color: #999999;}
+span{color:#ef6451}
+.main .left .pic{width: 814px;height: 417px;border: 6px solid #eb5844;position: relative;}
+.main .left .icon{width: 90px;height: 41px;float: right;position: absolute;right: 0;bottom: 0;}
+.main .left a{width:42px ;height: 41px;background: url(../images/s-icons.png) no-repeat -240px -122px;display: block;float: left;margin-left: 3px;}
+.main .left .er{background-position: -290px -122px;}
+.main .left img{width: 814px;height: 417px;}
+.main .left h4{height: 43px;line-height: 43px;color: #7f8487;font-size: 17px;font-family: arial;font-weight: normal;}
+.main .mid{padding-top: 19px;height: 560px;}
+.main h3{height: 53px;line-height: 53px;font-size: 27px;font-family: arial;font-weight: normal;}
+.main .mid input{height: 38px;width: 776px;background: #eeeeee;margin-top: 5px;padding: 0 16px;}
+.main .mid label{display: block;height: 78px;}
+.main .mid textarea{height: 150px;width: 808px;background: #eeeeee;}
+.main .mid .table{font-size: 15px;color: #4b4b4b;}
+.main .mid .sub{height: 51px;width: 145px;background: #ed5844;color: #fff;box-shadow:0 0 10px rgba(0,0,0,.5) inset;border-radius: 4px;}
+.main .card{width: 794px;height: 165px;padding: 17px 15px;border: 1px solid #d4d4d4;margin-bottom: 40px;}
+.main .card .pic{width: 158px;height: 158px;border: none;float: left;margin-right: 47px;}
+.main .card img{width: 158px;height: 158px;}
+.main .card .box{float: left;width: 580px;}
+.main .card a{display: block;width: 99px;height: 43px;background: #ed5844;float: right;line-height: 43px;text-align: center;color: #fff;margin-right: 70px;box-shadow:0 0 10px rgba(0,0,0,.5) inset;border-radius: 4px;}
+.main .card h4{height: 16px;line-height: 16px;padding-bottom: 5px;font-size: 14px;font-weight: bold;color: #60605e;}
+.main .card .date{float: left;height: 55px;line-height: 55px;font-size: 12px;font-family: arial;color: #c5c5c5;}
+.main .right{float: right;width: 270px;}
+.right .sub{width: 228px;height: 42px;border: 1px solid #dbdbdb;line-height: 42px;padding-right: 7px;margin:21px 0 12px 0;}
+.right .sub_1{width:188px;height: 42px;line-height: 42px;display: block;float: left;padding-left: 18px;}
+.right .icon{width:21px;height:20px;background: url(../images/search.png);float: right;margin-top: 10px;}
+
+.right dt{height: 52px;line-height: 52px;font-size: 18px;font-weight: bold;}
+.right dd{line-height: 23px;padding-left: 26px;background: url(../images/b_arrow.png) no-repeat left 8px;}
+.right a{color: #9d9aa1;font-size: 13px;}
+.main .pic h5{padding: 11px 0 13px 0;}
+.main .pic .box{width: 114px;height: 73px;margin: 4px 6px;text-align: center;position: relative;float: left;} 
+.main .right .pic img{width: 114px;height: 73px;}
+.main .right .pic a{width: 114px;height: 73px;background: rgba(0,0,0,.3);display: inline-block;position: absolute;left:0;top: 0;display: none;}
+.main .right .box:hover a{display: block;} 

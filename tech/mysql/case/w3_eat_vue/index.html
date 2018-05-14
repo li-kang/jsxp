@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>点餐系统</title>
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+
+<body>
+<div class="wrap">
+	<h2>菜单</h2>
+	<ul id="cateList" class="cateList">
+        <!--<li id="cate1" data-name="宫保鸡丁" data-price="22">
+            <h5>宫保鸡丁</h5>
+            <p>是一道闻名中外的特色传统名菜。鲁菜、川菜、贵州菜中都有收录，原料、做法有差别。</p>
+            <h6>单价:<em>22</em></h6>
+            <button type="button" class="orderBtn">点餐</button>
+        </li>-->
+    </ul>
+    <hr>
+    
+    <div class="shopping_cart">
+        
+        <dl>
+            <dt>购物车</dt>
+            <dd id="total_count">总数:<em>0</em>例</dd>
+            <dd id="total_price">总额:<em>0</em>元</dd>
+            <dd><button id="clearBtn" type="button" class="clearBtn">清空购物车</button></dd>
+        </dl>
+        
+        
+        
+        <ul id="shippingList" class="shippingList">
+            <!--<li>
+                <h5>宫保鸡丁</h5>
+                <p>单价:<em>28</em></p>
+                <p><button type="button">-</button> 数量:<em>1</em> <button type="button">+</button></p>
+            </li>-->
+        </ul>
+    </div>
+    <button id="submitBtn" type="button">提交订单</button>
+
+</div>
+
+</body>
+</html>
+<script src="js/jquery-1.11.3.min.js"></script>
+
+<script>
+    //model-----------------------------------------------
+    //菜品初始数据
+	var cate_arr=[
+		{	
+			"id":"cate1",
+			"name":"宫保鸡丁",
+			"describe":"是一道闻名中外的特色传统名菜。",
+			"price":22
+		},
+		{	
+			"id":"cate2",
+			"name":"鱼香肉丝",
+			"describe":"是一道闻名中外的特色传统名菜。",
+			"price":18
+		},
+		{	
+			"id":"cate3",
+			"name":"红烧茄子",
+			"describe":"是一道闻名中外的特色传统名菜。",
+			"price":15
+		}
+	];
+
+    //点餐购物车列表
+	var order_arr=[
+		/*{	
+			"id":"cate1",
+			"name":"宫保鸡丁",
+			"price":32,
+			"num":1,
+		},*/
+	];
+	
+	//视图-------------------------------------------------------------
+	//页面内插入菜单
+	
+	
+	for(var i=0; i<cate_arr.length; i++){
+		var html="";
+		html+='<li id="'+cate_arr[i].id+'" data-name="'+cate_arr[i].name+'" data-price="'+cate_arr[i].price+'">'+
+				'<h5>'+cate_arr[i].name+'</h5>'+
+				'<p>'+cate_arr[i].describe+'</p>'+
+				'<h6>单价:<em>'+cate_arr[i].price+'</em></h6>'+
+				'<button type="button" class="orderBtn">点餐</button>'+
+			'</li>';
+		$('#cateList').append(html);
+	};
+	
+	//刷新控制
+    function ref(arr){
+        var total_count=0;
+        var total_price=0;
+        
+        var html="";
+        for(var i=0; i<arr.length; i++){
+            html+='<li data-id="'+arr[i].id+'"><h5>'+arr[i].name+'</h5><p class="price">单价:<em>'+arr[i].price+'</em></p><p><button class="subBtn" type="button">-</button> 数量:<em>'+arr[i].num+'</em> <button class="addBtn" type="button">+</button></p></li>';
+            
+            //重新计算总数
+            total_count+=arr[i].num;
+            
+            //重新计算总额
+            total_price+=parseInt(arr[i].price)*arr[i].num; 
+        };
+        
+        //刷新购物车 总数 总额
+        $('#shippingList').empty().append(html);
+        $('#total_count em').text(total_count);
+        $('#total_price em').text(total_price);
+    };
+	
+    //-----------------------------------------------------	
+    //点餐
+    $('.orderBtn').click(function(){
+    	//禁用按钮
+    	$(this).prop('disabled',true);
+    	
+    	var pa=$(this).parent('li');
+    	
+    	//创建一个的对象，记录下被点菜品的信息
+    	var json={};
+    	json.id=pa.attr('id');
+    	json.name=pa.attr('data-name');
+    	json.price=pa.attr('data-price');
+    	json.num=1;
+    	
+    	order_arr.push(json);
+    	console.log(order_arr)
+    	
+    	//刷新购物车
+    	ref(order_arr);
+    	
+    });
+    
+    
+    //----------------------------------------------------------
+    //购物车加减数量
+    $('#shippingList').on('click','.subBtn,.addBtn',function(){
+    	var cls=$(this).prop('class');
+    	var em=$(this).siblings('em');
+    	var pa=$(this).parents('li');
+    	var n=parseInt(em.text());
+    	
+    	switch(cls){//根据cls 判断点击功能
+    	    //减少数量
+    		case "subBtn":
+    		n--;
+    		for(var j=0; j<order_arr.length; j++){
+    			if(order_arr[j].id==pa.attr('data-id')){
+    				order_arr[j].num=n;
+    				if(n<1){
+    					pa.remove();
+    					$('#'+order_arr[j].id+' .orderBtn' ).prop('disabled',false);
+    					order_arr.splice(j,1);
+    				};
+    				//刷新
+    				ref(order_arr);		
+    			}
+    		};
+    		em.text(n);
+    		break;
+    		
+    		//增加数量
+    		case "addBtn":
+    		n++;
+    		for(var j=0; j<order_arr.length; j++){
+    			if(order_arr[j].id==pa.attr('data-id')){
+    				order_arr[j].num=n;
+    				ref(order_arr);		
+    			}
+    		};
+    		em.text(n);
+    		break;
+    	}
+    })
+    
+    //清空购物车
+    $('#clearBtn').click(function(){
+        order_arr=[];
+        ref(order_arr);
+        $('.orderBtn').prop('disabled',false);
+    });
+    
+    //提交订单
+    $('#submitBtn').click(function(){
+    	console.log(order_arr);
+    	alert("点餐成功!")
+    });
+	
+	
+
+</script>

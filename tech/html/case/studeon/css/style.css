@@ -1,0 +1,59 @@
+body,ul,ol,h1,h2,h3,h4,h5,h6,p,textarea,input,dl,dd,select,option{margin: 0;padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none;}
+img,input,textarea{border: none;}
+
+.inner{width: 1140px;margin: 0 auto;}
+.header{height: 80px;background: #fff;box-shadow: 0 0 10px rgba(0,0,0,.5);z-index: 1;position: relative;}
+.header .logo{float: left;padding: 17px 152px 0 0;}
+.header .nav{float: left;}
+
+.header .nav li{float: left;height: 80px;line-height: 80px;}
+.header .nav a{padding: 0 24px;font-size: 15px;color: #485342;border-top: 3px solid #fff;display: block;}
+.header .nav a:hover{background: #ededed;border-top: 3px solid #eb5846;height: 66px;box-shadow:0 -10px 16px rgba(255,255,255,1) inset;color: #f05f0c;}
+.header .nav .active{background: #ededed;border-top: 3px solid #eb5846;height: 66px;box-shadow:0 -10px 16px rgba(255,255,255,1) inset;color: #f05f0c}
+.header .icon{float: right;padding-top: 29px;}
+.header .icon a{width: 23px;height: 22px;float: left;margin-left:7px ;background:url(../images/s-icons.png) no-repeat -241px -7px;}
+.header .icon .er{background-position-x: -268px;}
+.header .icon .san{background-position-x: -294px;}
+.header .icon .si{background-position-x: -319px;}
+.header .icon .wu{background-position-x: -344px;}
+.header .icon .liu{background-position-x: -369px;}
+
+.header .icon a:hover{background-position-y: -46px;}
+
+.main h2,h3{height: 38px;line-height: 38px;font-size: 15PX;}
+.main h2{padding-top: 11px;}
+.main .text{line-height: 20px;font-size: 12px;color: #9a9a9a;}
+
+.main .main_1 .left{width: 360px;height: 130px;background: url(../images/ser-bg.png);float: left;margin:0 20px 20px 0 }
+.main .main_1 .left .pic{background: #ed5844 url(../images/s-icons.png) no-repeat 18px 43px;width:67px;height:123px;float: left;margin-right: 23px;}
+.main .main_1 .left .er{background-position:-66px 34px;}
+.main .main_1 .left .san{background-position:-144px 34px;}
+.main .main_1 .left .si{background-position:21px -74px;}
+.main .main_1 .left .wu{background-position:-64px -70px;}
+.main .main_1 .left .liu{background-position:-142px -70px;}
+
+.footer{background: #373737;height: 260px;padding:13px 0 0 15px ;}
+.footer .left{width: 285px;float: left;}
+.footer h3{height: 48px;line-height: 48px;font-size: 18px;font-weight: bold;color: #fff;background: url(../images/xian_03.jpg) no-repeat left bottom;}
+.footer .text{font-size: 14px;color: #a2a1a6;padding-top: 17px;}
+.footer .left{width: 285px;float: left;}
+.footer .left h1{margin-bottom: 25px;}
+.footer .left .tag{padding-top: 21px;}
+.footer .left .tag a{color: #868688;padding: 0 10px;font-size: 13px;background: #000;display: inline-block;height: 37px;line-height: 37px;margin-bottom: 4px;}
+.footer .left h4{font-size: 13px;height: 30px;line-height: 30px;color: #fff;}
+.footer .left .top a{color: #cdcdcd;}
+.footer .left .top{background: url(../images/tw.png) no-repeat left 19px;padding-left:29px ;}
+.footer .right{width: 270px;float: right;}
+.footer .pic{padding-top: 18px;}
+.footer .box{width: 81px;height: 70px;position: relative;float: left;margin: 0 3px 3px 0;}
+.footer .box img{width: 100%;height: 100%;}
+.footer .box a{width: 100%;height: 100%;position: absolute;left: 0;top: 0;}
+.footer .box:hover a{background: rgba(0,0,0,.5);}
+
+.bottom{height: 54px;background: #000;}
+.bottom .logo{width: 94px;height: 24px;padding-top: 15px;float: left;}
+.bottom .text{float: right;color: #fefefe;font-size: 14px;line-height: 54px;}
+.bottom span{color: #e05140;}
+.ico a{width: 39px;height: 30px;background:#000 url(../images/move-top.png) no-repeat;position: fixed;right: 0;bottom: 0;}

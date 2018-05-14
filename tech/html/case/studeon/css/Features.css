@@ -1,0 +1,11 @@
+.main{padding-top: 56px;height: 1000px;}
+.main h3{height: 86px ;line-height: 86px;text-align: center;font-size: 30px;font-family: arial;height: 86px;}
+.main .main_1{padding:29px 0 42px 0;height: 275px;}
+.main .box{width: 334px;height: 235px;text-align: center;padding: 0 23px;float: left;}
+.main .box .pic{width: 100px;height: 100px;background:url(../images/img-sprite.png) no-repeat left top;display: inline-block;}
+.main .box .pic_2{background-position-x: -100px;}
+.main .box .pic_3{background-position-x: -200px;}
+.main .box .pic_4{background-position-x: -300px;}
+.main .box .pic_5{background-position-x: -400px;}
+.main .pic_1{width: 380px;float: left;}
+.main .pic_1 img{width: 347px;height: 207px;}

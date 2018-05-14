@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>弹跳小球菜单</title>
+<style>
+*{ margin:0; padding:0}
+body{ background: #fff;}
+ul{ list-style:none;}
+.menu{ width:400px; margin:100px auto; position:relative; padding-left:50px;}
+li{ height:50px; line-height:50px; color: #fff; background:red; width:300px; margin-bottom:20px; padding-left: 20px;}
+.ball{ position:absolute;height:30px; width:30px; background:blue; border-radius:50%; top:10px; left:10px;}
+.ac{ background:blue;}
+</style>
+
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script src="jquery.easing.min.js"></script>
+<script>
+$(function(){
+	var onTop=$('.menu .ac').position().top+10;  //起始位置
+	$('.ball').css({"top": onTop});
+
+	
+	$('li').mouseenter(function(){
+		var h=$(this).position().top+10;
+		$('.ball').stop().animate({"top":h},500,"easeOutBounce");
+	});
+	
+	$('li').mouseout(function(){
+		$('.ball').stop().animate({"top":onTop},500,"easeOutBounce");
+	});
+	
+	
+	//切换 li 的ac
+	$('li').click(function(){
+		$(this).addClass('ac').siblings().removeClass('ac');
+		onTop=$(this).position().top+10;//调整位置
+	});
+
+})
+
+
+</script>
+</head>
+
+<body>
+	<div class="menu">
+    	<span class="ball"></span>
+    	<ul>
+            <li class="ac">鱼香肉丝</li>
+            <li>宫保鸡丁</li>
+            <li>糖醋鲤鱼</li>
+            <li>红烧肉</li>
+            <li>尖椒肉丝</li>
+        </ul>
+    </div>
+	
+
+</body>
+</html>

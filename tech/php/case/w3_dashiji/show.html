@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+*{ margin:0; padding:0}
+body{ font-size: 14px;}
+ul,ol{ list-style:none}
+.wrap{ width:400px}
+.year{ margin-left:100px;  border-left:5px solid #1BBBE4; padding-bottom:30px ;}
+.year h3{ width:80px; height:80px; background:#54C5ED; color:#fff; text-align:center; line-height:80px; font-size:20px; border-radius:50%; position:relative;left:-40px; margin-bottom:50px}
+.year ol h4{width:50px; height:50px; background:#67CEF3; color:#fff; text-align:center; line-height:50px; font-size:16px; border-radius:50%; position:relative;left:-31px; border:3px solid #fff; margin-bottom:50px }
+.year ol dl{ margin-left:50px; position:relative; margin-bottom:30px;}
+.year ol dl dt{ position:absolute; left:-100px}
+.year ol dl dt::after{ content:""; position:absolute; width:12px; height:12px; background:#1899E1; border-radius:50%; left:39px; border:3px solid #E1F2FB}
+.year ol dl dd{ background:#ddd; padding:20px; border-radius:10px; word-break: break-all;}
+.year ol dl dd h5{ color:dodgerblue; margin-bottom: 10px; font-size: 16pxs;}
+button{ width: 100px; height: 30px;}
+
+</style>
+    <script src="jquery-1.11.3.min.js"></script>
+	</head>
+	<body style="height: 2000px;">
+	    <button id="btn" type="button">显示</button>
+	    <br>
+	    <br>
+	    <br>
+	    <div class="wrap"></div>
+	    <script>
+	        $("#btn").click(function(){
+	            $.get("doAction.php?a=get",function(data){
+	                $(document.body).append(data);
+                    data=JSON.parse(data);
+                    console.log(data);
+                    
+                    var html="";
+                    //遍历年
+                    for(var k=0; k<data.length; k++){
+                        html+='<div class="year">'+
+                        '<h3>'+data[k].year+'</h3>'+
+                        '<ol>';
+                        
+                        //遍历月
+                        for(var j=0; j<data[k].month_arr.length; j++){
+                            html+='<li>'+
+                                '<h4>'+data[k].month_arr[j].month+'月</h4>';
+                                
+                                //遍历日
+                                for(var i=0; i<data[k].month_arr[j].day_arr.length; i++){
+                                    html+='<dl>'+
+                                        '<dt>'+data[k].month_arr[j].day_arr[i].day+'日</dt>'+
+                                        '<dd>'+
+                                            '<h5>'+data[k].month_arr[j].day_arr[i].title+'</h5>'+
+                                            '<p>'+data[k].month_arr[j].day_arr[i].content+'</p>'+
+                                        '</dd>'+
+                                    '</dl>';
+                                };
+                            html+='</li>';
+                        }
+                        html+='</ol>'+
+                    '</div>';
+                }
+                
+             $('.wrap').empty().append(html);
+             
+                
+                
+            });
+	            
+	        });
+	        
+	        
+	        
+	        
+	        
+	        
+	    </script>
+	    
+	    
+	    
+	    
+	    
+	</body>
+</html>

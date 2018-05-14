@@ -1,0 +1,1205 @@
+.page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8, .page9, .page10, .page11, .page12, .page13 {
+    width: 1210px;
+    margin: 0 auto;
+}
+
+.flos {
+    width: 1200px;
+    margin: 20px auto 15px;
+    padding: 0 5px 0;
+    height: 125px;
+}
+
+.flos .element {
+    width: 400px;
+    display: block;
+    float: left;
+    font-size: 0;
+}
+
+.th_two a:hover {
+    text-decoration: underline;
+}
+
+.page1 .main .side {
+    width: 330px;
+    float: left;
+}
+
+.page1 .main .side .cont {
+    position: relative;
+    height: 473px;
+    overflow: hidden;
+}
+
+.page1 .main .cont .pic {
+    position: relative;
+}
+
+.page1 .main .cont .pic a:before {
+    content: "";
+    width: 50px;
+    height: 350px;
+    display: block;
+    position: absolute;
+    left: -150px;
+    top: 0;
+    transform: skewX(-25deg);
+    font-size: 0;
+    /*background-image: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 100%);*/
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 5;
+}
+
+.page1 .main .cont .pic:hover a:before {
+    transition: all .25s;
+    left: 420px;
+}
+
+.page1 .main .message {
+    position: absolute;
+    top: 253px;
+    left: 0;
+}
+
+.page1 .main .list_top {
+    background: rgba(255, 255, 255, 0.5);
+    padding-left: 25px;
+    height: 92px;
+    overflow: hidden;
+}
+
+.page1 .main .list_top li {
+    width: 100px;
+    height: 26px;
+    float: left;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.page1 .main .list_top a {
+    font-size: 14px;
+    white-space: nowrap;
+    padding-left: 31px;
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    padding-right: 5px;
+    background: url("../images/clothesicon.png") no-repeat;
+}
+
+.page1 .main .list_top .item_2 {
+    background-position-y: -26px;
+}
+
+.page1 .main .list_top .item_3 {
+    background-position-y: -52px;
+}
+
+.page1 .main .list_top .item_4 {
+    background-position-y: -78px;
+}
+
+.page1 .main .list_top .item_5 {
+    background-position-y: -104px;
+}
+
+.page1 .main .list_top .item_6 {
+    background-position-y: -130px;
+}
+
+.page1 .main .list_bot {
+    background: rgba(255, 255, 255, 0.7);
+    height: 128px;
+}
+
+.page1 .main .list_bot li {
+    float: left;
+    width: 135px;
+    padding: 16px 0 0 25px;
+    height: 92px;
+    overflow: hidden;
+}
+
+.page1 .main .list_bot a {
+    font-family: '宋体', sans-serif;
+    font-size: 12px;
+    color: #999;
+    height: 24px;
+    line-height: 24px;
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.page1 .main .list_bot a:hover {
+    text-decoration: underline;
+}
+
+.page1 .main .list_bot .init {
+    color: #c81623;
+}
+
+.page1 .main .side .low_pic {
+    height: 158px;
+    border: 1px solid #ededed;
+    width: 328px;
+}
+
+.page1 .main .main_wrap {
+    float: left;
+}
+
+.page1 .main .main_wrap .m_inner, .page1 .main .main_wrap .m_list {
+    width: 880px;
+    height: 632px;
+    overflow: hidden;
+    float: left;
+    border-bottom: 1px solid #ededed;
+    font-size: 0;
+}
+
+.page1 .m_inner {
+    display: none;
+}
+
+.page1 .m_list {
+    display: none;
+}
+
+.page1 .m_inner .m_banner {
+    float: left;
+    height: 633px;
+    width: 439px;
+    border-right: 1px solid #ededed;
+}
+
+.page1 .m_inner .m_details {
+    float: left;
+    height: 633px;
+    width: 219px;
+    border-right: 1px solid #ededed;
+}
+
+.page1 .m_inner li {
+    height: 157px;
+    border-bottom: 1px solid #ededed;
+    overflow: hidden;
+}
+
+.page1 .m_inner .m_banner .b_pic {
+    height: 315px;
+    overflow: hidden;
+}
+
+.page1 .m_inner .last {
+    height: 158px;
+    border-bottom: none;
+    overflow: hidden;
+}
+
+.page1 .m_inner .back {
+    height: 316px;
+    overflow: hidden;
+}
+
+.page1 .m_list .list_one li {
+    width: 219px;
+    height: 236px;
+    float: left;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+
+.page1 .m_list .list_one .pic {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    font-size: 0;
+    padding-top: 21px;
+}
+
+.page1 .m_list .list_one p {
+    font-size: 12px;
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden;
+    padding: 14px 17px 0;
+}
+
+.page1 .m_list .list_one span {
+    font-size: 16px;
+    line-height: 25px;
+    height: 25px;
+    overflow: hidden;
+    color: #e4393c;
+    padding: 0 17px;
+}
+
+.page1 .m_list .list_two li {
+    width: 219px;
+    height: 158px;
+    float: left;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+
+}
+
+.page1 .icon {
+    margin-top: 8px;
+    background: #f7f7f7;
+    height: 66px;
+    overflow: hidden;
+}
+
+.page1 .icon li {
+    float: left;
+    padding: 0 10px;
+    border-right: 1px dashed #ccc;
+    margin-top: 13px;
+}
+
+.page1 .icon .last {
+    border-right: none;
+}
+
+.page1 .icon li a {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+}
+
+.page2 {
+    margin-top: 22px;
+}
+
+.page2 .main .side {
+    float: left;
+    width: 210px;
+}
+
+.page2 .main .side .cont {
+    position: relative;
+    height: 474px;
+    overflow: hidden;
+}
+
+.page2 .main .cont .pic {
+    position: relative;
+}
+
+.page2 .main .cont .message {
+    position: absolute;
+    left: 0;
+    top: 237px;
+}
+
+.page2 .main .list_top {
+    background: rgba(255, 255, 255, 0.5);
+    padding-left: 10px;
+    height: 92px;
+    overflow: hidden;
+}
+
+.page2 .main .list_top li {
+    width: 98px;
+    height: 26px;
+    float: left;
+    margin: 10px 0;
+}
+
+.page2 .main .list_top a {
+    font-size: 14px;
+    line-height: 26px;
+    height: 26px;
+    padding-right: 5px;
+    background: url("../images/cosmeticsicon.png") no-repeat;
+    display: block;
+    float: left;
+    padding-left: 31px;
+}
+
+.page2 .main .list_top .item_2 {
+    background-position-y: -26px;
+}
+
+.page2 .main .list_top .item_3 {
+    background-position-y: -52px;
+}
+
+.page2 .main .list_top .item_4 {
+    background-position-y: -78px;
+}
+
+.page2 .main .list_bot {
+    background: rgba(255, 255, 255, 0.7);
+    height: 145px;
+    overflow: hidden;
+}
+
+.page2 .main .list_bot .th_one {
+    padding: 22px 0 6px 25px;
+    overflow: hidden;
+    width: 180px;
+}
+
+.page2 .main .list_bot .th_one a {
+    line-height: 24px;
+    height: 24px;
+    display: block;
+    font-size: 14px;
+    float: left;
+    white-space: nowrap;
+    color: #666;
+}
+
+.page2 .main .list_bot .th_two {
+    padding-left: 25px;
+    height: 52px;
+    overflow: hidden;
+}
+
+.page2 .main .list_bot .th_two .active {
+    color: #c81623;
+}
+
+.page2 .main .list_bot .th_two a {
+    line-height: 24px;
+    height: 24px;
+    display: block;
+    font-size: 12px;
+    font-family: "宋体", sans-serif;
+    float: left;
+    margin-right: 10px;
+    white-space: nowrap;
+    color: #999;
+}
+
+.page2 .main .main_wrap {
+    float: left;
+}
+
+.page2 .main .m_inner {
+    width: 1000px;
+    height: 473px;
+    float: left;
+    border-bottom: 1px solid #ededed;
+    font-size: 0;
+}
+
+.page2 .m_inner .m_banner {
+    width: 339px;
+    border-right: 1px solid #ededed;
+    float: left;
+}
+
+.page2 .m_inner .m_details {
+    float: left;
+    width: 219px;
+    border-right: 1px solid #ededed;
+}
+
+.page2 .m_inner li {
+    height: 296px;
+    float: left;
+    overflow: hidden;
+}
+
+.page2 .m_inner .m_banner .last {
+    height: 176px;
+    border-top: 1px dotted #ededed;
+    overflow: hidden;
+}
+
+.page2 .icon {
+    margin-top: 10px;
+    background: #f7f7f7;
+    height: 66px;
+    overflow: hidden;
+}
+
+.page2 .icon li {
+    float: left;
+    padding: 0 10px;
+    border-right: 1px dashed #cccccc;
+    margin-top: 13px;
+}
+
+.page2 .icon .last {
+    border-right: 0;
+}
+
+.page2 .icon li a {
+    display: block;
+    width: 100px;
+    height: 40px;
+}
+
+.page3 .main .side {
+    float: left;
+    width: 330px;
+}
+
+.page3 .main .side .cont {
+    position: relative;
+    height: 474px;
+    overflow: hidden;
+}
+
+.page3 .main .cont .pic {
+    position: relative;
+}
+
+.page3 .main .text {
+    position: absolute;
+    left: 0;
+    top: 237px;
+}
+
+.page3 .main .theme1 {
+    background: rgba(255, 255, 255, 0.5);
+    padding-left: 25px;
+    height: 46px;
+    overflow: hidden;
+}
+
+.page3 .main .theme1 li {
+    width: 98px;
+    height: 26px;
+    float: left;
+    margin: 10px 0;
+}
+
+.page3 .main .theme1 a {
+    font-size: 14px;
+    line-height: 26px;
+    height: 26px;
+    padding-right: 5px;
+    background: url("../images/mobilesicon.png") no-repeat;
+    display: block;
+    float: left;
+    padding-left: 31px;
+}
+
+.page3 .main .theme1 .fore2 {
+    background-position: 0 -26px;
+}
+
+.page3 .main .theme1 .fore3 {
+    background-position: 0 -52px;
+}
+
+.page3 .main .theme2 {
+    background: rgba(255, 255, 255, 0.7);
+    height: 191px;
+}
+
+.page3 .main .theme2 .th_one {
+    padding: 22px 0 6px 0;
+    overflow: hidden;
+    width: 330px;
+    height: 48px;
+}
+
+.page3 .main .theme2 .th_one a {
+    line-height: 24px;
+    height: 24px;
+    display: block;
+    font-size: 14px;
+    float: left;
+    white-space: nowrap;
+    color: #666;
+    width: 135px;
+    overflow: hidden;
+    padding-left: 25px;
+}
+
+.page3 .main .theme2 .th_two li {
+    padding-left: 25px;
+    float: left;
+    width: 135px;
+    height: 98px;
+    overflow: hidden;
+}
+
+.page3 .main .theme2 .th_two a {
+    line-height: 24px;
+    height: 24px;
+    display: block;
+    font-size: 12px;
+    font-family: "宋体", sans-serif;
+    margin-right: 10px;
+    white-space: nowrap;
+    color: #999;
+    float: left;
+}
+
+.page3 .main .main_wrap {
+    float: left;
+}
+
+.page3 .main .m_inner {
+    width: 880px;
+    height: 473px;
+    float: left;
+    border-bottom: 1px solid #ededed;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.page3 .m_inner .m_banner {
+    float: left;
+    width: 439px;
+    height: 473px;
+    border-right: 1px solid #ededed;
+    overflow: hidden;
+}
+
+.page3 .m_inner .m_banner li {
+    height: 236px;
+    float: left;
+    overflow: hidden;
+}
+
+.page3 .m_inner .m_banner .last {
+    height: 237px;
+    border-top: 1px solid #ededed;
+    overflow: hidden;
+}
+
+.page3 .m_inner .m_details {
+    float: left;
+    width: 219px;
+    height: 473px;
+    border-right: 1px solid #ededed;
+    overflow: hidden;
+}
+
+.page3 .m_inner .m_details li {
+    height: 117px;
+    overflow: hidden;
+    border-bottom: 1px solid #ededed;
+}
+
+.page3 .m_inner .m_details .last {
+    height: 237px;
+    border-right: none;
+}
+
+.page3 .main_wrap .m_list {
+    width: 880px;
+    height: 473px;
+    overflow: hidden;
+    float: left;
+    border-bottom: 1px solid #ededed;
+    font-size: 0;
+    display: none;
+}
+
+.page3 .m_list .list_one li {
+    width: 219px;
+    height: 236px;
+    float: left;
+    border-right: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+
+.page3 .icon {
+    margin-top: 10px;
+    background: #f7f7f7;
+    height: 66px;
+    overflow: hidden;
+}
+
+.page3 .icon li {
+    float: left;
+    padding: 0 10px;
+    border-right: 1px dashed #cccccc;
+    margin-top: 13px;
+}
+
+.page3 .icon .last {
+    border-right: 0;
+}
+
+.page3 .icon li a {
+    display: block;
+    width: 100px;
+    height: 40px;
+}
+
+.page4, .page5 {
+    margin-top: 22px;
+}
+
+.page6 .icon {
+    margin-top: 10px;
+    background: #f7f7f7;
+    height: 66px;
+    overflow: hidden;
+}
+
+.page6 .icon li {
+    float: left;
+    padding: 0 10px;
+    border-right: 1px dashed #cccccc;
+    margin-top: 13px;
+}
+
+.page6 .icon li a {
+    display: block;
+    width: 100px;
+    height: 40px;
+}
+
+.page6 .icon .last {
+    border-right: 0;
+}
+
+.page6 .main .side {
+    float: left;
+    width: 210px;
+}
+
+.page6 .main .cont .pic a:before {
+    content: "";
+    width: 50px;
+    height: 350px;
+    background: rgba(255,255,255,0.7);
+    display: block;
+    position: absolute;
+    left: -150px;
+    top: 0;
+    transform: skewX(-25deg);
+}
+
+.page6 .main .cont .pic:hover a:before{
+    transition: all .3s;
+    left: 420px;
+}
+
+.page6 .main .text {
+    position: absolute;
+    left: 0;
+    top: 237px;
+}
+
+.page6 .main .theme1 {
+    padding-left: 25px;
+    background: rgba(255, 255, 255, 0.5);
+    height: 92px;
+    overflow: hidden;
+}
+
+.page6 .main .theme1 li {
+    width: 98px;
+    height: 26px;
+    float: left;
+    margin: 10px 0;
+}
+
+.page6 .main .theme1 a {
+    font-size: 14px;
+    line-height: 26px;
+    height: 26px;
+    padding-right: 5px;
+    background: url("../images/sportsicon.png") no-repeat;
+    display: block;
+    float: left;
+    padding-left: 31px;
+}
+
+.page6 .main .theme1 .fore2 {
+    background-position: 0 -26px;
+}
+
+.page6 .main .theme1 .fore3 {
+    background-position: 0 -52px;
+}
+
+.page6 .main .theme1 .fore4 {
+    background-position: 0 -78px;
+}
+
+.page6 .main .theme2 {
+    background: rgba(255, 255, 255, 0.7);
+    height: 145px;
+    overflow: hidden;
+}
+
+.page6 .main .theme2 .th_one {
+    padding: 22px 0 6px 25px;
+    overflow: hidden;
+    width: 180px;
+}
+
+.page6 .main .theme2 .th_one a {
+    line-height: 24px;
+    height: 24px;
+    display: block;
+    font-size: 14px;
+    float: left;
+    white-space: nowrap;
+    color: #666;
+}
+
+.page6 .main .theme2 .th_two {
+    padding: 0 20px 0 25px;
+    height: 52px;
+    overflow: hidden;
+}
+
+.page6 .main .theme2 .th_two .active {
+    color: #c81623;
+}
+
+.page6 .main .theme2 .th_two a {
+    line-height: 24px;
+    height: 24px;
+    display: block;
+    font-size: 12px;
+    font-family: "宋体", sans-serif;
+    float: left;
+    margin-right: 10px;
+    white-space: nowrap;
+    color: #999;
+}
+
+.page6 .main .side .cont {
+    position: relative;
+    height: 474px;
+    overflow: hidden;
+}
+
+.page6 .main .cont .pic {
+    position: relative;
+}
+
+.page6 .main .main_wrap {
+    float: left;
+}
+
+.page6 .main .m_inner {
+    width: 1000px;
+    height: 473px;
+    float: left;
+    border-bottom: 1px solid #ededed;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.page6 .m_inner .m_details {
+    float: left;
+    width: 219px;
+    border-right: 1px solid #ededed;
+}
+
+.page6 .m_inner li {
+    height: 236px;
+    float: left;
+    border-bottom: 1px solid #ededed;
+    overflow: hidden;
+}
+
+.page6 .m_inner .m_banner {
+    width: 339px;
+    border-right: 1px solid #ededed;
+    float: left;
+}
+
+.page7, .page8, .page9 {
+    margin-top: 22px;
+}
+
+.page10 .m_inner .m_banner {
+    width: 439px;
+}
+
+.page10 .m_inner .m_banner .first {
+    border-bottom: 1px dotted #ededed;
+}
+
+.page10 .m_inner .m_author {
+    width: 314px;
+    float: left;
+    padding: 0 15px 0 10px;
+    overflow: hidden;
+}
+
+.page10 .m_inner .m_author dt {
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.page10 .m_inner .m_author dd {
+    height: 79px;
+    padding-top: 21px;
+}
+
+.page10 .m_inner .m_author dd > a {
+    width: 72px;
+    height: 79px;
+    box-sizing: border-box;
+    display: block;
+    text-align: center;
+    float: left;
+}
+
+.page10 .m_inner .m_author .au_text {
+    float: left;
+    width: 241px;
+}
+
+.page10 .m_inner .m_author a .portrait {
+    width: 48px;
+    height: 48px;
+    font-size: 0;
+    margin: 2px auto;
+}
+
+.page10 .m_inner .m_author a p {
+    font: 12px/29px "宋体";
+    color: #999;
+    height: 29px;
+}
+
+.page10 .m_inner .m_author a .portrait img {
+    width: 100%;
+}
+
+.page10 .m_inner .m_author .au_text .book {
+    width: 79px;
+    height: 79px;
+    float: left;
+    margin-right: 10px;
+}
+
+.page10 .m_inner .m_author .au_text .book img {
+    width: 100%;
+}
+
+.page10 .m_inner .m_author a p {
+    font: 12px/29px "宋体";
+    color: #999;
+    height: 29px;
+}
+
+.page10 .m_inner .m_author .au_text p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #666;
+    width: 143px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Microsoft YaHei", sans-serif;
+    float: left;
+}
+
+.page10 .m_inner .m_author .au_text .wenzi {
+    width: 150px;
+    height: 57px;
+    background: #f8f8f8;
+    position: relative;
+    float: right;
+}
+
+.page10 .m_inner .m_author .au_text .wenzi:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #f8f8f8;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -5px;
+    bottom: 22px;
+}
+
+.page10 .m_inner .m_author .au_text span {
+    font: 12px/18px "宋体";
+    color: #999;
+    width: 125px;
+    height: 57px;
+    overflow: hidden;
+    display: block;
+    padding: 10px 20px 0 5px;
+}
+
+.page10 .m_inner .m_author .au_text span .f_mark {
+    font-size: 35px;
+    font-family: "Arial", sans-serif;
+    line-height: 30px;
+    float: left;
+    width: 15px;
+}
+
+.page10 .m_inner .m_author .au_text span .l_mark {
+    font-size: 35px;
+    font-family: "Arial", sans-serif;
+    line-height: 38px;
+    width: 15px;
+    vertical-align: -22px;
+}
+
+.page11, .page12, .page13 {
+    margin-top: 22px;
+}
+
+.page12 .main .m_con {
+    float: left;
+    width: 395px;
+    height: 473px;
+    border-bottom: 1px solid #ededed;
+    font-size: 0;
+}
+
+.page12 .main .m_con .m_banner {
+    height: 237px;
+    overflow: hidden;
+}
+
+.page12 .main .m_con .m_details .pic_r {
+    width: 197px;
+}
+
+.page12 .main .m_con .m_details li {
+    width: 196px;
+    height: 117px;
+    border-right: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+    float: left;
+    overflow: hidden;
+}
+
+.page12 .main .m_con .m_details {
+    height: 236px;
+}
+
+.page13 .b_price {
+    float: left;
+}
+
+.page13 .b_price h2 {
+    line-height: 41px;
+    height: 41px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.page13 .b_price .b_con {
+    width: 899px;
+    height: 281px;
+    border: 1px solid #e5e5e5;
+    border-right: none;
+}
+
+.page13 .b_price .b_left {
+    width: 181px;
+    padding: 0 29px 30px;
+    float: left;
+}
+
+.page13 .b_price .b_left .b_list .pic {
+    width: 160px;
+    height: 160px;
+    margin: 18px auto 0;
+    transition: all 0.3s;
+}
+
+.page13 .b_price .b_left .b_list .pic img {
+    transition: all .6s;
+}
+
+.page13 .b_price .b_left .b_list p {
+    font-size: 12px;
+    font-family: "宋体", sans-serif;
+    color: #696969;
+    line-height: 23px;
+    height: 23px;
+    margin-top: 27px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.page13 .b_price .b_left span {
+    font-size: 14px;
+    color: #e32228;
+    line-height: 24px;
+    height: 24px;
+    font-weight: bolder;
+}
+
+.page13 .b_price ul {
+    float: left;
+    width: 660px;
+}
+
+.page13 .b_price ul li {
+    width: 206px;
+    float: left;
+    height: 140px;
+    border-left: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+    padding-right: 13px;
+}
+
+.page13 .b_price ul li .pic {
+    display: block;
+    width: 140px;
+    height: 140px;
+    float: left;
+    overflow: hidden;
+}
+
+.page13 .b_price ul li .pic img {
+    margin: 20px;
+    transition: all .8s;
+    /*transform: rotate(360deg);*/
+}
+
+.page13 .b_price ul li p {
+    line-height: 18px;
+    height: 36px;
+    overflow: hidden;
+    font-size: 12px;
+    font-family: "宋体", sans-serif;
+    color: #696969;
+    margin-top: 18px;
+}
+
+.page13 .b_price ul li span {
+    line-height: 28px;
+    height: 28px;
+    font-size: 14px;
+    color: #e32228;
+    font-weight: bolder;
+}
+
+.page13 .sharepeat {
+    float: left;
+}
+
+.page13 .sharepeat h2 {
+    line-height: 41px;
+    height: 41px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.page13 .sharepeat .s_roll {
+    width: 264px;
+    height: 206px;
+    border: 1px solid #ededed;
+    padding: 39px 24px 36px 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.page13 .sharepeat .s_con {
+    width: 264px;
+    height: 206px;
+    position: absolute;
+    -webkit-animation: roll 5s linear infinite;
+    -moz-animation: roll 5s linear infinite;
+    -o-animation: roll 5s linear infinite;
+    animation: roll 5s linear infinite;
+}
+
+@keyframes roll {
+    0% {
+        top: -206px;
+        /*left: 36px;*/
+    }
+    100% {
+        top: 39px;
+        /*left: -264px;*/
+    }
+}
+
+.page13 .sharepeat .s_con li {
+    margin-bottom: 40px;
+}
+
+.page13 .sharepeat .s_con .s_pic {
+    float: left;
+    width: 80px;
+    height: 80px;
+    padding-top: 6px;
+    overflow: hidden;
+}
+
+.page13 .sharepeat .s_con .s_pic img {
+    width: 100%;
+}
+
+.page13 .sharepeat .s_con .s_text {
+    float: right;
+    width: 165px;
+    height: 86px;
+}
+
+.page13 .sharepeat .s_con .s_text .book img {
+    width: 28px;
+    height: 27px;
+    float: left;
+    margin-right: 8px;
+}
+
+.page13 .sharepeat .s_con .s_text .book p {
+    font-size: 12px;
+    line-height: 27px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+.page13 .sharepeat .s_con .s_text .wenzi {
+    width: 165px;
+    height: 54px;
+    background: #f8f8f8;
+    position: relative;
+    float: right;
+    margin-top: 5px;
+}
+
+.page13 .sharepeat .s_con .s_text .wenzi:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #f8f8f8;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -5px;
+    bottom: 22px;
+}
+
+.page13 .sharepeat .s_con .s_text a {
+    font: 12px/18px "宋体";
+    color: #999;
+    width: 150px;
+    height: 40px;
+    overflow: hidden;
+    display: block;
+    padding: 10px 20px 0 5px;
+}
+
+.page13 .sharepeat .s_con .s_text .f_mark {
+    font-size: 35px;
+    font-family: 'Arial', sans-serif;
+    line-height: 30px;
+    float: left;
+    width: 15px;
+    color: #666;
+}
+
+.page13 .sharepeat .s_con .s_text .l_mark {
+    font-size: 35px;
+    font-family: 'Arial', sans-serif;
+    line-height: 38px;
+    width: 15px;
+    vertical-align: -22px;
+    color: #666;
+}

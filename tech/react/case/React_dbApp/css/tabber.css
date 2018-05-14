@@ -1,0 +1,30 @@
+.tabberWrapper {
+    height: 64px;
+    width: 100%;
+    background-color: #f6f6f6;
+    border-top: 1px solid #b5b5b5;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+.tabberWrapper > div.items {
+    width: 20%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    font-size: 0;
+}
+
+.items > img {
+    width: 45px;
+}
+
+.items > p {
+    color: #b5b5b5;
+    font-size: 14px;
+}
+
+.items > p.ac {
+    color: #42bf55;
+}

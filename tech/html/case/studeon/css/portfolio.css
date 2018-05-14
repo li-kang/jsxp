@@ -1,0 +1,12 @@
+.main{text-align: center;}
+.main h3{height: 50px;line-height: 50px;padding-top: 80px;font-size: 30px;}
+.main ul{height: 65px;display: inline-block;}
+.main li{float: left;line-height: 65px;}
+.main li a{font-size: 15px;padding: 0 17px;color: #222;}
+.main li a:hover{color: #e6260d;}
+.main .active{color: #e6260d;}
+.main .pic{height: 602px;}
+.main .box{width: 285px;height: 182px;position: relative;float: left;}
+.main .box img{width: 100%;height: 100%;}
+.main .box a{width: 100%;height: 100%;position: absolute;left: 0;top: 0;}
+.main .box:hover a{background: rgba(225,225,225,.5);}

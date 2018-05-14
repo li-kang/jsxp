@@ -1,0 +1,13 @@
+# 创建表格
+create table stu_ajax(
+id tinyint(3) unsigned primary key auto_increment not null, # id
+name varchar(20) not null, # 姓名
+age tinyint(3) not null, # 年龄
+city varchar(10) not null # 城市
+);
+
+insert into stu_ajax values(null, '刘一','18','北京');
+insert into stu_ajax values(null, '陈二','20','上海');
+insert into stu_ajax values(null, '张三','22','杭州');
+insert into stu_ajax values(null, '李四','26','深圳');
+insert into stu_ajax values(null, '王五','28','重庆');

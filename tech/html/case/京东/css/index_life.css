@@ -1,0 +1,184 @@
+.life {
+    padding-top: 22px;
+}
+
+.life h2 {
+    height: 34px;
+    line-height: 34px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.life .quality {
+    height: 405px;
+    border: 1px solid #ededed;
+}
+
+.life .quality .item {
+    float: left;
+    width: 403px;
+    background: #f7f7f7;
+    border-right: 1px solid #ededed;
+}
+
+.life .quality .mid {
+    width: 228px;
+    background: #fff;
+}
+
+.life .quality h4 {
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    border-bottom: 1px dashed #e0e0e0;
+    text-align: center;
+    margin: 0 20px;
+    color: #333;
+}
+
+.life .quality .show {
+    position: relative;
+}
+
+.life .quality p {
+    line-height: 38px;
+    height: 38px;
+    font-size: 15px;
+    color: #333;
+    font-weight: bolder;
+}
+
+.life .quality span {
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    display: block;
+    color: #333;
+}
+
+.life .quality i {
+    height: 18px;
+    line-height: 18px;
+    font-size: 12px;
+    color: #c81623;
+    display: block;
+}
+
+.life .quality .pic {
+    height: 205px;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.life .quality .pic img{
+    transition: all .5s;
+}
+
+.life .quality .pic:hover img{
+    transform: translate(-10px,0);
+}
+
+.life .quality .con {
+    position: absolute;
+    left: 44px;
+    top: 59px;
+}
+
+.life .quality ul {
+    border-top: 1px solid #ededed;
+}
+
+.life .quality li {
+    float: left;
+    width: 201px;
+    position: relative;
+    border-right: 1px solid #ededed;
+}
+
+.life .quality .out_line {
+    border-right: 0;
+}
+
+.life .quality li .pic {
+    height: 158px;
+}
+
+.life .quality li .con {
+    position: absolute;
+    left: 10px;
+    top: 39px;
+}
+
+.life .quality .mid .midPic {
+    height: 158px;
+    border-top: 1px solid #ededed;
+}
+
+.life .quality .mid .show .con {
+    position: absolute;
+    left: 10px;
+    top: 39px;
+}
+
+.life .brands {
+    width: 171px;
+    float: left;
+    overflow: hidden;
+}
+
+.life .brands .brand_left  img{
+    transition: all .8s;
+}
+
+.life .brands .brand_left li:hover img{
+    transform: translate(8px,0);
+}
+
+.life .brands .brand_right li:hover img{
+    transform: translate(-8px,0);
+}
+
+.life .brands .brand_left {
+    width: 85px;
+    border-right: 1px dashed #e0e0e0;
+    float: left;
+    margin-top: 13px;
+    height: 381px;
+}
+
+.life .brands .brand_right {
+    border-right: none;
+}
+
+.life .brands .brand_left ul {
+    border: none;
+    margin-top: -13px;
+}
+
+.life .brands .brand_left li {
+    width: 74px;
+    border-bottom: 1px dashed #e0e0e0;
+    border-right: none;
+    margin-left: 11px;
+    height: 57px;
+}
+
+.life .brands .brand_left li a {
+    width: 85px;
+    display: inline-block;
+    text-align: center;
+    margin-left: -11px;
+    font-size: 0;
+}
+
+.life .brands .brand_right {
+    border-right: none;
+}
+
+.life .brands .brand_right li {
+    margin-left: 0;
+}
+
+.life .brands .brand_right li a {
+    margin-left: 0;
+}

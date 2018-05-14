@@ -1,0 +1,56 @@
+create table score(
+id tinyint unsigned primary key auto_increment,
+user_id tinyint(3), # 用户id
+course_id tinyint(2) not null, # 课程
+score float(5,2) default 0 # 成绩
+);
+
+create table course(
+id tinyint unsigned primary key,
+name varchar(10)
+);
+
+insert into score values(null,'2','1','89.2');
+insert into score values(null,'3','2','68');
+insert into score values(null,'4','3','87.2');
+insert into score values(null,'6','1','95.5');
+insert into score values(null,'1','2','70');
+insert into score values(null,'1','4','89.1');
+insert into score values(null,'1','1','58');
+insert into score values(null,'2','2','61');
+insert into score values(null,'3','4','78.5');
+
+
+insert into course values(1,'数学');
+insert into course values(2,'语文');
+insert into course values(3,'英语');
+insert into course values(4,'物理');
+
+
+
+
+# 及格率
+
+//统计及格人数
+select count(score) from score  where score>60;
+
+
+# 多表联查--------------------------------------------
+
+# a表   人名
+select a.name from students as a where a.id=6;
+
+# b表  分数
+select b.score from score as b where b.user_id=6 and b.course_id=4;
+
+# c表  科目
+select c.name from course as c where c.id=4;
+
+
+select a.name,c.name,b.score from students as a,score as b,course as c where b.user_id=6 and b.course_id=4 and a.id=6 and c.id=4;
+
+
+where 条件的另一种形式
+select a.name,c.name,b.score from students as a,score as b,course as c where b.user_id=6 and b.course_id=4 and a.id=b.user_id and c.id=b.course_id;
+
+

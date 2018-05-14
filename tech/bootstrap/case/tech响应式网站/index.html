@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			a{
+				text-decoration: none;
+			}
+			
+			ul{
+				list-style: none;
+			}
+			
+			input{
+				border: none;
+			}
+			
+			.clearfix:after{
+				content: "";
+				display: table;
+				clear: both;
+			}
+			body{
+				background-image: url(images/body-bg.jpg);
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			
+			.container{
+				width:980px;
+				margin: 0 auto;
+			}
+			
+			header{
+				height: 119px;
+			}
+			.logo{
+				padding-top: 33px;
+				float: left;
+			}
+			
+			.search{
+				float: right;
+			}
+			
+			nav{
+				height: 40px;
+				background-color: #888888;
+				border-radius: 7px;
+				box-shadow:  1px 5px 5px 0 rgba(0,0,0,0.5);
+			}
+			
+			nav ul{
+				padding-left: 15px;
+				float:left;
+			}
+			nav .search{
+				float: right;
+				padding-top: 7px;
+				padding-right: 10px;
+				position: relative;
+			}
+			
+			.search input{
+				padding-left:10px;
+				width:130px;
+				height: 27px;
+				background-color: #fff;
+				border-radius: 4px;
+				color: gray;
+				transition: width .5s;
+			}
+			
+			.search input:focus{
+				width:130px;
+			}
+			
+			nav li{
+				float: left;
+				padding:0 15px;
+				line-height: 40px;
+			}
+			
+			nav li a{
+				color: #fffcff;
+				text-shadow: 1px 2px 1px rgba(0,0,0,0.5);
+			}
+			
+			.main{
+				padding-top: 30px;
+			}
+			
+			article{
+				width:600px;
+				padding:30px 35px 40px;
+				float: left;
+				background-color: #fff;
+				border-radius: 7px;
+				box-shadow:  1px 5px 5px 0 rgba(0,0,0,0.5);
+			}
+
+            article img{
+            	width:100%;
+            }
+            			
+			article h2{
+				line-height: 33px;
+			}
+			
+			article h4{
+				line-height: 28px;
+				padding-bottom: 7px;
+			}
+			
+			article p{
+				line-height: 21px;
+				padding:26px 0 9px;
+			}
+			
+			aside{
+				width:240px;
+				float: right;
+			}
+			
+			aside>div{
+				background-color: #fff;
+				padding:0 20px;
+				border-radius: 7px;
+				box-shadow:  1px 5px 5px 0 rgba(0,0,0,0.5);
+			}
+			
+			.sidebar{
+				padding-bottom: 10px;
+			}
+			
+			aside h3{
+				height: 36px;
+				line-height: 36px;
+			}
+			
+			.sidebar li{
+				height: 30px;
+				line-height: 30px;
+				border-bottom: 1px #eeeeee solid;
+			}
+			
+			.sidebar li a{
+				color: #060201;
+			}
+			
+			
+			
+			aside>.flickr{
+				margin-top: 27px;
+			}
+			
+			video{
+				width:100%;
+			}
+			
+			footer{
+				height: 87px;
+			}
+			
+			footer p{
+				color: #64676c;
+				text-align: center;
+				line-height: 21px;
+				padding-top:15px;
+			}
+			
+			@media screen and (max-width:980px){
+				.container{
+					width:96%;
+					padding: 0 2%;
+				}
+				
+				article{
+					width:61.2%;
+					padding:0 3.5%;
+				}
+				
+				aside{
+					width:24.4%;
+				}
+				
+			}
+			
+			@media screen and (max-width: 640px) {
+				article{
+					width:90%;
+					padding:0 5%;
+					float: none;
+				}
+				
+				aside{
+					width:100%;
+					float: none;
+					margin-top: 30px;
+				}
+				
+				.search input{
+					position:absolute;
+					right:0;
+					top:-40px;
+					width:80px;
+				}
+			}
+			
+			
+			
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="logo"><img src="images/logo.png"></div>
+				
+			</header>
+			<nav>
+				<ul>
+					<li><a href="#">home</a></li>
+					<li><a href="#">Themify</a></li>
+					<li><a href="#">IconDock</a></li>
+					<li><a href="#">N.Design</a></li>
+				</ul>
+				<form class="search">
+					<input type="text" placeholder="Search" />
+				</form>
+			</nav>
+			<div class="main clearfix">
+				<article>
+					<hgroup>
+						<h2>Just a Post Title</h2>
+						<h4>May 8, 2011 in Category</h4>
+					</hgroup>
+					<div>
+						<img src="images/sample-image.jpg" />
+					</div>
+					<p>
+						Fusce ut sem est. In eu sagittis felis. In gravida arcu ut neque ornare vitae rutrum turpis vehicula. Nunc ultrices sem mollis metus rutrum non malesuada metus fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque interdum rutrum quam, a pharetra est pulvinar ac. Vestibulum congue nisl magna. Ut vulputate odio id dui convallis in adipiscing libero condimentum. Nunc et pharetra enim. Praesent pharetra, neque et luctus tempor, leo sapien faucibus leo, a dignissim turpis ipsum sed libero. Sed sed luctus purus. Aliquam faucibus turpis at libero consectetur euismod. Nam nunc lectus, congue non egestas quis, condimentum ut arcu. Nulla placerat, tortor non egestas rutrum, mi turpis adipiscing dui, et mollis turpis tortor vel orci. Cras a fringilla nunc. Suspendisse volutpat, eros congue scelerisque iaculis, magna odio sodales dui, vitae vulputate elit metus ac arcu. Mauris consequat rhoncus dolor id sagittis. Cras tortor elit, aliquet quis tincidunt eget, dignissim non tortor.
+					</p>
+					<video src="swf/Compress.MP4" autoplay controls></video>
+					
+				</article>
+				<aside>
+					<div class="sidebar">
+						<h3>Sidebar</h3>
+						<ul>
+							<li><a href="#">WordPress (3)</a></li>
+							<li><a href="#">WordPress (3)</a></li>
+							<li><a href="#">WordPress (3)</a></li>
+						</ul>
+					</div>
+					<div class="flickr">
+						<h3>flickr</h3>
+					</div>
+				</aside>
+			</div>
+			<footer>
+				<p>
+					@火星时代科技有限公司<br>
+					北京市海淀区杏石口路81号火星时代大厦
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>
+							

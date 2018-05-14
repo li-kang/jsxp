@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+*{ margin:0; padding:0}
+body{ background: #fff;}
+h3{ text-align:center; margin:100px auto 20px}
+#box{ width:500px; margin:0 auto; border:1px solid #ccc; padding:20px}
+#box .cont{ height:120px; padding:20px}
+#box .cont div{ margin-bottom:20px}
+#box p{text-align:center}
+#box button{ height:40px; width:100px; margin:5px}
+.big{ font-size:30px;}
+</style>
+
+</head>
+
+<body>
+<h3>幸运大抽奖</h3>
+<div id="box">
+    <div class="cont">
+    </div>
+    <p>
+        <button type="button">三等奖5人</button>
+        <button disabled type="button">二等奖3人</button>
+        <button disabled type="button">一等奖1人</button>
+    </p>
+</div>
+
+</body>
+</html>
+
+<script>
+	var students='李宇,曹晓宁,杨升,秦崇阳,毛凌锋,温梓睿,马志清,靳宇,张悦,王宣,王博俊,周海涛,赵丽,张宏松,王祎伟,王治,侍波,赵高强,杨林鲎,王敬辉,王鸿,洪杰,赵孟龙,李帅,王强,郭争帅,梁超,张洁,孙明野,李志行,曹天野,刘朝阳,张永鱼,王钊,徐林,王阔,程皓,孙英范';
+	var stu_arr=students.split(',');
+    
+    var oBox=document.getElementById('box');
+    var oCont=oBox.children[0]; 
+    var aBtn=document.getElementsByTagName('button');
+    
+    //抽取三等奖---------------------------------------
+    
+    function run(arr,n,lev,fn,end){//名单 抽奖个数 显示文字  回调  是否为“一等奖”
+        var i=0;
+        var oDiv=document.createElement('div');
+        
+        oDiv.innerHTML="获得"+lev+"等奖的有：";
+        
+        var timer=setInterval(function(){
+            var index= parseInt(Math.random()*arr.length);
+            
+            if(end){
+                oDiv.innerHTML+='<span class="big">'+arr[index]+'</span>';//最后抽一等奖
+            }else{
+                oDiv.innerHTML+=arr[index]+" ";
+            };
+            
+            arr.splice(index,1); //数组中删除已经抽出的人
+            
+            //第二种方法
+            //var man=arr.splice(index,1);
+            //oDiv.innerHTML+=man+" ";
+            
+            oCont.appendChild(oDiv);
+            console.log(index,stu_arr);
+            i++;
+            if(i==n){
+                clearInterval(timer);
+                fn && fn();
+            };
+        },500);
+    };
+    
+    //一等奖
+    aBtn[0].onclick=function(){
+        run(stu_arr,5,"三",function(){
+            aBtn[1].disabled=false;
+        });
+        this.disabled=true;
+        
+        
+    };
+    //二等奖
+    aBtn[1].onclick=function(){
+        run(stu_arr,3,"二",function(){
+            aBtn[2].disabled=false;
+        });
+        this.disabled=true;
+        
+    };
+    //三等奖
+    aBtn[2].onclick=function(){
+        run(stu_arr,1,"一",null,true);//如果是一等奖，增加额外样式
+        this.disabled=true;
+    };
+
+
+
+</script>

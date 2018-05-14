@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/vue.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #box{
+            width: 800px;
+            /*border: 1px solid #000;*/
+            margin: 0 auto;
+        }
+        .store{
+            width: 100%;
+            height: 50px;
+            background: url('store_img.JPG') 0 0 repeat-x;
+            padding-left: 10px;
+            box-sizing: border-box;
+         }
+        .store p{
+            display: inline-block;
+            color: #732C01;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: 'STXingKai';
+            -webkit-box-reflect:below -5px -webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0.2)),to(rgba(0,0,0,0)));
+            padding-top: 10px;
+
+        }
+        li{
+            list-style: none;
+        }
+        .kinds{
+            float: left;
+            width: 160px;
+            /*border: 1px solid #000;*/
+        }
+        .kinds p, .kinds li{
+            line-height: 35px;
+            text-align: center;
+            border-bottom: 1px solid #BABABA;
+            background-color: #F4F5F7;
+            color: #732C01;
+        }
+        .kinds p{
+            text-align: left;
+            padding-left: 10px;
+            font-weight: bold;
+        }
+        .foods{
+            float: right;
+            width: 640px;
+            border: 1px solid #B4B0AF;
+            box-sizing: border-box;
+            /*position: relative;*/
+        }
+        .clear{
+            clear: both;
+        }
+        .foods li{
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: #E6E5E3;
+            border-bottom: 1px solid #B0B0B0;
+            position: relative;
+        }
+        .foods .pic{
+            width: 80px;
+            height: 80px;
+            border: 5px solid #D4C6A3;
+        }
+        .foods .food_name{
+            position: absolute;
+            top: 10px;
+            left: 110px;
+            color: #732C01;
+        }
+        .foods .food_describe{
+            position: absolute;
+            top: 80px;
+            left: 110px;
+            font-size: 12px;
+        }
+        .foods .food_price{
+            position: absolute;
+            top: 10px;
+            right: 40px;
+            color: #732C01;
+        }
+        .foods button{
+            position: absolute;
+            top: 80px;
+            width: 60px;
+            border-radius: 3px;
+            color: #732C01;
+            border: none;
+            background-color: #efddc5;
+            box-shadow: 2px 2px 5px #ccc;
+            font-size: 14px;
+        }
+        .foods .food_details{
+            right: 90px;
+        }
+        .foods .food_order{
+            right: 20px;
+        }
+
+        .bill{
+            width: 800px;
+            border: 1px solid #B4B0AF;
+            box-sizing: border-box;
+            color: #732C01;
+            line-height: 42px;
+
+            position: relative;
+        }
+        .bill .gather{
+            background-color: #E6E5E3;
+            padding: 10px;
+            border-bottom: 1px solid #B0B0B0;
+        }
+        .bill .clear{
+            position: absolute;
+            right: 30px;
+            top: 15px;
+            width: 100px;
+            height: 30px;
+            color: #732C01;
+            border: none;
+            box-shadow: 0 0 5px #ccc;
+        }
+        .bill .list{
+            position: relative;
+            background-color: #E6E5E3;
+            padding: 10px;
+            border-bottom: 1px solid #B0B0B0;
+        }
+        .bill .price{
+            position: absolute;
+            right: 50px;
+            top: 15px;
+        }
+        .bill button{
+            width: 25px;
+            height: 25px;
+        }
+        .bill input{
+            border: none;
+            width: 35px;
+            height: 25px;
+            text-align: center;
+            background-color: #efefef;
+        }
+        .foods .active{
+            background-color: #d3d3d3;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div class="main">
+        <div class="store"><p>北京饭店</p></div>
+        <div class="kinds">
+            <ul>
+                <li>
+                    <p @click="meat">菜品分类</p>
+                    <ul v-show="bool1">
+                        <li>凉菜</li>
+                        <li>热菜</li>
+                        <li>特价菜</li>
+                        <li>煨汤</li>
+                    </ul>
+                    <p @click="wine">酒品分类</p>
+                    <ul v-show="bool2">
+                        <li>红酒</li>
+                        <li>白酒</li>
+                        <li>泡酒</li>
+                        <li>啤酒</li>
+                        <li>果汁</li>
+                    </ul>
+                    <p @click="wheaten">主食</p>
+                    <ul v-show="bool3">
+                        <li>意大利面</li>
+                        <li>葱花饼</li>
+                        <li>菠萝饭</li>
+                        <li>窝窝头</li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+        <div class="foods">
+            <ul>
+                <li v-for="(item,index) in foods">
+                    <img class='pic' :src="item.pic" alt=""/>
+                    <h3 class="food_name">{{item.name}}</h3>
+                    <p class="food_describe">介绍:{{item.describe}}</p>
+                    <h3 class="food_price">{{item.price}}元/份</h3>
+                    <button class="food_details" @click="show(index)">详 细</button>
+                    <button class="food_order" @click="order(index)" :disabled=item.disabled :class="{active:item.disabled}">点 菜</button>
+                    <p v-show="item.bool">{{item.detail}}</p>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="bill">
+        <div class="gather" v-show="bool">
+            <h3>购物车</h3>
+            <button class="clear" @click="clear">清空购物车</button>
+            <p>总数:{{total}}个</p>
+            <p>总额:{{money}}元</p>
+        </div>
+        <ul>
+            <li class="list" v-for="(item,index) in list">
+                <h3>{{item.name}}</h3>
+                <p class="price">价格:￥{{item.price*item.num}}元</p>
+                <button @click="sub(index)">-</button>
+                <input type="text" :value="item.num"/>
+                <button @click="add(index)">+</button>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    var app = new Vue({
+        el:'#box',
+        data:{
+            bool:false,
+            bool1:true,
+            bool2:true,
+            bool3:true,
+            total:0,
+            money:0,
+            list:[],
+            foods:[
+                {
+                    "id":"cate1",
+                    "name":"北京烤鸭",
+                    "pic":'dug.jpg',
+                    "describe":"色泽红艳，肉质细嫩，味道醇厚，肥而不腻。",
+                    "detail":"烤鸭是具有世界声誉的北京著名菜式，起源于中国南北朝时期，《食珍录》中已记有炙鸭，在当时是宫廷食品。用料为优质肉食鸭北京鸭，果木炭火烤制，色泽红润，肉质肥而不腻，外脆里嫩。",
+                    "price":358,
+                    "bool":false,
+                    'num':0,
+                    'disabled':false,
+                    'mark':0
+                },
+                {
+                    "id":"cate2",
+                    "name":"双冬烧海参",
+                    "pic":'cucumber.jpg',
+                    "describe":"具有提高记忆力、延缓性腺衰老，防止动脉硬化，抗肿瘤等作用。",
+                    "detail":"海参同人参、燕窝、鱼翅齐名，是世界八大珍品之一。海参不仅是珍贵的食品，也是名贵的药材。据《本草纲目拾遗》中记载：海参，味甘咸，补肾，益精髓，摄小便，壮阳疗痿，其性温补，足敌人参，故名海参。",
+                    "price":398,
+                    "bool":false,
+                    'num':0,
+                    'disabled':false,
+                    'mark':1
+                },
+                {
+                    "id":"cate3",
+                    "name":"澄阳湖大闸蟹",
+                    "pic":'crab.jpg',
+                    "describe":"高蛋白，富含微量元素，具有滋阴壮阳的作用。",
+                    "detail":"阳澄湖大闸蟹营养丰富，其含有多种维生素，其中维生素A高于其它陆生和水生动物，是肉类维生素B2的5-6倍，比鱼类高出6-10倍，比蛋类高出2-3倍。维生素B1及磷的含量比一般鱼类高出6到10倍。",
+                    "price":256,
+                    "bool":false,
+                    'num':0,
+                    'disabled':false,
+                    'mark':2
+                },
+                {
+                    "id":"cate4",
+                    "name":"皇牌极品鲍鱼",
+                    "pic":'abalone.jpg',
+                    "describe":"鲍鱼高蛋白、低脂肪，富含谷氨酸，味道非常鲜美。",
+                    "detail":"鲍鱼是名贵的“海珍品”之一，味道鲜美，营养丰富，被誉为海洋“软黄金”。鲍鱼是名贵的海洋食用贝类，被誉为“餐桌黄金，海珍之冠”，其肉质细嫩、营养丰富。",
+                    "price": 278,
+                    "bool":false,
+                    'num':0,
+                    'disabled':false,
+                    'mark':3
+                },
+                {
+                    "id":"cate5",
+                    "name":"佛跳墙",
+                    "pic":'ftq.jpg',
+                    "describe":"佛跳墙富含营养，美容养颜，延缓衰老，增强免疫力。",
+                    "detail":"制作这道美食，工序十分繁琐。佛跳墙的原料有十几种之多，鲍鱼、海参、鱼唇、牦牛皮胶、杏鲍菇、蹄筋、花菇、墨鱼、瑶柱、鹌鹑蛋等。要充分体现每一种食材的口味和特点需要先将这十几种食材分别独立制作成一道菜，再汇聚到一起，加入高汤和绍兴酒，文火煨制十几个小时以上，这种味道才能真正达到醇厚的特点。",
+                    "price":328,
+                    "bool":false,
+                    'num':0,
+                    'disabled':false,
+                    'mark':4
+                }
+            ]
+        },
+        methods:{
+            meat: function(){
+                this.bool1 = !this.bool1
+            },
+            wine:function(){
+                this.bool2 = !this.bool2
+            },
+            wheaten:function(){
+                this.bool3 = !this.bool3
+            },
+            show:function(index){
+                this.foods[index].bool = !this.foods[index].bool;
+            },
+            order: function(index){
+                this.foods[index].num++;
+                this.list.push(this.foods[index]);
+                this.foods[index].disabled = true;
+
+                this.total++;
+                this.money += this.foods[index].price;
+                this.bool = true
+            },
+            add: function(index){
+                this.list[index].num++;
+                this.total++;
+                this.money += this.list[index].price;
+            },
+            sub: function(index){
+                this.list[index].num--;
+                this.total--;
+                this.money -= this.list[index].price;
+                if(this.list[index].num < 1){
+                    this.foods[this.list[index].mark].disabled = false;
+                    this.list.splice(index,1);
+                }
+                if(this.list.length<1){
+                    this.bool = false
+                }
+            },
+            clear: function(){
+                for(let i = 0; i < this.list.length; i++){
+                    this.foods[this.list[i].mark].disabled = false;
+                }
+                this.total = 0;
+                this.money = 0;
+                this.list = [];
+                this.bool = false
+            }
+        }
+    })
+</script>

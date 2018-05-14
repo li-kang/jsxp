@@ -1,0 +1,207 @@
+﻿# 数据表
+create table dsj(
+id tinyint(3) unsigned not null primary key auto_increment,
+title varchar(20),
+time date not null,
+content text not null
+) character set "utf8";
+
+
+# 数据
+insert into dsj values(null,'大赛','2015-10-8','手游连连看大赛');
+insert into dsj values(null,'班会','2017-02-16','月度班会');
+insert into dsj values(null,'班级日志','2017-04-22','月考');
+insert into dsj values(null,'班级日志','2016-06-10','集体活动，新年大聚会');
+insert into dsj values(null,'吃大餐啦','2015-10-2','快乐大餐，分享快乐');
+insert into dsj values(null,'班级日志','2016-10-18','手游连连看大赛');
+insert into dsj values(null,'班级日志','2018-02-16','月度班会');
+insert into dsj values(null,'月考','2017-04-27','月考');
+insert into dsj values(null,'聚会','2018-03-10','集体活动，新年大聚会');
+insert into dsj values(null,'班级日志','2016-01-2','快乐大餐，分享快乐');
+insert into dsj values(null,'班级日志','2015-03-8','手游连连看大赛');
+insert into dsj values(null,'班级日志','2017-02-14','月度班会');
+insert into dsj values(null,'月考','2017-04-21','月考');
+insert into dsj values(null,'班级日志','2016-06-17','集体活动，新年大聚会');
+insert into dsj values(null,'班级日志','2015-10-22','快乐大餐，分享快乐');
+insert into dsj values(null,'班级日志','2016-10-09','手游连连看大赛');
+insert into dsj values(null,'班级日志','2018-01-19','月度班会');
+insert into dsj values(null,'月考','2017-04-25','月考');
+insert into dsj values(null,'班级日志','2018-03-11','集体活动，新年大聚会');
+insert into dsj values(null,'班级日志','2016-10-13','快乐大餐，分享快乐');
+
+
+
+# 输出的json
+
+[
+    {
+        "year": "2015",
+        "month_arr": [
+            {
+                "month": "3",
+                "day_arr": [
+                    {
+                        "day": "8",
+                        "content": "手游连连看大赛",
+                        "title": "班级日志"
+                    }
+                ]
+            },
+            {
+                "month": "10",
+                "day_arr": [
+                    {
+                        "day": "2",
+                        "content": "快乐大餐，分享快乐",
+                        "title": "吃大餐啦"
+                    },
+                    {
+                        "day": "8",
+                        "content": "手游连连看大赛",
+                        "title": "大赛"
+                    },
+                    {
+                        "day": "22",
+                        "content": "快乐大餐，分享快乐",
+                        "title": "班级日志"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2016",
+        "month_arr": [
+            {
+                "month": "1",
+                "day_arr": [
+                    {
+                        "day": "2",
+                        "content": "快乐大餐，分享快乐",
+                        "title": "班级日志"
+                    }
+                ]
+            },
+            {
+                "month": "6",
+                "day_arr": [
+                    {
+                        "day": "10",
+                        "content": "集体活动，新年大聚会",
+                        "title": "班级日志"
+                    },
+                    {
+                        "day": "17",
+                        "content": "集体活动，新年大聚会",
+                        "title": "班级日志"
+                    }
+                ]
+            },
+            {
+                "month": "10",
+                "day_arr": [
+                    {
+                        "day": "9",
+                        "content": "手游连连看大赛",
+                        "title": "班级日志"
+                    },
+                    {
+                        "day": "13",
+                        "content": "快乐大餐，分享快乐",
+                        "title": "班级日志"
+                    },
+                    {
+                        "day": "18",
+                        "content": "手游连连看大赛",
+                        "title": "班级日志"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2017",
+        "month_arr": [
+            {
+                "month": "2",
+                "day_arr": [
+                    {
+                        "day": "14",
+                        "content": "月度班会",
+                        "title": "班级日志"
+                    },
+                    {
+                        "day": "16",
+                        "content": "月度班会",
+                        "title": "班会"
+                    }
+                ]
+            },
+            {
+                "month": "4",
+                "day_arr": [
+                    {
+                        "day": "21",
+                        "content": "月考",
+                        "title": "月考"
+                    },
+                    {
+                        "day": "22",
+                        "content": "月考",
+                        "title": "班级日志"
+                    },
+                    {
+                        "day": "25",
+                        "content": "月考",
+                        "title": "月考"
+                    },
+                    {
+                        "day": "27",
+                        "content": "月考",
+                        "title": "月考"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "year": "2018",
+        "month_arr": [
+            {
+                "month": "1",
+                "day_arr": [
+                    {
+                        "day": "19",
+                        "content": "月度班会",
+                        "title": "班级日志"
+                    },
+                ]
+            },
+            {
+                "month": "2",
+                "day_arr": [
+                    {
+                        "day": "16",
+                        "content": "月度班会",
+                        "title": "班级日志"
+                    }
+                ]
+            },
+            {
+                "month": "3",
+                "day_arr": [
+                    {
+                        "day": "10",
+                        "content": "集体活动，新年大聚会",
+                        "title": "聚会"
+                    },
+                    {
+                        "day": "11",
+                        "content": "集体活动，新年大聚会",
+                        "title": "班级日志"
+                    }
+                ]
+            }
+        ]
+    }
+]

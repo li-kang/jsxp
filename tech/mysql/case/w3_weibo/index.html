@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{ margin: 0; padding: 0;}
+			body{ background: #efefef;}
+			.wrap{ width: 500px; margin: 50px auto;}
+			.dialog{ border: 1px solid #ccc; padding: 20px; margin-left: 80px; position: relative; margin-bottom: 30px; background: #fff; border-radius: 5px; box-shadow: 1px 1px 15px 1px #ddd;}
+			.dialog img{position: absolute; left:-80px; top:0}
+			.dialog time{ position: absolute; top:10px; right:10px; font-size: 12px; color: #ccc;}
+			.my{margin-right: 80px; margin-left: auto;}
+			.my img{left:auto;right:-80px; top:0}
+			.dialog .myInfo{ background: #ddd; border-radius: 5px; padding: 10px; position: absolute;
+			top:60px; left:-8px; z-index: 10;}
+			.dialog .myInfo::before{ content: ""; position: absolute; border:6px solid transparent;border-bottom-color:#ddd ;top:-11px; left:10px}
+			.my .myInfo{left:auto;right:-100px}
+			.my .myInfo::before{left:auto; right: 10px;}
+			.dialog .top{top:-66px}
+			.dialog .top::before{border-bottom-color:transparent;border-top-color:#ddd ;top:auto;bottom:-11px}
+			.my .top::before{border-bottom-color:transparent;border-top-color:#ddd ;top:auto;bottom:-11px}
+		</style>
+		
+	</head>
+	<body>
+		<button type="button">显示对话列表</button>
+		<div class="wrap">
+			<!--<div class="dialog">
+				<img src="images/head01.jpg">
+				<h4>速度发顺丰</h4>
+				<p>ad sdf asd fasd fas dfasd fasdfasdf</p>
+				<time>2017-10-24</time>
+				
+				<div class="myInfo">
+					<h5>姓名：琳达</h5>
+					<p>学校：北理工</p>
+				</div>
+				
+				
+			</div>
+			<div class="dialog my">
+				<img src="images/head02.jpg">
+				<h4>速度发顺丰</h4>
+				<p>ad sdf asd fasd fas dfasd fasdfasdf</p>
+				<time>2017-10-24</time>
+				<div class="myInfo top">
+					<h5>姓名：杰西卡</h5>
+					<p>学校：西安交大</p>
+				</div>
+			</div>-->
+			
+		</div>	
+		<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+		<script src="js/jquery_plugin_hxsd.js" type="text/javascript"></script>
+		
+		<script type="text/javascript">
+			
+			$("button").click(function(){
+				
+				var myData;
+				
+				//插入对话列表
+				$.get("doAciton.php",function(data){
+					//$(document.body).append(data);
+					myData=JSON.parse(data);
+					
+					var html="";
+					for(var i=0; i<myData.length; i++){
+						html+='<div class="'+(myData[i].id==2?"dialog my":"dialog")+'"><img src="images/'+myData[i].headpic+'" data-userid="'+myData[i].id+'">'+
+						'<h4>'+myData[i].title+'</h4>'+
+						'<p>'+myData[i].cont+'</p>'+
+						'<time>'+myData[i].time+'</time>'+
+					'</div>';
+					};
+					$('.wrap').append(html);
+					
+					var popBox;
+					
+					//---------------------------------------------
+					$("img").hover(
+						function(){
+							var t=$.halfScreen($(this));
+							//console.log(t);
+							var myId=$(this).attr("data-userid");
+							//console.log(myId);
+							for(var j=0; j<myData.length; j++){
+								if(myData[j].id==myId){
+									var html='<div class="'+(t? "myInfo":"myInfo top")+'"><h5>姓名：'+myData[j].name+'</h5><p>学校：'+myData[j].school+'</p></div>';
+    								popBox=$(html);	
+    								$(this).parent().append(popBox);
+    								return;
+								}
+							}
+						},
+						function(){
+							popBox.remove();
+						}
+					)
+				})
+			})
+			
+		</script>
+		
+	</body>
+</html>

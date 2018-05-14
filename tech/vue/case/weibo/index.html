@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/vue.js"></script>
+    <script src="../js/vue-resource.js"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #box{
+            width: 500px;
+            background-color: #eee;
+            padding: 50px;
+            border-radius: 5px;
+            margin: 0 auto;
+            position: relative;
+        }
+        textarea{
+            width: 100%;
+            height: 130px;
+            resize: none;
+            border-radius: 5px;
+        }
+        .btn{
+            height: 40px;
+        }
+        button{
+            position: absolute;
+            right: 50px;
+            width: 100px;
+            height: 40px;
+            background-color: #FFA00A;
+            border: none;
+            border-radius: 5px;
+        }
+        li{
+            list-style: none;
+            width: 100%;
+            padding: 20px 0 ;
+            border-bottom: 1px solid #ccc;
+            position: relative;
+        }
+        img{width: 10%}
+        .comment{
+            width: 90%;
+            height: 90px;
+            position: absolute;
+            left:60px;
+            top: 15px;
+        }
+        .comment p{
+            height: 40px;
+            width: 80%;
+            word-wrap:break-word;
+            overflow: auto;
+        }
+        .comment .del{
+            position: absolute;
+            top: 0px;
+            right: 10px;
+            color: #65B2EB;
+            cursor: pointer;
+        }
+        .comment .prove{
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            color: #65B2EB;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <textarea name="" id="" cols="30" rows="10" placeholder="请输入留言" v-model="msg"></textarea>
+    <div class="btn"><button @click="comment">评论</button></div>
+    <ul>
+        <li v-for="(item,index) in commentMessages">
+            <div><img :src="item.userPic" alt=""/></div>
+            <div class="comment">
+                <p>{{item.userName}} {{item.createAt}}</p>
+                <p>{{item.commentTxt}}</p>
+                <div class="del" @click="del(index)">删除</div>
+                <div class="prove"><span @click="praise(index)" >赞{{item.praiseNum}}</span> <span @click="dislike(index)">踩{{item.replyNum}}</span></div>
+
+            </div>
+            <!--<div class="clear"></div>-->
+        </li>
+
+    </ul>
+
+</div>
+</body>
+</html>
+<script>
+    var app = new Vue({
+        el:'#box',
+        data:{
+            msg:'',
+            commentMessages:[]
+        },
+        methods:{
+            comment:function(){
+                var date = new Date();
+                var seperator1 = "-";
+                var seperator2 = ":";
+                var month = date.getMonth() + 1;
+                var strDate = date.getDate();
+                if (month >= 1 && month <= 9) {
+                    month = "0" + month;
+                }
+                if (strDate >= 0 && strDate <= 9) {
+                    strDate = "0" + strDate;
+                }
+                var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
+                        + " " + date.getHours() + seperator2 + date.getMinutes()
+                        + seperator2 + date.getSeconds();
+
+                if(this.msg.trim() != ''){
+                    this.commentMessages.unshift({userPic:'HLA1.jpg',userName:'loseName',commentTxt:this.msg,praiseNum:0,replyNum:0, createAt: currentdate});
+                }
+                this.msg = '';
+            },
+            praise: function(index){
+                this.commentMessages[index].praiseNum ++
+            },
+            dislike: function(index){
+                this.commentMessages[index].replyNum ++
+            },
+            del:function(index){
+                this.commentMessages.splice(index,1)
+            }
+        },
+        created:function(){
+            this.$http.get('http://api.artgoer.cn:8084/artgoer/api/v1/user/324380/v3/topic/topicHomeByLabel?pageIndex=1&token=b544cd63-6d42-46fe-a96c-3cf96bae3113&topicId=62187').then(
+                function(res){
+                    this.commentMessages = res.data.data.commentList;
+                    console.log(res.data.data);
+                },
+                function(err){
+                    console.log(err)})
+        }
+    })
+</script>

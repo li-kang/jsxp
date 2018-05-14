@@ -1,0 +1,334 @@
+.header {
+    border: none;
+}
+
+.header ul li {
+    float: left;
+    border: none;
+    position: relative;
+}
+
+.header .top {
+    height: 30px;
+    width: 100%;
+    background: #f1f1f1;
+    font-size: 12px;
+    border: none;
+    position: relative;
+}
+
+.header .top .city {
+    position: relative;
+    float: left;
+    left: 0;
+    top: 0;
+    color: #666;
+    line-height: 30px;
+}
+
+.header .top .city i {
+    color: #c81623;
+    padding: 0 10px;
+    font-weight: bolder;
+}
+
+.header .top .someCity {
+    position: relative;
+    z-index: 5;
+    top: 30px;
+    left: -24px;
+    float: left;
+    background: #f1f1f1;
+    display: none;
+    border-radius: 0 0 5px 5px;
+}
+
+.header .top .someCity ul {
+    float: left;
+}
+
+.header .top .someCity ul li {
+    clear: both;
+}
+
+.header .top .someCity ul li a {
+    vertical-align: middle;
+    line-height: 15px;
+    height: 15px;
+    padding: 5px 8px;
+}
+
+.header .top .someCity ul li a:hover {
+    text-decoration: underline;
+}
+
+.header .top .top_navs {
+    line-height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.header .top a {
+    height: 30px;
+    display: inline-block;
+    padding: 0 10px;
+    font-family: '宋体', sans-serif;
+    vertical-align: top;
+}
+
+.header .top .line {
+    height: 12px;
+    width: 1px;
+    margin-top: 9px;
+    background: #ddd;
+}
+
+.header .top .top_navs li span, .header .top .city span {
+    position: absolute;
+    right: 7px;
+    top: 12px;
+    width: 12px;
+    height: 5px;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 2px;
+    margin-left: 9px;
+    font-size: 12px;
+    font-family: "Consolas", sans-serif;
+}
+
+.header .top .top_navs li:hover span {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    transform: rotate(180deg);
+}
+
+.header .top .top_navs li i {
+    margin: 5px 3px 0 0;
+    float: left;
+    width: 15px;
+    height: 20px;
+    display: inline-block;
+    background: url("../images/jd2015img.png") no-repeat;
+    vertical-align: top;
+}
+
+.header .top .top_navs li:hover i {
+    background: url("../images/jd2015img.png") no-repeat 0 -25px;
+}
+
+.header .top .city span {
+    right: -15px;
+}
+
+.header .top .city:hover span {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    transform: rotate(180deg);
+}
+
+.header .top .white {
+    padding-right: 22px;
+}
+
+.header .top .white:hover {
+    background: #fff;
+}
+
+.header .clearFix {
+    zoom: 1;
+}
+
+.header .mid {
+    /*height: 100px;*/
+    background: #fff;
+    position: relative;
+    height: 104px;
+}
+
+.header .mid:after {
+    content: '200B';
+    font-size: 0;
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+.header .mid .logo {
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 270px;
+    height: 60px;
+}
+
+.header .mid .logo a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+/*538*36*/
+/*456*36*/
+
+.header .mid .search {
+    display: inline-block;
+    padding-bottom: 11px;
+    position: absolute;
+    left: 362px;
+}
+
+.header .mid .search form {
+    float: left;
+    padding-top: 25px;
+}
+
+.header .mid .search .text {
+    /*box-sizing: border-box;*/
+    height: 32px;
+    width: 442px;
+    /*padding: 6px;*/
+    padding: 0 6px;
+    border: 2px #b61d1d solid;
+    border-right: none;
+    font-size: 13px;
+    float: left;
+}
+
+.header .mid .search .photo_search {
+    position: absolute;
+    right: 90px;
+    top: 35px;
+    width: 19px;
+    height: 15px;
+    display: inline-block;
+}
+
+.header .mid .search .photo_search span {
+    display: block;
+    width: 19px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.header .mid .search .photo_search i {
+    color: #c81623;
+}
+
+.header .mid .search .photo_search .file {
+    opacity: 0;
+    width: 19px;
+    height: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.header .mid .search .submit {
+    height: 36px;
+    line-height: 36px;
+    width: 82px;
+    background: #b61d1d;
+    color: #fff;
+    border: none;
+    float: left;
+    font-size: 16px;
+}
+
+.header .mid .search .tags a {
+    font-size: 12px;
+    font-family: '宋体', sans-serif;
+    line-height: 28px;
+    height: 28px;
+    float: left;
+    margin-right: 11px;
+}
+
+.header .mid .search .tags .active {
+    color: #b61d1d;
+}
+
+.header .mid .myCart {
+    width: 139px;
+    height: 34px;
+    line-height: 34px;
+    background: #f9f9f9 url("../images/jd2015img.png") no-repeat 18px -48px;
+    position: absolute;
+    right: 65px;
+    top: 25px;
+    border: 1px solid #dfdfdf;
+}
+
+.header .mid .myCart a {
+    margin-left: 48px;
+    font-size: 12px;
+    vertical-align: top;
+    font-family: '宋体', sans-serif;
+    float: left;
+}
+
+.header .mid .myCart span {
+    float: right;
+    font-size: 13px;
+    padding-right: 11px;
+    font-family: "Consolas", sans-serif;
+    color: #999;
+}
+
+.header .mid .myCart .number {
+    padding: 0 5px;
+    height: 14px;
+    background: #c81623;
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    border-radius: 7px 7px 7px 0;
+    position: absolute;
+    top: -4px;
+    left: 104px;
+}
+
+.header .bot {
+    height: 44px;
+    background: #fff;
+    border-bottom: 2px solid #b1191a;
+}
+
+.header .bot .title {
+    float: left;
+    width: 200px;
+    height: 44px;
+    line-height: 44px;
+    color: #fff;
+    font-size: 15px;
+    padding-left: 10px;
+    background: #b1191a;
+}
+
+.header .bot .nav {
+    float: left;
+}
+
+.header .bot .nav li a {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 44px;
+    height: 44px;
+    margin: 0 20px;
+}
+
+.header .bot .national_day {
+    float: right;
+    height: 44px;
+    width: 200px;
+}

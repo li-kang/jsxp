@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>绘制正方形</title>
+<script>
+
+window.onload=function(){
+	
+    var cvs=document.getElementById("cvs");
+	
+	var ctx=cvs.getContext("2d");
+	
+	//ctx.fillRect(100,100,30,30);
+	
+	var size=20;
+	
+	for(var i=0;i<100;i++){
+		for(var j=0;j<100;j++){
+			 ctx.strokeRect(i*size,j*size,size,size);
+		}
+	}
+	
+	var arr=[
+	
+	    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+	    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+	    [0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0],
+	    [0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0],
+	    [0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0],
+	    [0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,0,0,0],
+	    [0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0],
+	    [0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0],
+	    [0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,0,0],
+	    [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+	
+	]
+	
+	
+	for(var i=0;i<arr.length;i++){
+		
+		for(var j=0;j<arr[i].length;j++){
+			if(arr[i][j]==0){
+			   ctx.strokeRect(j*size,i*size,size,size);	
+			}else{
+				ctx.fillRect(j*size,i*size,size,size);
+			}
+		}
+		
+	}
+	
+}
+
+</script>
+</head>
+
+<body>
+<canvas id="cvs" width="500" height="500" style="display: block;margin: 0 auto;">您的浏览器不支持canvas</canvas>
+</body>
+</html>

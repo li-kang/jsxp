@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>上传图片</title>
+		<link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+	    <h1>上传文件</h1>
+	    <div class="main" style="padding-top: 50px; text-align: center;">
+	        <form action="up_load.php?a=upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="fname" multiple />
+                <button>提交</button> <button type="button" onclick="location.href='show.php'">查看列表</button>
+            </form>
+	    </div>
+	    
+	</body>
+</html>

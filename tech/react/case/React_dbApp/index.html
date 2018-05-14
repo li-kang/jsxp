@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0, user-scalable=no">
+    <script src="./react.js"></script>
+    <script src="./react-dom.js"></script>
+    <script src="./babel.js"></script>
+    <script src="swiper-3.4.2.min.js"></script>
+    <link rel="stylesheet" href="swiper-3.4.2.min.css"/>
+    <link rel="stylesheet" href="./css/myHeader.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/tabber.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/groupList.css">
+</head>
+<body>
+<div id="app"></div>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./banner-img/01.jpg"></div>
+      <div class="swiper-slide"><img src="./banner-img/02.jpg"></div>
+      <div class="swiper-slide"><img src="./banner-img/03.jpg"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-scrollbar"></div>
+</div>
+</body>
+</html>
+<script type="text/babel">
+    let lists=[
+          {
+            topic:"佳片推荐",
+            describe:"加入豆瓣人数最多的影视组织，互相推荐和交流自认为好的电影，剧集",
+            imgUrl1:"/static/media.jpg",
+            imgUrl2:"/static/ic_group_check_anonymous.png",
+            count:612808,
+          },
+          {
+          topic:"佳片推荐",
+          describe:"加入豆瓣人数最多的影视组织，互相推荐和交流自认为好的电影，剧集",
+          imgUrl1:"/static/media.jpg",
+          imgUrl2:"/static/ic_group_check_anonymous.png",
+          count:612808,
+        },
+        {
+          topic:"佳片推荐",
+          describe:"加入豆瓣人数最多的影视组织，互相推荐和交流自认为好的电影，剧集",
+          imgUrl1:"/static/media.jpg",
+          imgUrl2:"/static/ic_group_check_anonymous.png",
+          count:612808,
+        },
+        ]
+    var mySwiper = new Swiper ('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: 1000,
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        scrollbar: '.swiper-scrollbar',
+
+    });
+    let data = {
+        url_search: "./images/ic_group_search.png",
+        url_search_status: "./images/ic_status_search_user.png",
+        url_scan: "./images/ic_scan_gray.png",
+        url_chat_white: "./images/ic_chat_white.png",
+        url_chat_green: "./images/ic_chat_green.png",
+        placeholder_index: "影视 图片 唱片 小组等",
+        title_books: "书影音",
+        title_broadCast: "广播",
+        title_group: "小组"
+    };
+
+    let tabberData = [
+        {
+            title: "首页",
+            isActive: true,
+            normalSrc: "./images/ic_tab_home_normal.png",
+            activeSrc: "./images/ic_tab_home_active.png"
+        },
+        {
+            title: "书影音",
+            isActive: false,
+            normalSrc: "./images/ic_tab_subject_normal.png",
+            activeSrc: "./images/ic_tab_subject_active.png"
+        },
+        {
+            title: "广播",
+            isActive: false,
+            normalSrc: "./images/ic_tab_status_normal.png",
+            activeSrc: "./images/ic_tab_status_active.png"
+        },
+        {
+            title: "小组",
+            isActive: false,
+            normalSrc: "./images/ic_tab_group_normal.png",
+            activeSrc: "./images/ic_tab_group_active.png"
+        },
+        {
+            title: "我的",
+            isActive: false,
+            normalSrc: "./images/ic_tab_profile_female_normal.png",
+            activeSrc: "./images/ic_tab_profile_female_active.png"
+        }
+    ];
+
+    let MyHander = React.createClass({
+        render() {
+            return (
+                    <div>
+                        <div className="indexHeader headerWrapper">
+                            <input className="index" type="text" title=""
+                                   placeholder={this.props.data.placeholder_index}/>
+                            <img className="index search" src={this.props.data.url_search}/>
+                            <img className="index scanner" src={this.props.data.url_scan}/>
+                            <img className="index chat" src={this.props.data.url_chat_white}/>
+                        </div>
+                        
+                    </div>
+            )
+        }
+    });
+
+    let Tabber = React.createClass({
+        getInitialState() {
+            return {
+                bool: false
+            }
+        },
+        changeActive() {
+            this.setState({
+                bool: !this.state.bool
+            });
+        },
+        render() {
+            return (
+                    <div className="tabberWrapper">
+                        {
+                            this.props.data.map(function (item) {
+                                return (
+                                        <div className="items">
+                                            <img src={item.normalSrc}/>
+                                            <p>{item.title}</p>
+                                        </div>
+                                )
+                            })
+                        }
+                    </div>
+            )
+        }
+    });
+
+
+    
+
+
+
+    ReactDOM.render(
+            <div>
+                <MyHander data={data}/>
+                <Tabber data={tabberData}/>
+            </div>,
+        document.getElementById('app')
+    );
+
+</script>

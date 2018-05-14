@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>五星评价</title>
+<style>
+body{ background: #fff;}
+a{ display:inline-block; height:30px; width:30px; padding:5px;background:url(star.png) no-repeat center -40px}
+.ac{ background-position:center 0}
+h2{ color: red;}
+.box{ width: 240px; height: 120px; border:1px solid #ccc; padding: 20px; margin: 100px auto; text-align: center; background: #fff; box-shadow: 0 0 80px 5px #D94B01;}
+
+</style>
+</head>
+
+<body>
+    <div class="box">
+       <h2>淘宝五星评价</h2>
+<a></a><a></a><a></a><a></a><a></a> 
+        
+    </div>
+    
+
+
+<script>
+	var aA=document.getElementsByTagName('a');
+	
+	var num;//选中的位置  不能num=0； 否则，第一个会被选中
+	
+	for(var i=0; i<aA.length; i++){
+		aA[i].index=i;//用“点”语法自定义索引属性
+		
+		aA[i].onmouseover=function(){
+			//比对牌照
+			for(var j=0; j<aA.length; j++){
+				if(j<=this.index){// 相当于 aA[j].index==this.index
+					aA[j].className="ac";
+				}
+				else{
+					aA[j].className="";
+				}
+			}		
+		};
+		//---------------------------------------------
+		aA[i].onclick=function(){
+			num=this.index;
+		};
+		
+		//---------------------------------------------
+		aA[i].onmouseout=function(){
+			for(var i=0; i<aA.length; i++){
+				
+				//按照num分配颜色
+				if(i<=num){
+					aA[i].className="ac";
+				}
+				else{
+					aA[i].className="";
+				}
+			};
+		};
+	}
+
+</script>
+
+</body>
+</html>

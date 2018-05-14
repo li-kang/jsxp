@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+        <style type="text/css">
+            body{
+                overflow: hidden;
+            }
+            canvas{ display: block; margin: 0 auto;}
+        </style>
+        <script type="text/javascript">
+            window.onload = function(){
+                var cvs = document.getElementById("cvs");
+                var ctx = cvs.getContext("2d");
+
+                var sceneSize = 30; // 场景大小
+                var size = 20; // 格子的大小
+                var snake = [{x:10, y:12}, {x:10, y:13}, {x:10, y:14}]; // 蛇的身体
+                var direction = 1;// 蛇的方向     0: 左    1： 上      2：右      3：下
+
+                var apples = []; // 所有的苹果
+
+                var countFrame = 0;
+
+                // 绘制一帧
+                function draw(){
+                    // 清除画布
+                    ctx.clearRect(0, 0, cvs.width, cvs.height);
+                    // 绘制场景
+                    drawScene();
+                    // 绘制苹果
+                    drawApples();
+                    // 绘制蛇
+                    drawSnake();
+
+                    // 每一帧更新数据
+                    update();
+                }
+
+                // 每一帧更新数据
+                function update(){
+                    // 移动
+                    move();
+
+                    if (countFrame % 20 == 0)
+                        generateApple();
+
+                    countFrame++;
+                }
+
+                // 移动
+                function move(){
+                    // 蛇的身体的移动
+                    for(var i=snake.length-1 ; i >= 1; i--){
+                        // 把当前身体移动上一节身体所在的位置
+                        snake[i].x = snake[i-1].x;
+                        snake[i].y = snake[i-1].y;
+                    }
+
+                    // 蛇头的移动
+                    switch(direction){
+                        case 0: snake[0].x--; break;
+                        case 1: snake[0].y--; break;
+                        case 2: snake[0].x++; break;
+                        case 3: snake[0].y++; break;
+                    }
+
+                    // 穿墙
+                    if(snake[0].x >= sceneSize) snake[0].x = 0;
+                    if(snake[0].x < 0) snake[0].x = sceneSize-1;
+                    if(snake[0].y >= sceneSize) snake[0].y = 0;
+                    if(snake[0].y < 0) snake[0].y = sceneSize-1;                    
+
+                    // 吃苹果
+                    for (var i = 0; i < apples.length; i++) {
+                        if (apples[i].x === snake[0].x &&
+                            apples[i].y === snake[0].y) {
+                            // 吃到苹果了
+                            apples.splice(i, 1);
+                            grow();
+                        }
+                    }
+
+                    // 咬到自己
+                    for (var i=1; i < snake.length; i++){
+                        if (snake[i].x === snake[0].x &&
+                            snake[i].y === snake[0].y) {
+
+                            clearInterval(handle);
+                            alert("aaaaaaaaaaaaaa");
+                        }
+                    }
+                }
+
+                // 绘制场景
+                function drawScene(){
+                    ctx.strokeStyle = "gray";
+                    for(var x = 0; x < sceneSize; x++){
+                        for(var y = 0; y < sceneSize; y++){
+                            ctx.strokeRect(x*size, y*size, size, size);
+                        }
+                    }
+                }
+
+                // 绘制蛇
+                function drawSnake(){
+                    ctx.fillStyle = "purple";
+                    for (var i = 0; i < snake.length; i++) {
+                        ctx.fillRect(snake[i].x*size, snake[i].y*size, size, size);
+                    }
+                }
+
+                // 绘制苹果
+                function drawApples(){
+                    ctx.fillStyle = "orange";
+                    for (var i = 0; i < apples.length; i++) {
+                        ctx.fillRect(apples[i].x*size, apples[i].y*size, size, size);
+                    }    
+                }
+
+                // 产生苹果
+                function generateApple(){
+                    var x = parseInt(Math.random()*sceneSize);
+                    var y = parseInt(Math.random()*sceneSize);
+                    apples.push({x:x, y:y});
+                }
+
+                // 身体增长
+                function grow(){
+                    var body = {
+                        x: snake[snake.length-1].x,
+                        y: snake[snake.length-1].y
+                    };
+                    snake.push(body);
+                }
+
+                generateApple();
+                generateApple();
+                generateApple();
+
+                var handle = setInterval(draw, 50);
+
+                window.onkeydown=function(e){
+                    switch(e.keyCode){
+                        case 37: 
+                            if (direction != 2)
+                                direction=0;
+                            break;
+                        case 38: if (direction != 3) direction=1; break;
+                        case 39: if (direction != 0) direction=2; break;
+                        case 40: if (direction != 1) direction=3; break;
+                    }
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <canvas id="cvs" width="800" height="800">您的浏览器不支持Canvas</canvas>
+    </body>
+</html>

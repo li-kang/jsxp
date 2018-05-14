@@ -1,0 +1,16 @@
+*{ margin:0; padding:0}
+ul{ list-style:none}
+a{ text-decoration:none}
+li a{width:360px;display:block; height:30px;line-height:30px; font-size:14px; color:#999; padding-left:2em; }
+input,button{vertical-align:middle;}
+input[type=text]{ height: 26px; }
+button{ height: 30px;width: 80px;}
+h1{text-align: center;}
+.main{ width: 500px; margin: 50px auto;}
+.subMenu{ display:none; margin-left:1em}
+.hasSub>a{ display:block; background-image:url(a1.png); background-repeat:no-repeat; background-position:10px center;color:#666}
+.showSubmenu>a{ background-image:url(a2.png); background-position:11px center; background-repeat:no-repeat}
+.ac{ color:#000 !important; background-color:#efefef;}
+#objTree{ margin-top:100px; width:460px; padding:10px; border:1px solid #777}
+.showSubmenu>.subMenu{ display:block;}
+.ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis; word-wrap: normal}

@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>二级菜单完整版</title>
+<style>
+*{ margin:0; padding:0; font-size:14px;}
+body{ background: #fff;}
+ul,li,ol{ list-style:none}
+a{ text-decoration:none;}
+.nav{ height:40px; background:#3A5998;}
+.nav li{ float:left; position:relative;}
+.nav li::after{ content:"";border:5px solid transparent; font-size:0px; border-top-color:#fff; position:absolute; top:18px; right:10px; display:none}
+.nav li:hover{ background: red; }
+.nav li a{ display:block; height:40px; line-height:40px; padding:0 20px;color:#fff;}
+.nav .ac a{ background:red; color:#fff;}
+.nav li .subMenu{ position:absolute; top:40px; left:0px; border-bottom:1px solid #ccc; display:none}
+.nav li .subMenu li a{ width:100px; height:30px; background:#6E93DD; line-height:30px; border:1px solid #ccc; border-bottom:none; font-size:12px;}
+.nav li .subMenu li a:hover{background:#3A5998;}
+
+.nav .hasSubMenu{ padding-right:0}
+.nav .hasSubMenu a{ padding-right:40px; }
+.nav .hasSubMenu::after{ display:block}
+</style>
+
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script>
+
+
+$(function(){
+	
+	var aLi=$("#mainNav > li");
+	
+		
+	//console.log(aLi.size())  //
+	
+	
+	//判断是否有二级菜单
+	aLi.each(function(i,element){  //each两个参数：i 索引       element：原生对象
+		
+		//var sub=this.getElementsByTagName('ul')[0];
+		
+		var sub=$(this).children('ul')[0];
+		
+		//console.log(sub)
+		//console.log(i,element,this);
+		
+		if(sub){
+			$(sub).addClass("subMenu");
+			$(this).addClass("hasSubMenu");
+		};
+	});
+	
+	
+//	aLi.mouseover(function(){
+//		$(this).children('ul').show();
+//	});
+//	
+//	aLi.mouseout(function(){
+//		$(this).children('ul').hide();
+//	});
+	
+	//绑定事件
+	aLi.hover(
+		function(){
+			$(this).children('ul').show();
+		},
+		function(){
+			$(this).children('ul').hide();
+		}
+	);
+
+	
+	
+	
+	
+});
+
+
+
+
+	
+//------------------------------------------------------------------
+/*
+window.onload=function(){
+	var oNav=document.getElementById('mainNav');
+	
+	var aLi=oNav.getElementsByTagName('li');
+	
+	console.log(aLi)
+	
+	for(var i=0; i<aLi.length; i++){
+		var sub=aLi[i].getElementsByTagName('ul')[0];//每一个li下面去找ul，如果找到，说明有二级菜单
+	
+		if(sub){
+			sub.className="subMenu"; //二级ul
+			aLi[i].className="hasSubMenu";
+		};
+		
+		//-----------------------------------------------------
+		aLi[i].onmouseover=function(){
+			var sub=this.getElementsByTagName('ul')[0];
+			if(sub){//显示之前，先判断
+				sub.style.display="block";
+			}
+		};
+		
+		aLi[i].onmouseout=function(){
+			var sub=this.getElementsByTagName('ul')[0];
+			if(sub){
+				sub.style.display="none";
+			}
+			
+		};
+		
+		
+		
+		
+	};
+	
+	
+	
+}
+
+* */
+</script>
+
+
+</head>
+
+<body>
+    <ul id="mainNav" class="nav">
+    	<li><a href="#">首页</a></li>
+        <li class="hasSubMenu">
+        	<a href="#">产品列表</a>
+        	<ul class="subMenu">
+            	<li><a href="#">冰箱</a></li>
+                <li><a href="#">彩电</a></li>
+                <li><a href="#">洗衣机</a></li>
+                <li><a href="#">小家电</a></li>
+            </ul>
+        </li>
+        <li>
+        	<a href="#">新闻列表dfsdfsdf</a>
+        	<ul>
+            	<li><a href="#">最新动态</a></li>
+                <li><a href="#">企业文化</a></li>
+                <li><a href="#">内部活动</a></li>
+                <li><a href="#">客户活动</a></li>
+            </ul>
+        </li>
+        <li><a href="#">内部管理</a></li>
+        <li><a href="#">关于我们</a></li>
+    </ul>
+</body>
+</html>

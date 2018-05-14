@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>五星评价</title>
+<style>
+body{ background: #fff;}
+a{ display:inline-block; height:30px; width:30px; padding:5px;background:url(star.png) no-repeat center -40px}
+.ac{ background-position:center 0}
+.wrap{ width: 600px; text-align: center; margin: 100px auto;}
+</style>
+</head>
+
+<body>
+    <div class="wrap">
+    	<a></a><a></a><a></a><a></a><a></a>
+    </div>
+
+
+<script src="../js/jquery-1.11.3.min.js"></script>
+<script>
+$(function(){
+	var num;
+	$('a').hover(
+		function(){
+			var n=$(this).index();		
+			$('a:lt('+(n+1)+')').addClass('ac');
+			$('a:gt('+n+')').removeClass('ac');
+		},
+		function(){
+			$('a').removeClass('ac');
+			$('a:lt('+(num+1)+')').addClass('ac');
+		}
+	);
+		
+	$('a').click(function(){
+		num=$(this).index();
+	});
+})
+</script>
+
+</body>
+</html>

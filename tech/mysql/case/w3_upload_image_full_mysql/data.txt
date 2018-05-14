@@ -1,0 +1,15 @@
+create table my_images(
+id tinyint(3) unsigned primary key auto_increment,
+name varchar(40) not null,
+size varchar(20) not null,
+image varchar(100) not null,
+ip char(20)
+);
+
+
+insert into my_images values(null,'21427206.jpg','161,76 KB','./upload/2018011917075531771851.jpg','127.0.0.1');
+
+insert into my_images values(null,'22623035.jpg','388,72 KB','./upload/2018011917080721118164.jpg','127.0.0.1');
+
+insert into my_images values(null,'54_187021_91e14796522fef0.jpg','179,16 KB','./upload/2018011917082994732666.jpg','127.0.0.1');
+

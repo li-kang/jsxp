@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin:0; padding:0}
+			.hide{ display: none;}
+			p{margin-bottom: 20px;}
+			input{vertical-align: middle;}
+			input[type=text],input[type=tel],input[type=password],input[type=email]{ height: 26px; padding: 0 5px;}
+			select{height:26px}
+			label{ margin-right: 10px;}
+			h1{ text-align: center; height: 80px; line-height: 80px; }
+			.main{width:500px; margin:0 auto; padding: 50px 0;}
+			button{ height: 30px; width: 80px; border: 1px solid #ccc;}
+			.notice{ font-size: 12px; color: red;}
+		</style>
+	</head>
+	<body>
+	    <h1>信息录入</h1>
+	    <hr />
+	    <div class="main">
+	        <form action="doAction.php?a=insert" method="post" >
+                <p><label>用户名：<input type="text" id="username" name="username"/> <span class="notice hide ">该用户已存在！</span></label></p>
+                <p>性　别：<label><input type="radio" name="sex" value="m" checked/>男</label><label><input type="radio" name="sex" value="w"/>女</label></p>
+                
+                <p>出　生：<select name="year">
+                       <option value="1980">1980</option>
+                       <option value="1981">1981</option>
+                       <option value="1982">1982</option>
+                       <option value="1983">1983</option>
+                       <option value="1984">1984</option>
+                    </select> <label>年</label>
+                    <select name="month">
+                       <option value="1">1</option>
+                       <option value="2">2</option>
+                       <option value="3">3</option>
+                       <option value="4">4</option>
+                       <option value="5">5</option>
+                       <option value="6">6</option>
+                       <option value="7">7</option>
+                       <option value="8">8</option>
+                       <option value="9">9</option>
+                       <option value="10">10</option>
+                       <option value="11">11</option>
+                       <option value="12">12</option>
+                    </select> <label>月</label>
+                    <select name="day">
+                       <option value="1">1</option>
+                       <option value="2">2</option>
+                       <option value="3">3</option>
+                       <option value="4">4</option>
+                       <option value="5">5</option>
+                    </select> <label>日</label>
+                
+                </p>
+                <p><label>电　话：<input type="tel" name="tel" /></label></p>
+                <p><label>城　市：</label>
+                    <select name="city">
+                       <option value="1">北京</option>
+                       <option value="2">上海</option>
+                       <option value="3">杭州</option>
+                       <option value="4">深圳</option>
+                    </select>
+                </p>
+                <p>爱　好：
+                    <label><input type="checkbox" name="hobby[]" value="1" />篮球</label>
+                    <label><input type="checkbox" name="hobby[]" value="2" />足球</label>
+                    <label><input type="checkbox" name="hobby[]" value="3" />游戏</label>
+                    <label><input type="checkbox" name="hobby[]" value="4" />读书</label>
+                </p>
+                <p>　　　　<button>提交</button> <button type="reset">重置</button></p>
+            </form>
+	        
+	    </div>
+	
+	<script src="jquery-1.11.3.min.js"></script>
+	<script>
+	    
+	    //验证用户
+	    $('#username').blur(function(){
+	        var _this=$(this);
+	        var name=_this.val();
+	        $.get('doAction.php?a=validate&username='+name,function(data){
+	            $(document.body).append(data);
+	            if(data){
+	                _this.next('.notice').removeClass('hide');
+	                _this.focus();
+	            }else{
+	               _this.next('.notice').addClass('hide'); 
+	            }
+	        })
+	    })
+	</script>
+	
+	
+	
+	</body>
+</html>

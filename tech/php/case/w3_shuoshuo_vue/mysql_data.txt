@@ -1,0 +1,7 @@
+create table shuoshuo(
+id tinyint(3) unsigned primary key auto_increment,
+cont text not null,
+ding tinyint(3),
+cai tinyint(3),
+time datetime
+);

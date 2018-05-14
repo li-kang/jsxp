@@ -1,0 +1,183 @@
+.floorNavs {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 347px;
+    margin: -166px 0 0 -650px;
+    text-align: center;
+    display: none;
+}
+
+.floorNavs ul li {
+    position: relative;
+    font-size: 14px;
+    margin: -1px 0 0 5px;
+    height: 31px;
+    line-height: 30px;
+    width: 20px;
+    cursor: pointer;
+    border-top: 1px dotted #c2c2c2;
+}
+
+.floorNavs ul .start {
+    border-top: none;
+}
+
+.floorNavs ul li a {
+    color: #c81623;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+    margin-left: -5px;
+    display: none;
+    border-radius: 50%;
+    font-weight: bolder;
+}
+
+.floorNavs ul .active a {
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c81623), to(orange)); /*谷歌*/
+    background: -moz-linear-gradient(top, #c81623, orange); /*火狐*/
+    background: -ms-linear-gradient(top, #c81623, orange); /* IE 10 */
+    background: -webkit-linear-gradient(top, #c81623, orange); /*Safari5.1 Chrome 10+*/
+    background: -o-linear-gradient(top, #c81623, orange); /*Opera 11.10+*/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#c81623), to(orange)); /* Safari 4-5, Chrome 1-9*/
+    color: #efefef;
+    transition: all .3s;
+    display: inline-block;
+}
+
+.floorNavs ul li span {
+    width: 30px;
+    display: inline-block;
+    margin-left: -5px;
+    font-size: 14px;
+}
+
+.floorNavs ul .active span {
+    display: none;
+}
+
+.aBorder {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background: #7a6e6e;
+    z-index: 0;
+}
+
+.iconNavs {
+    position: fixed;
+    right: 0;
+    top: 393px;
+}
+
+.iconNavs li {
+    position: relative;
+}
+
+.iconNavs li span {
+    background: #7a6e6e;
+    font-size: 12px;
+    color: #fff;
+    height: 35px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    line-height: 35px;
+    border-radius: 3px 0 0 3px;
+    transition: all 0.2s;
+    padding-left: 12px;
+    z-index: 1;
+    cursor: help;
+}
+
+.iconNavs li a {
+    width: 35px;
+    height: 35px;
+    background: #7a6e6e url("../images/toolbars.png") no-repeat -87px -175px;
+    border-radius: 3px 0 0 3px;
+    margin-bottom: 1px;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.iconNavs li .item_2 {
+    background-position: -49px 0;
+}
+
+.iconNavs li .item_3 {
+    background-position: -49px -50px;
+}
+
+.iconNavs li .item_4 {
+    background-position: -49px -100px;
+}
+
+.iconNavs li .item_5 {
+    background-position: -189px -150px;
+}
+
+.iconNavs li .item_6 {
+    background-position: -49px -150px;
+}
+
+.someNavs {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.someNavs li {
+    position: relative;
+}
+
+.someNavs li span {
+    background: #7a6e6e;
+    font-size: 12px;
+    color: #fff;
+    height: 35px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 35px;
+    border-radius: 3px 0 0 3px;
+    transition: all 0.2s;
+    padding-left: 12px;
+    z-index: 1;
+    cursor: wait;
+}
+
+.someNavs li a {
+    width: 35px;
+    height: 35px;
+    background: #7a6e6e url("../images/toolbars.png") no-repeat -48px -250px;
+    border-radius: 3px 0 0 3px;
+    margin-bottom: 1px;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.someNavs li .item_2 {
+    background-position: -48px -300px;
+}
+
+.someNavs li .item_3 {
+    background: #c81623;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 15px;
+    padding-top: 2px;
+    height: 32px;
+}
+
