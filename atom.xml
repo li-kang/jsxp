@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.JiShuXuePai.com/"/>
-  <updated>2018-06-13T02:18:44.000Z</updated>
+  <updated>2018-06-13T09:49:00.000Z</updated>
   <id>http://www.JiShuXuePai.com/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如何有效的学习Web前端开发？</title>
+    <link href="http://www.JiShuXuePai.com/blog/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E5%A6%82%E4%BD%95%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%A6%E4%B9%A0Web%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%EF%BC%9F/"/>
+    <id>http://www.JiShuXuePai.com/blog/学习答疑/学习答疑/如何有效的学习Web前端开发？/</id>
+    <published>2018-06-13T09:36:00.000Z</published>
+    <updated>2018-06-13T09:49:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>一个好的Web前端工程师在知识体系上既要有广度，又要有深度，所以很多大公司即使出高薪也很难招聘到理想的前端开发工程师。那么如何系统的学习企业实用的web前端技术呢？</p><p>当大家有了一些HTML的静态布局的基础，那么我们学完HTML、CSS这些最简单的东西就算是有了小小的入门，知道了Web前端到底是做什么的，那么我们入门之后应该学习哪些系统的前端知识体系呢？如果我们大家选择自学，那么我们就应该根据个人的学习能力，制定好每天学习“量”，今天技术学派帮大家梳理了一条学习路线。</p><img src="/blog/学习答疑/学习答疑/如何有效的学习Web前端开发？/01.jpg" title="Markdown 语法"><h3 id="第一阶段-HTML、CSS、JavaScript"><a href="#第一阶段-HTML、CSS、JavaScript" class="headerlink" title="第一阶段 HTML、CSS、JavaScript"></a>第一阶段 HTML、CSS、JavaScript</h3><p>我们学习Web前端开发系统知识，除了学习JavaScript之外，其他的千万不要买书看，对于html，css看视频学习就可以了，看书完全是在浪费时间，而且也不会动手去写代码，w3cschool是我们学习Web前端开发的标准，可以随时查阅，为什么我说除了学习JavaScript之外其他的知识不用看书，这个你以后工作了之后就会明白，在这里推荐JavaScript书籍《JavaScript权威指南》。建议没有基础的同学可以看看，如果你工作了，或许对你用处并不大。</p><p><img src="02.jpg" alt=""></p><h3 id="第二阶段-学习框架"><a href="#第二阶段-学习框架" class="headerlink" title="第二阶段 学习框架"></a>第二阶段 学习框架</h3><p>Web前端框架都是用JavaScript封装出来的，所以对于JavaScript一定要掌握好，一定要了解es6，和现在比较流行的主流框架如React、Vue、Angular。现在公司都会用框架，但不止于这些，所以不会框架话，在找工作中是很困难的。</p><p><img src="03.jpg" alt=""></p><h3 id="第三阶段-多做几个项目练手"><a href="#第三阶段-多做几个项目练手" class="headerlink" title="第三阶段 多做几个项目练手"></a>第三阶段 多做几个项目练手</h3><p>当我们有了一定的基础后，一定要多做几个项目去练手，这样我们才会有进步，可以找到身边从事前端的朋友要一些完整的项目，然后去分析前端部分，自己尝试去做项目，因为我们目前只会做前端部分，所以后端的代码我们不会，那我们就需要用一些假的数据来填充页面了，所以我们不需要从数据库中获取，我们练习的时候，写固定的数据就可以的，多做几个大型网站让自己更加熟练，然后掌握一些解决问题的能力，如果自己可以独立完成一些网站的项目，那么在一线城市找个7000-8000的工作是没问题的。</p><p><img src="04.jpg" alt=""></p><h3 id="第四阶段-全栈发展"><a href="#第四阶段-全栈发展" class="headerlink" title="第四阶段 全栈发展"></a>第四阶段 全栈发展</h3><p>如果你觉得自己学习能力可以，接受能力也行，那么可以在学习一门后端语言，如：PHP，Java，Python都可以，如果你前后端的知识都可以掌握，那么你就是全栈工程师的材料，以后可以慢慢发展成为全栈工程师，年薪达到30万是可以的，站在全栈的角度上，深入的学习前端和后端，可以更好的了解Web系统的开发流程以及各个阶段的相互作用。</p><p><img src="05.jpg" alt=""></p><h3 id="学习建议"><a href="#学习建议" class="headerlink" title="学习建议"></a>学习建议</h3><ol><li>必须掌握基本的Web前端开发技术，其中包括CSS、HTML、DOM、BOM、Ajax、JavaScript等，在掌握这些技术的同时，还要清楚地了解它们在不同浏览器上的兼容情况、渲染原理和存在的Bug。</li><li>在一名合格的前端工程师的知识结构中，网站性能优化、SEO和服务器端的基础知识也是必须掌握的。</li><li>必须学会运用各种工具进行辅助开发，如：Webpack、Gulp等。</li><li>除了要掌握技术层面的知识，还要掌握理论层面的知识，包括代码的可维护性、组件的易用性、分层语义模板和浏览器分级支持等等。</li></ol><p>代码的质量是前端开发中应该重点考虑的问题之一。例如，实现一个网站界面可能会有无数种方案，但有些方案的维护成本会比较高，有些方案会存在性能问题，而有些方案则更易于维护，而且性能也比较好。这里的关键影响因素就是代码质量。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;一个好的Web前端工程师在知识体系上既要有广度，又要有深度，所以很多大公司即使出高薪也很难招聘到理想的前端开发工程师。那么如何系统的学习企业实用的web前端技术呢？&lt;/p&gt;&lt;p&gt;当大家有了一些HTML的静态布局的基础，那么我们学完HTML、CSS这些最简单的东西就算是有了小
+      
+    
+    </summary>
+    
+      <category term="学习答疑" scheme="http://www.JiShuXuePai.com/categories/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/"/>
+    
+    
+      <category term="python" scheme="http://www.JiShuXuePai.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>什么样的行为出卖了你是一个程序员</title>
+    <link href="http://www.JiShuXuePai.com/blog/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E8%A1%8C%E4%B8%BA%E5%87%BA%E5%8D%96%E4%BA%86%E4%BD%A0%E6%98%AF%E4%B8%80%E4%B8%AA%E7%A8%8B%E5%BA%8F%E5%91%98/"/>
+    <id>http://www.JiShuXuePai.com/blog/学习答疑/学习答疑/什么样的行为出卖了你是一个程序员/</id>
+    <published>2018-06-12T09:23:38.000Z</published>
+    <updated>2018-06-14T01:52:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="0-在正常交流中掺杂编程规范和语法"><a href="#0-在正常交流中掺杂编程规范和语法" class="headerlink" title="0. 在正常交流中掺杂编程规范和语法"></a>0. 在正常交流中掺杂编程规范和语法</h3><p>每个编程语言都有自己特定的语法，程序员在日常开发中都要遵守这些规范。这些编程习惯可能会影响到程序员的日常文档书写习惯，比如写东西时会用分号来结束一行内容等。</p><h3 id="1-在写文档时，标序号总是从0开始（0、1、2、3-…）"><a href="#1-在写文档时，标序号总是从0开始（0、1、2、3-…）" class="headerlink" title="1. 在写文档时，标序号总是从0开始（0、1、2、3 …）"></a>1. 在写文档时，标序号总是从0开始（0、1、2、3 …）</h3><p>程序语言中数组下标都是从0开始，所以使得程序员在日常生活中数数都是从0开始。</p><img src="/blog/学习答疑/学习答疑/什么样的行为出卖了你是一个程序员/01.jpg" title="Markdown 语法"><h3 id="2-真实生活中习惯操作快捷键"><a href="#2-真实生活中习惯操作快捷键" class="headerlink" title="2. 真实生活中习惯操作快捷键"></a>2. 真实生活中习惯操作快捷键</h3><p>程序员在工作中是习惯使用快捷键，能使用键盘操作的绝对不使用鼠标，如 Cmd-C 表示复制、Cmd-V 表示粘贴。然而这些快捷键有时在程序员的行为和话语中表现的很常见，却在一些场合引起尴尬。</p><p><img src="02.jpg" alt=""></p><h3 id="3-害羞而闷骚"><a href="#3-害羞而闷骚" class="headerlink" title="3. 害羞而闷骚"></a>3. 害羞而闷骚</h3><p>网上聊天猛如虎，现实见面却怂如。。。</p><p>大多数的程序员在网上聊天时状态很嗨，但一见面就害羞脸红不敢说话。总的来说是，闲的时候骚而不闷，忙的时候只闷不骚。</p><p><img src="03.jpg" alt=""></p><h3 id="4-试图优化任何事情"><a href="#4-试图优化任何事情" class="headerlink" title="4. 试图优化任何事情"></a>4. 试图优化任何事情</h3><p>软件开发者会不断优化自己的代码，让它越来越快、越来越高效。</p><p>而在现实生活中，程序员也习惯会尝试优化真实生活中的事情，尽量省力、高效，往往会被认为太懒惰，比如脏衣服经常要堆到一定规模才去清洗。</p><h3 id="5-生活方式不健康"><a href="#5-生活方式不健康" class="headerlink" title="5. 生活方式不健康"></a>5. 生活方式不健康</h3><p>程序员写起程序来有时一坐就是大半天，眼镜不离电脑屏幕，甚至在灵感爆发时熬夜。以致作息无规律，锻炼不足，与外界接触过少。</p><p><img src="04.jpg" alt=""></p><h3 id="6-希望人们都和电脑一样循规蹈矩"><a href="#6-希望人们都和电脑一样循规蹈矩" class="headerlink" title="6. 希望人们都和电脑一样循规蹈矩"></a>6. 希望人们都和电脑一样循规蹈矩</h3><p>计算机会按照程序设定的方式运行，运行出错就是程序出现Bug了。</p><p>程序员有时会忽略人们是和电脑不一样的，人不可能完全按照逻辑和理性来做事，更多的是“跟着感觉走”。</p><p><img src="05.gif" alt=""></p><h3 id="7-价值千金的电子产品"><a href="#7-价值千金的电子产品" class="headerlink" title="7. 价值千金的电子产品"></a>7. 价值千金的电子产品</h3><p>你们懂程序员的电脑、耳机、键盘都是什么牌子的吗？程序员不是不炫富，而是炫富的方式跟我们的不一样罢了，不然我们来查查程序员的电脑、键盘、耳机等价格。</p><p><img src="06.jpg" alt=""></p><h3 id="8-太过于强迫症、完美主义"><a href="#8-太过于强迫症、完美主义" class="headerlink" title="8. 太过于强迫症、完美主义"></a>8. 太过于强迫症、完美主义</h3><p>程序中一般不能使用模糊的语义，因为计算机要求很精确。程序中即使有一点小错误，也会导致程序编译不过、运行不起来。</p><p>程序员日常生活中容易过于认真，不放过任何小细节，“打破沙锅问到底”，这有时会给周围的人造成压力。</p><p><img src="07.gif" alt=""></p><h3 id="9-总想到2的幂次方"><a href="#9-总想到2的幂次方" class="headerlink" title="9. 总想到2的幂次方"></a>9. 总想到2的幂次方</h3><p>计算机都是以二进制存储信息的，基本单位是bit。这导致程序员常常不以10进制而是2进制进行计算。</p><h3 id="10-收藏夹中有-LeetCode"><a href="#10-收藏夹中有-LeetCode" class="headerlink" title="10. 收藏夹中有 LeetCode"></a>10. 收藏夹中有 LeetCode</h3><p>除了逛 Github、CSDN、知乎、今日头条外，就是打开 LeetCode 练习刷题，保养脑细胞，夜生活不玩狼人杀和同事、朋友、同学组团刷！</p><h3 id="11-习惯按Ctrl-S"><a href="#11-习惯按Ctrl-S" class="headerlink" title="11.习惯按Ctrl+S"></a>11.习惯按Ctrl+S</h3><p>有时候看网页看着看着就Ctrl+S一下，之后突然反应过来不对。</p><h3 id="12-注释"><a href="#12-注释" class="headerlink" title="12.注释"></a>12.注释</h3><p>重要地方必须要有注释，注释内容必须要清楚明了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;0-在正常交流中掺杂编程规范和语法&quot;&gt;&lt;a href=&quot;#0-在正常交流中掺杂编程规范和语法&quot; class=&quot;headerlink&quot; title=&quot;0. 在正常交流中掺杂编程规范和语法&quot;&gt;&lt;/a&gt;0. 在正常交流中掺杂编程规范和语法&lt;/h3&gt;&lt;p&gt;每个编程语言都有
+      
+    
+    </summary>
+    
+      <category term="学习答疑" scheme="http://www.JiShuXuePai.com/categories/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/"/>
+    
+    
+      <category term="python" scheme="http://www.JiShuXuePai.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>Python相比Java，谁更胜一筹呢？</title>
@@ -441,54 +491,6 @@
     
     
       <category term="python" scheme="http://www.JiShuXuePai.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>为什么Python是入行人工智能的首选语言？</title>
-    <link href="http://www.JiShuXuePai.com/blog/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E4%B8%BA%E4%BB%80%E4%B9%88Python%E6%98%AF%E5%85%A5%E8%A1%8C%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E9%A6%96%E9%80%89%E8%AF%AD%E8%A8%80%EF%BC%9F/"/>
-    <id>http://www.JiShuXuePai.com/blog/学习答疑/学习答疑/为什么Python是入行人工智能的首选语言？/</id>
-    <published>2018-05-18T01:56:26.741Z</published>
-    <updated>2018-05-18T02:07:23.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>其实在所有编程语言里，Python并不算新宠，在1991年就发布了第一个版本，至今已经快30年了。</p><p>最近几年，随着人工智能概念的火爆，Python也迅速升温，成为了众多AI从业者的首选语言。</p><p>根据数据平台 Kaggle发布的机器学习及数据科学调查报告，在工具语言使用方面，Python是数据科学家和人工智能从业者使用最多的语言。<br><img src="/blog/学习答疑/学习答疑/为什么Python是入行人工智能的首选语言？/paihang.jpg" title="Markdown 语法"></p><p>在IEEE Spectrum发布的最受欢迎编程语言列表中，Python同样也位居榜首。</p><p><img src="640.jpg" alt=""></p><h2 id="那为什么Python现在变得这么火爆呢？"><a href="#那为什么Python现在变得这么火爆呢？" class="headerlink" title="那为什么Python现在变得这么火爆呢？"></a>那为什么Python现在变得这么火爆呢？</h2><h3 id="1-Python是一种人性化的语言"><a href="#1-Python是一种人性化的语言" class="headerlink" title="1.Python是一种人性化的语言"></a>1.Python是一种人性化的语言</h3><ul><li><p>开发者不需要关注底层</p></li><li><p>语法简单直观</p></li><li><p>表达形式一致</p></li></ul><blockquote><p>我们以”Hello World”为例，来看一下几种语言的代码：</p></blockquote><h4 id="C-语言的代码："><a href="#C-语言的代码：" class="headerlink" title="C 语言的代码："></a>C 语言的代码：</h4><figure class="highlight plain"><figcaption><span>main()</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123; </span><br><span class="line"> printf(&quot;Hello, World!&quot;);</span><br><span class="line"> return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="Java的代码："><a href="#Java的代码：" class="headerlink" title="Java的代码："></a>Java的代码：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public static void main(String[] args)&#123;</span><br><span class="line">System.out.println(&quot;Hello World!&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="Python的代码："><a href="#Python的代码：" class="headerlink" title="Python的代码："></a>Python的代码：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(&quot;Hello World!&quot;)</span><br></pre></td></tr></table></figure><p>当然，仅仅是一个”Hello World”的话，C和Java的代码也多不了几行。可是不要忘了，C和Java的代码要运行，都必须先经过编译的环节。</p><p>而Python则不用编译，直接运行。而且都可以不用写文件，一条条语句可以直接作为命令行运行。</p><h3 id="2-强大的AI支持库"><a href="#2-强大的AI支持库" class="headerlink" title="2.强大的AI支持库"></a>2.强大的AI支持库</h3><p><strong>矩阵运算</strong></p><p>NumPy由数据科学家Travis Oliphant创作，支持维度数组与矩阵运算。结合Python内置的math和random库，堪称AI数据神器！有了它们，就可以放心大胆玩矩阵了！</p><p><strong>ML模型</strong></p><p>用Python实现大多数经典模型，几十上百行代码就够了。</p><p>当然，对于普通用户，也可以连算法都不用管，只是调用Scikit-Learn的接口就可以了。</p><p><strong>支持图表</strong></p><p>Python还有许多图表方面的支持库。用来生成各种图形表格，是非常简单的事情。</p><p><img src="new图表.png" alt=""></p><p>现在，人工智能技术在现代社会中的地位日趋重要，尤其在自动化和数据驱动的诸多领域，如图像识别、机器人学、搜索引擎、自动驾驶技术都有不俗的表现。Python语言借助AI和数据科学，攀爬到了编程语言生态链的顶级位置，可以说Python与AI已经紧密捆绑在了一起。</p><p>Python易于阅读和编写，所以经常被称为实用主义，就算是非程序员或开发人员也很容易上手。除此之外，Python还能够满足各种开发需求，为程序员提供了各种选择，如果你习惯了使用python，很容易从一个行业跳到另外一个行业。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;其实在所有编程语言里，Python并不算新宠，在1991年就发布了第一个版本，至今已经快30年了。&lt;/p&gt;&lt;p&gt;最近几年，随着人工智能概念的火爆，Python也迅速升温，成为了众多AI从业者的首选语言。&lt;/p&gt;&lt;p&gt;根据数据平台 Kaggle发布的机器学习及数据科学调查报告
-      
-    
-    </summary>
-    
-      <category term="学习答疑" scheme="http://www.JiShuXuePai.com/categories/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/"/>
-    
-    
-      <category term="python" scheme="http://www.JiShuXuePai.com/tags/python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2018 最具就业前景的编程语言，转行者了解一下</title>
-    <link href="http://www.JiShuXuePai.com/blog/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/2018%20%E6%9C%80%E5%85%B7%E5%B0%B1%E4%B8%9A%E5%89%8D%E6%99%AF%E7%9A%84%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%EF%BC%8C%E8%BD%AC%E8%A1%8C%E8%80%85%E4%BA%86%E8%A7%A3%E4%B8%80%E4%B8%8B/"/>
-    <id>http://www.JiShuXuePai.com/blog/学习答疑/学习答疑/2018 最具就业前景的编程语言，转行者了解一下/</id>
-    <published>2018-05-15T07:11:10.335Z</published>
-    <updated>2018-05-15T09:02:16.853Z</updated>
-    
-    <content type="html"><![CDATA[<p>2017年最热门的编程语言莫过于JavaScript和Python了，自然学习这两门技术的人也是最多的，那这个学习趋势在2018年会有怎样的变化呢？</p><h2 id="在2018年最值得学习的编程语言又是哪些呢？"><a href="#在2018年最值得学习的编程语言又是哪些呢？" class="headerlink" title="在2018年最值得学习的编程语言又是哪些呢？"></a>在2018年最值得学习的编程语言又是哪些呢？</h2><img src="/blog/学习答疑/学习答疑/2018%20最具就业前景的编程语言，转行者了解一下/code.jpg" title="Markdown 语法"><p>对于大多数的转行者来说，学习编程的目的就是想找一份高薪的工作，那么肯定是哪个编程语言的就业前景好，就越值得学习。</p><p>在2017年12月底，Coding Dojo发布的2018年最具就业前景的编程语言排行榜，在此次的最有“钱”途的编程语言榜单上，Java排名第一，网红语言Python排名第二，JavaScript排名第三，其次是C++、PHP等。</p><p><img src="pahang.jpg" alt=""><br>对于2018年最有“钱”途的编程语言排行榜，程序员网友们纷纷发表了各自的看法：</p><p>网友一：C# 宇宙第一生产力工具!</p><p>网友二：C# 也有人用?</p><p>网友三：世界上只有两种语言，PHP语言和其它语言。</p><p>网友四：不得不揭晓编程界的秘密：最有前途：C++。目前最火最赚钱：Python。需求量最高：Java。</p><h2 id="那我们就来分析一下这几个最有“钱”途的编程语言"><a href="#那我们就来分析一下这几个最有“钱”途的编程语言" class="headerlink" title="那我们就来分析一下这几个最有“钱”途的编程语言"></a>那我们就来分析一下这几个最有“钱”途的编程语言</h2><h3 id="1-Java"><a href="#1-Java" class="headerlink" title="1.Java"></a>1.Java</h3><p><img src="java.jpg" alt=""></p><p>Java 这种老牌编程语言，虽然一直被诟病语法臃肿，但是其实随着 Java 版本的更新，已经逐渐支持了很多新语言的特性。</p><p>并且在2017年的TIOBE编程语言排行榜上，Java每月总是稳坐第一宝座，毋庸置疑，它仍然是市场上最流行和最火爆的编程语言。</p><p>目前国内的电商行业一片火热，电商平台的数量也十分惊人，由于Java语言开发的电商平台具有安全性高、结构合理，高效、稳定、扩展性强。再者，所有Android应用程序都基于Java。无论是哪一门编程语言，其流行程度短期要超过java都是一件非常困难的事情。</p><h3 id="2-Python"><a href="#2-Python" class="headerlink" title="2.Python"></a>2.Python</h3><p><img src="python.jpg" alt=""></p><p>人工智能（AI）兴起，Python开始大热。<br>Python是一种用于 Web 开发的通用编程语言，Python易于阅读和编写，所以经常被称为实用主义，就算是非程序员或开发人员也很容易上手。除此之外，Python还能够满足各种开发需求，为程序员提供了各种选择，如果你习惯了使用Python，很容易从一个行业跳到另外一个行业，Python被广泛地用于系统运维、图形处理、数学处理、文本处理、数据库编程、网络编程、web编程、多媒体应用、pymo引擎、爬虫编写、人工智能等，加上人工智能（AI）的持续火热，Python作为通用开发语言，地位也是水涨船高。</p><h4 id="当然有人会问了，Python-这么火热，以后会不会竞争很大"><a href="#当然有人会问了，Python-这么火热，以后会不会竞争很大" class="headerlink" title="当然有人会问了，Python 这么火热，以后会不会竞争很大?"></a>当然有人会问了，Python 这么火热，以后会不会竞争很大?</h4><p>Python 之所以这么火热，是因为现在大家都对趋势越来越敏感，大家开始焦虑自己是否会被淘汰，所以很多其他编程语言的从业者都在关注、学习、使用 Python。</p><p>但是真正敢于放弃本职工作，全职转行 Python 开发的人跟整个编程行业的人相比还是少数的，更何况，在一个新的时代即将到来，相对应的需求本就大，所以，一旦人工智能技术有所成熟与突破，Python 的需求还会更大。</p><p>再说到易学性，其实 Python 相比较大部分语言来说，都算是很容易上手的，语法清楚，也没有那么多复杂的概念，非常适合新手学习。</p><h3 id="3-JavaScript"><a href="#3-JavaScript" class="headerlink" title="3.JavaScript"></a>3.JavaScript</h3><p><img src="javascript.jpg" alt=""><br>超过 80％ 的开发者和 95％ 的网站都使用 JavaScript 来实现页面上的动态逻辑。</p><p>随着物联网和移动设备越来越流行，React 和 Vue 等 JavaScript前端框架具有巨大的未来潜力，所以我们可能很快就会看到 JavaScript 的普及。</p><h4 id="小结：综上所述，2018年要转行IT学习编程的人，可以考虑从这3者中选择一个去学习。"><a href="#小结：综上所述，2018年要转行IT学习编程的人，可以考虑从这3者中选择一个去学习。" class="headerlink" title="小结：综上所述，2018年要转行IT学习编程的人，可以考虑从这3者中选择一个去学习。"></a>小结：综上所述，2018年要转行IT学习编程的人，可以考虑从这3者中选择一个去学习。</h4>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;2017年最热门的编程语言莫过于JavaScript和Python了，自然学习这两门技术的人也是最多的，那这个学习趋势在2018年会有怎样的变化呢？&lt;/p&gt;&lt;h2 id=&quot;在2018年最值得学习的编程语言又是哪些呢？&quot;&gt;&lt;a href=&quot;#在2018年最值得学习的编程语言又
-      
-    
-    </summary>
-    
-      <category term="学习答疑" scheme="http://www.JiShuXuePai.com/categories/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/"/>
-    
     
   </entry>
   
