@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.JiShuXuePai.com/"/>
-  <updated>2018-06-13T09:49:00.000Z</updated>
+  <updated>2018-06-19T03:19:45.000Z</updated>
   <id>http://www.JiShuXuePai.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>零基础如何学习数据分析？</title>
+    <link href="http://www.JiShuXuePai.com/blog/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E9%9B%B6%E5%9F%BA%E7%A1%80%E5%A6%82%E4%BD%95%E5%AD%A6%E4%B9%A0%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%EF%BC%9F/"/>
+    <id>http://www.JiShuXuePai.com/blog/学习答疑/学习答疑/零基础如何学习数据分析？/</id>
+    <published>2018-06-19T02:06:16.000Z</published>
+    <updated>2018-06-19T03:19:45.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>目前市场对大数据相关人才的需求与日俱增，岗位的增多，也导致了大数据相关人才出现了供不应求的状况，从而引发了一波关于大数据学习的浪潮。那么什么是数据分析？为什么要学习数据分析呢？</p><p><strong>数据分析</strong>是基于商业目的，有目的的进行收集、整理、加工和分析数据，提炼有价信息的一个过程。</p><p>一个分析项目，你的数据对象是谁？商业目的是什么？要解决什么业务问题？数据分析师对这些都要了然于心。基于商业的理解，整理分析框架和分析思路。例如，减少新客户的流失、优化活动效果、提高客户响应率等等。不同的项目对数据的要求，使用的分析手段也是不一样的。</p><img src="/blog/学习答疑/学习答疑/零基础如何学习数据分析？/01.jpg" title="Markdown 语法"><h3 id="1-数据分析师是什么？为什么要做数据分析师？"><a href="#1-数据分析师是什么？为什么要做数据分析师？" class="headerlink" title="1.数据分析师是什么？为什么要做数据分析师？"></a>1.数据分析师是什么？为什么要做数据分析师？</h3><p>数据分析师是指的是不同行业中，专门从事行业数据搜集、整理、分析，并依据数据做出行业研究、评估和预测的专业人员。</p><p>近些年，随着互联网行业发展日趋迅猛，互联网公司的对数据分析师岗位的需求越来越多，这不是偶然。</p><p>在过去的十年里，中国互联网行业靠着人口红利和流量红利急剧生长；而随着流量获取成本的不断提高、运营效率的不断下降，这种粗放式经营模式已经不再可行。互联网企业迫切需要通过数据分析来实现精细化运营，降低成本、提高效率。</p><p><img src="02.jpg" alt=""></p><h3 id="2-如何学习数据分析？"><a href="#2-如何学习数据分析？" class="headerlink" title="2.如何学习数据分析？"></a>2.如何学习数据分析？</h3><p><strong>任何一门技术或学科都有其内部规律，需要有计划，有先后，循序渐进来学。</strong></p><p>一个初级数据分析师需要掌握的技能有：</p><ol><li>统计学基础</li><li>Python语言</li><li>网页分析</li><li>数据库技术</li><li>常用模型理论</li></ol><p>数据分析入门并不难，难的是之后的积累才是重点，如何在实际工作、项目中真正发挥数据分析的作用，产生价值。</p><p><img src="03.jpg" alt=""></p><h3 id="3-数据分析师需具备的核心能力"><a href="#3-数据分析师需具备的核心能力" class="headerlink" title="3.数据分析师需具备的核心能力"></a>3.数据分析师需具备的核心能力</h3><p>数据分析师要具备六种核心能力：1.基础科学的能力；2.使用分析工具的能力；3.掌握编程语言的能力；4.逻辑思维的能力；5.数据可视化的能力；6.模型评估的能力；</p><p><strong>1.基础科学的能力</strong></p><p>可以说，在数据决策的时代，数据分析几乎渗透到企业的每个业务环节中。</p><p>掌握统计学，我们才能知道每一种数据分析的模型，什么样的输入，什么样的输出，有什么样的作用，开始我们并不一定要把每个算法都弄懂。</p><p><strong>2.使用分析工具的能力</strong></p><p>任何数据分析师从事业务方向的工作都必须会统计学，统计学的学习最好辅助SPSS或其他SAS来学，做到数据分析基本功扎实，兼顾实战性。</p><p>任何数据分析师从事技术方向的工作都必会SQL，不单是数据分析师，每一个运营、产品经理、尤其是互联网行业，一定要会SQL，基本知名互联网公司的产品经理都能写SQL。</p><p>学习中，要掌握SQL的基础语法、中级语法和常用函数，结合关系数据库系统来学习SQL语句。</p><p><strong>3.掌握编程语言的能力</strong></p><p>Python主要掌握基础语法，pandas操作、numpy操作、sklearn建模，学会用python编写网络爬虫爬取数据等等。</p><p><img src="04.jpg" alt=""></p><p><strong>4.逻辑思维的能力</strong></p><p>逻辑思维对于数据分析来说特别重要。反映商业数据里，大家可以理解为去搭建商业框架或者说是故事线，有逻辑的推进，结果才会另人信服。</p><p><strong>5.数据可视化的能力</strong></p><p>有了Python的基础，我们就可以学习数据可视化了。运营和产品都需要学习可视化，可视化说白了，就是画图，但做为数据分析师来说，我们不能用EXCEL 来实现可视化，因为它的局限性太大了。这里也不建议花太多时间学习给非专业人士展示的Tableau，有1个小时学会Tableau足够。</p><p>Python中可视化的工具有matplotlib,seaborn,ploltly;</p><p><strong>6.模型评估的能力</strong></p><p>Model建模，知道模型建好后应该怎样去评估，掌握怎样用一些定量的指标，数据、数值来衡量模型建好后到底有多准确，或者说到底有多错误。模型评估的指标或计算方式选择正确与否，能够直接影响到整个项目获模型是否有效。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;目前市场对大数据相关人才的需求与日俱增，岗位的增多，也导致了大数据相关人才出现了供不应求的状况，从而引发了一波关于大数据学习的浪潮。那么什么是数据分析？为什么要学习数据分析呢？&lt;/p&gt;&lt;p&gt;&lt;strong&gt;数据分析&lt;/strong&gt;是基于商业目的，有目的的进行收集、整理、加
+      
+    
+    </summary>
+    
+      <category term="学习答疑" scheme="http://www.JiShuXuePai.com/categories/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/"/>
+    
+    
+      <category term="python" scheme="http://www.JiShuXuePai.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>如何有效的学习Web前端开发？</title>
@@ -466,31 +491,6 @@
     
       <category term="学习答疑" scheme="http://www.JiShuXuePai.com/categories/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>十个最受欢迎的机器学习Python库，你知道几个？</title>
-    <link href="http://www.JiShuXuePai.com/blog/%E6%8F%92%E4%BB%B6%E8%B5%84%E6%BA%90%E5%BA%93/%E6%8F%92%E4%BB%B6%E8%B5%84%E6%BA%90%E5%BA%93/%E5%8D%81%E4%B8%AA%E6%9C%80%E5%8F%97%E6%AC%A2%E8%BF%8E%E7%9A%84%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0Python%E5%BA%93%EF%BC%8C%E4%BD%A0%E7%9F%A5%E9%81%93%E5%87%A0%E4%B8%AA%EF%BC%9F/"/>
-    <id>http://www.JiShuXuePai.com/blog/插件资源库/插件资源库/十个最受欢迎的机器学习Python库，你知道几个？/</id>
-    <published>2018-05-21T09:53:31.105Z</published>
-    <updated>2018-05-22T08:50:51.847Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>2018年将会是人工智能和机器学习快速发展的一年，有专家表示：相较之下Python比Java更加接地气，也自然而然地成为机器学习的首选语言。</p></blockquote><p>今天我们就来介绍一下最受欢迎的机器学习库，希望你能够在这里寻找到你未来一段时间内的<strong>“利器”</strong>。</p><h3 id="PyTorch"><a href="#PyTorch" class="headerlink" title="PyTorch"></a>PyTorch</h3><blockquote><p>脸谱网今年推出的，在深入学习社区是非常受欢迎。pytorch是建立在一个受欢迎的火炬框架，特别是基于Python。考虑到过去几年人们一直在使用Python进行数据科学研究，这也是大多数学习库使用Python的原因。</p></blockquote><img src="/blog/插件资源库/插件资源库/十个最受欢迎的机器学习Python库，你知道几个？/PyTorch.png" title="Markdown 语法"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">项目地址：https://pytorch.org/</span><br></pre></td></tr></table></figure><h3 id="Caffe2"><a href="#Caffe2" class="headerlink" title="Caffe2"></a>Caffe2</h3><blockquote><p>今年，脸谱网还发布了另一个DL框架，牛奶。原来的Caffe框架已被广泛使用多年，以其很好的性能和测试代码库。然而，DL最近的趋势使得这个框架在某些方面有所突破。所以牛奶代替了它。</p></blockquote><p><img src="Caffe2.png" alt=""></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">项目地址：https://caffe2.ai/</span><br></pre></td></tr></table></figure><h3 id="Pipenv"><a href="#Pipenv" class="headerlink" title="Pipenv"></a>Pipenv</h3><blockquote><p>pipenv是今年初管理依赖官方推荐工具。pipenv最初是一个项目由Kenneth Reitz创建，其目的是整合其他软件包管理器的创新，比如故宫或纱，Python。安装virtualenv和virtualenvwrapper，确保依赖版本的依赖版本的重复性。Pipenv，你可以指定所有的依赖性，通常使用命令来添加，删除或更新的依赖。该工具可以生成一个文件，使您的构建具有确定性，可以帮助您避免难以捕获的bug。</p></blockquote><p><img src="Pipenv.png" alt=""></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">项目地址：https://github.com/pypa/pipenv</span><br></pre></td></tr></table></figure><h3 id="Pendulum"><a href="#Pendulum" class="headerlink" title="Pendulum"></a>Pendulum</h3><blockquote><p>一个摆的优点是，它是Python标准DateTime类的直接替代品，所以你可以很容易地将它与现有的代码，只在需要的时候使用它。作者特别注意确保时区得到正确处理，并默认每个实例时区的时区被感知。你也会得到一个扩展timedelta，所以它更容易的日期和时间。</p></blockquote><p><img src="pendulum.png" alt=""></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">项目地址：https://github.com/sdispater/pendulum</span><br></pre></td></tr></table></figure><h3 id="Dash"><a href="#Dash" class="headerlink" title="Dash"></a>Dash</h3><blockquote><p>如果你是做科学的数据，你可以使用优秀的工具，如大熊猫、scikit在Python的系统学习。你也可以使用jupyternotebook来管理你的工作流程。但是当你和那些不知道如何使用这些工具的人一起工作时，你会怎么做呢？如何构建一个界面，让人们在整个过程中轻松地播放数据并可视化它们？在过去，您可能需要一个专业的JavaScript前端团队来构建这些GUI。</p></blockquote><p><img src="Dash.png" alt=""></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">项目地址：https://kapeli.com/dash</span><br></pre></td></tr></table></figure><h3 id="Fire"><a href="#Fire" class="headerlink" title="Fire"></a>Fire</h3><blockquote><p>火灾是一个开源库。它可以为任何python项目自动生成CLI。钥匙是自动的。您几乎不需要编写任何代码或文档来构建CLI。你只需要调用一个火方法并把它传递给它需要构建的CLI。</p></blockquote><p><img src="Fire.png" alt=""></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">项目地址：https://github.com/google/python-fire</span><br></pre></td></tr></table></figure><h3 id="PyFlux"><a href="#PyFlux" class="headerlink" title="PyFlux"></a>PyFlux</h3><blockquote><p>pyflux是一个开源库的Python，特别是时间序列的发展。时间序列研究是统计学和计量经济学的一个分支，它可以描述时间序列是如何表达的（由潜在因素或利益特征表示）和预测未来行为。pyflux允许时间序列建模的使用，和现代时间序列GARCH模型等已实施。</p></blockquote><p><img src="PyFlux.png" alt=""></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">项目地址：https://github.com/RJT1990/pyflux</span><br></pre></td></tr></table></figure><h3 id="imbalanced-learn"><a href="#imbalanced-learn" class="headerlink" title="imbalanced-learn"></a>imbalanced-learn</h3><blockquote><p>在理想情况下，我们将得到完全平衡的数据集，但不幸的是，现实世界是不一样的。有些任务的数据非常不平衡。例如，在预测信用卡交易中的欺诈行为时，您期望绝大多数交易（99.9%）是合法的。ML算法的幼稚训练可能会导致令人失望的性能，因此在处理这些类型的数据集时需要特别小心。</p></blockquote><p><img src="imbalanced-learn.png" alt=""></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">项目地址：https://github.com/scikit-learn-contrib/</span><br></pre></td></tr></table></figure><h3 id="FlashText"><a href="#FlashText" class="headerlink" title="FlashText"></a>FlashText</h3><blockquote><p>如果你需要寻找一些文本和取代它与其他内容（最喜欢的数据清理刘成中），它通常将正则表达式。通常，正则表达式是解决这个问题的完美方法。但有时会出现这样的情况：需要搜索的术语数是数千个，然后正则表达式可能变得非常缓慢。在这一点上，FlashText是一个更好的选择，大大提高了整个手术的时间（从5到15分钟）。flashtext的优点是，无论多少个搜索条件，运行时间是相同的，而正则表达式的运行时间与条件数线性增长。</p></blockquote><p><img src="FlashText.png" alt=""></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">项目地址：https://flashtext.com/</span><br></pre></td></tr></table></figure><h3 id="Luminoth"><a href="#Luminoth" class="headerlink" title="Luminoth"></a>Luminoth</h3><blockquote><p>luminoth是一个开源的计算机视觉，是与TensorFlow和十四行诗内置Python工具包。目前，它能以模型的目标检测支持更快r-cnn。</p></blockquote><p><img src="Luminoth.png" alt=""></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">项目地址：https://luminoth.ai/</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;blockquote&gt;&lt;p&gt;2018年将会是人工智能和机器学习快速发展的一年，有专家表示：相较之下Python比Java更加接地气，也自然而然地成为机器学习的首选语言。&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;今天我们就来介绍一下最受欢迎的机器学习库，希望你能够在这里寻找到你未来
-      
-    
-    </summary>
-    
-      <category term="插件资源库" scheme="http://www.JiShuXuePai.com/categories/%E6%8F%92%E4%BB%B6%E8%B5%84%E6%BA%90%E5%BA%93/"/>
-    
-    
-      <category term="python" scheme="http://www.JiShuXuePai.com/tags/python/"/>
     
   </entry>
   
