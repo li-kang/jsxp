@@ -92,6 +92,29 @@
   </entry>
   
   <entry>
+    <title>5个常用的大数据可视化分析工具，你知道吗？</title>
+    <link href="http://www.JiShuXuePai.com/blog/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/5%E4%B8%AA%E5%B8%B8%E7%94%A8%E7%9A%84%E5%A4%A7%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%88%86%E6%9E%90%E5%B7%A5%E5%85%B7%EF%BC%8C%E4%BD%A0%E7%9F%A5%E9%81%93%E5%90%97%EF%BC%9F/"/>
+    <id>http://www.JiShuXuePai.com/blog/学习答疑/学习答疑/5个常用的大数据可视化分析工具，你知道吗？/</id>
+    <published>2018-06-19T01:35:34.000Z</published>
+    <updated>2018-06-26T01:23:52.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>大数据及移动互联网时代，每一个使用移动终端的人无时无刻不在生产数据，而作为互联网服务提供的产品来说，也在持续不断的积累数据。数据如同人工智能一样，往往能表现出更为客观、理性的一面，数据可以让人更加直观、清晰的认识世界，数据也可以指导人更加理智的做出决策。</p><p>而在大数据时代的今天，最有价值的商品则是数据。那么今天小编在这里给大家推荐一些常用于数据分析的必备神器。</p><img src="/blog/学习答疑/学习答疑/5个常用的大数据可视化分析工具，你知道吗？/01.jpg" title="Markdown 语法"><p><strong>1.Tableau</strong></p><p><img src="Tableau01.jpg" alt=""></p><p><img src="Tableau02.jpg" alt=""></p><p>Tableau 帮助人们快速分析、可视化并分享信息。它的程序很容易上手，各公司可以用它将大量数据拖放到数字“画布”上，转眼间就能创建好各种图表。数以万计的用户使用 Tableau Public 在博客与网站中分享数据。</p><blockquote><p>项目地址：<a href="https://www.tableau.com/" target="_blank" rel="noopener">https://www.tableau.com/</a></p></blockquote><p><strong>2.ECharts</strong></p><p><img src="ECharts01.jpg" alt=""></p><p><img src="ECharts02.jpg" alt=""></p><p>Echarts可以运用于散点图、折线图、柱状图等这些常用的图表的制作。Echarts的优点在于，文件体积比较小，打包的方式灵活，可以自由选择你需要的图表和组件。而且图表在移动端有良好的自适应效果，还有专为移动端打造的交互体验。</p><blockquote><p>项目地址：<a href="http://echarts.baidu.com/" target="_blank" rel="noopener">http://echarts.baidu.com/</a></p></blockquote><p><strong>3.Highcharts</strong></p><p><img src="Highcharts01.jpg" alt=""></p><p><img src="Highcharts02.jpg" alt=""></p><p>Highcharts的图表类型是很丰富的，线图、柱形图、饼图、散点图、仪表图、雷达图、热力图、混合图等类型的图表都可以制作，也可以制作实时更新的曲线图。</p><p>另外，Highcharts是对非商用免费的，对于个人网站，学校网站和非盈利机构，可以不经过授权直接使用 Highcharts 系列软件。Highcharts还有一个好处在于，它完全基于 HTML5 技术，不需要安装任何插件，也不需要配置 PHP、Java 等运行环境，只需要两个 JS 文件即可使用。</p><blockquote><p>项目地址：<a href="https://www.hcharts.cn/" target="_blank" rel="noopener">https://www.hcharts.cn/</a></p></blockquote><p><strong>4.魔镜</strong></p><p><img src="魔镜01.jpg" alt=""></p><p>​<img src="魔镜02.jpg" alt=""></p><p>魔镜是中国最流行的大数据可视化分析挖掘平台，帮助企业处理海量数据价值，让人人都能做数据分析。</p><p>魔镜基础企业版适用于中小企业内部使用，基础功能免费，可代替报表工具和传统BI，使用更简单化，可视化效果更绚丽易读。</p><blockquote><p>项目地址：<a href="http://www.moojnn.com/" target="_blank" rel="noopener">http://www.moojnn.com/</a></p></blockquote><p><strong>5.图表秀</strong></p><p><img src="图表秀01.jpg" alt=""></p><p><img src="图表秀02.jpg" alt=""></p><p>图表秀的操作简单易懂， 而且站内包含多种图表，涉及各行各业的报表数据都可以用图表秀实现， 支持自由编辑和Excel、csv等表格一键导入，同时可以实现多个图表之间联动， 使数据在我们的软件辅助下变的更加生动直观，是目前国内先进的图表制作工具。</p><blockquote><p>项目地址：<a href="http://www.tubiaoxiu.com/" target="_blank" rel="noopener">http://www.tubiaoxiu.com/</a></p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;大数据及移动互联网时代，每一个使用移动终端的人无时无刻不在生产数据，而作为互联网服务提供的产品来说，也在持续不断的积累数据。数据如同人工智能一样，往往能表现出更为客观、理性的一面，数据可以让人更加直观、清晰的认识世界，数据也可以指导人更加理智的做出决策。&lt;/p&gt;&lt;p&gt;而在大
+      
+    
+    </summary>
+    
+      <category term="学习答疑" scheme="http://www.JiShuXuePai.com/categories/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>为什么程序员喜欢在夜间写代码？</title>
     <link href="http://www.JiShuXuePai.com/blog/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E4%B8%BA%E4%BB%80%E4%B9%88%E7%A8%8B%E5%BA%8F%E5%91%98%E5%96%9C%E6%AC%A2%E5%9C%A8%E5%A4%9C%E9%97%B4%E5%86%99%E4%BB%A3%E7%A0%81%EF%BC%9F/"/>
     <id>http://www.JiShuXuePai.com/blog/学习答疑/学习答疑/为什么程序员喜欢在夜间写代码？/</id>
@@ -464,29 +487,6 @@
       
       
         &lt;p&gt;为什么看上去差不多的技术和资历，有的人可以一个月收到二三十个offer，有的人只有寥寥几个？&lt;/p&gt;&lt;img src=&quot;/blog/学习答疑/学习答疑/初次求职的程序员该如何准备简历？/01.jpg&quot; title=&quot;Markdown 语法&quot;&gt;&lt;p&gt;今天技术学派为大家分享一下
-      
-    
-    </summary>
-    
-      <category term="学习答疑" scheme="http://www.JiShuXuePai.com/categories/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>机器学习和人工智能的区别你真的知道嘛？</title>
-    <link href="http://www.JiShuXuePai.com/blog/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%92%8C%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E5%8C%BA%E5%88%AB%E4%BD%A0%E7%9C%9F%E7%9A%84%E7%9F%A5%E9%81%93%E5%98%9B%EF%BC%9F/"/>
-    <id>http://www.JiShuXuePai.com/blog/学习答疑/学习答疑/机器学习和人工智能的区别你真的知道嘛？/</id>
-    <published>2018-06-01T05:43:06.839Z</published>
-    <updated>2018-06-01T06:00:35.162Z</updated>
-    
-    <content type="html"><![CDATA[<p>大家现在经常会听到别人提起人工智能、机器学习和深度学习。怎样才可以正确的使用这些词呢？他们的区别是什么呢？</p><p>机器学习算法是人工智能背后的推动力量，所有机器学习算法中最关键的是深度学习。</p><p><strong>简单来说，人工智能、机器学习和深度学习都是属于一个领域的一个子集。但是人工智能是机器学习的首要范畴，机器学习是深度学习的首要范畴。</strong></p><img src="/blog/学习答疑/学习答疑/机器学习和人工智能的区别你真的知道嘛？/01.jpg" title="Markdown 语法"><h3 id="人工智能"><a href="#人工智能" class="headerlink" title="人工智能"></a>人工智能</h3><p>人工智能是研究让计算机来模拟人的思维过程和智能行为（比如：学习、推理、思考、规划等）的学科，主要包括计算机实现智能的原理、制造类似于人脑智能的计算机，使计算机能实现更高层次的应用。人工智能将涉及到计算机科学、心理学、哲学等学科。可以说几乎是自然科学和社会科学的所有学科。从思维观点上看，人工智能不仅限于逻辑思维，要考虑形象思维和灵感思维才能促进人工智能的突破性的发展。数学常被认为是多种学科的基础科学，数学也进入语言、思维领域，人工智能学科也必须借用数学工具，数学不仅在标准逻辑、模糊数学等范围发挥作用，数学进入人工智能学科，它们将互相促进而更快地发展。</p><p><img src="02.jpg" alt=""></p><p>机器学习和人工智能的区别你真的知道嘛？</p><p><strong>人工智能的领域：</strong></p><ul><li>机器学习：人工智能的领域，使计算机不用明确编程就可以学习。</li><li>搜索及优化：算法，如梯度下降迭代搜索局部最大值或最小值。</li><li>逻辑推理：人工智能中逻辑推理的例子是模拟人类专家决策能力的专家计算机系统。</li><li>概率推理：将概率论的能力去处理不确定性和演绎逻辑的能力来利用形式论证的结构结合起来。其结果是一个更丰富和更具表现力的形式主义与更广泛应用领域。</li><li>控制理论：一种正式的方法来找到具有可证性的控制器。这通常涉及描述像机器人或飞机这样的物理系统的微分方程组。</li></ul><p><strong>人工智能的目标：</strong></p><ul><li>逻辑推理：让计算机能够完成人类能够完成的复杂心理任务。例如下棋和数学问题。</li><li>知识表达：使计算机能够清楚的描述对象、人员和语言。</li><li>规划和导航：使计算机从A点到B点。例如，第一台自动驾驶机器人建于20世纪60年代初。</li><li>自然语言处理：使计算机能够理解和处理语言。例如把英语翻译中文，或者把中文翻译成英语。</li><li>感知：让电脑通过视觉、听觉、触觉和嗅觉与世界交流。</li></ul><h3 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h3><p>机器学习是一门多领域交叉学科。专门研究计算机怎样模拟或实现人类的学习行为，以获取新的知识或技能，重新组织已有的知识结构使之不断改善自身的性能。</p><p>它是人工智能的核心，是使计算机具有智能的根本途径，其应用遍及人工智能的各个领域，它主要使用归纳、综合而不是演绎。</p><p><strong>当我们谈论机器学习时，值得一提的是机器学习算法：神经网络。</strong></p><p>神经网络是机器学习算法的关键部分。神经网络是教计算机以人类的方式思考和理解世界的关键。实质上，神经网络是模拟人类的大脑。这被抽象为由加权边缘（突触）连接的节点（神经元）的图形。</p><p>这个神经网络有一层，三个输入和一个输出。任何神经网络都可以有任何数量的层，输入或输出。</p><p><img src="03.jpg" alt=""></p><h3 id="深度学习"><a href="#深度学习" class="headerlink" title="深度学习"></a>深度学习</h3><p>深度学习是所有机器学习算法中的核心关键。深度学习是采用神经网络，用于解决线性不可分的问题。</p><p>深度学习的概念源于人工神经网络的研究。含多隐层的多层感知器就是一种深度学习结构。深度学习通过组合低层特征形成更加抽象的高层表示属性类别或特征，以发现数据的分布式特征表示。</p><p>这个神经网络有两层，三个输入和一个输出。任何神经网络都可以有任何数量的层，输入或输出。输入神经元和最后一层输出神经元之间的层是深层神经网络的隐藏层。</p><p><img src="04.jpg" alt=""></p><p><strong>总结：机器学习是人工智能的前沿，深度学习是机器学习的前沿。</strong><br><strong>想了解更多编程内容，请关注技术学派。</strong></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;大家现在经常会听到别人提起人工智能、机器学习和深度学习。怎样才可以正确的使用这些词呢？他们的区别是什么呢？&lt;/p&gt;&lt;p&gt;机器学习算法是人工智能背后的推动力量，所有机器学习算法中最关键的是深度学习。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;简单来说，人工智能、机器学习和深度学习都是属于一
       
     
     </summary>
