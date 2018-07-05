@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.JiShuXuePai.com/"/>
-  <updated>2018-07-03T01:15:38.000Z</updated>
+  <updated>2018-07-05T03:48:54.000Z</updated>
   <id>http://www.JiShuXuePai.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>人工智能、机器学习、数据挖掘以及数据分析有什么联系？（下）</title>
+    <link href="http://www.JiShuXuePai.com/blog/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E3%80%81%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%81%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E4%BB%A5%E5%8F%8A%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%89%E4%BB%80%E4%B9%88%E8%81%94%E7%B3%BB%EF%BC%9F%EF%BC%88%E4%B8%8B%EF%BC%89/"/>
+    <id>http://www.JiShuXuePai.com/blog/学习答疑/学习答疑/人工智能、机器学习、数据挖掘以及数据分析有什么联系？（下）/</id>
+    <published>2018-07-05T03:47:03.051Z</published>
+    <updated>2018-07-05T03:48:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="3-深度学习"><a href="#3-深度学习" class="headerlink" title="3.深度学习"></a>3.深度学习</h3><p>深度学习的概念源于人工神经网络的研究。含多隐层的多层感知器就是一种深度学习结构。深度学习通过组合低层特征形成更加抽象的高层表示属性类别或特征，以发现数据的分布式特征表示。晦涩难懂的概念，略微有些难以理解，但是在其高冷的背后，却有深远的应用场景和未来。</p><p>那深度学习和机器学习是什么关系呢？</p><p>深度学习是实现机器学习的一种方式和一条路径。其动机在于建立、模拟人脑进行分析学习的神经网络，它模仿人脑的机制来解释数据。比如其按特定的物理距离连接；而深度学习使用独立的层、连接，还有数据传播方向，比如最近大火的卷积神经网络是第一个真正多层结构学习算法，它利用空间相对关系减少参数数目以提高训练性能，让机器认知过程逐层进行，逐步抽象，从而大幅度提升识别的准确性和效率。</p><p><strong>神经网络</strong>是<strong>机器学习</strong>的一个<strong>分支</strong>，而<strong>深度学习又是神经网络的一个大分支</strong>，深度学习的<strong>基本结构</strong>是<strong>深度神经网络</strong>。</p><img src="/blog/学习答疑/学习答疑/人工智能、机器学习、数据挖掘以及数据分析有什么联系？（下）/01.jpg" title="Markdown 语法"><h3 id="4-数据分析"><a href="#4-数据分析" class="headerlink" title="4.数据分析"></a>4.数据分析</h3><p>数据分析的概念；基于数据库系统和应用程序，可以直观的查看统计分析系统中的数据，从而可以很快得到我们想要的结果；这个就是最基本的数据分析功能，也是我们在信息化时代了，除了重构业务流程、提升行业效率和降低成本之外，另一个非常重要的数据分析功能，数据可视化。</p><p>比如说，在财务系统的信息化中，基于企业的财务系统，我们可以直观获取企业现金流量表、资产负债表和利润表，这些都来自与我们的数据分析技术。数据分析目前常用的软件是Excel, R, Python等工具。</p><p>数据分析更多的是指从历史数据里面发现有价值的信息，从而提高决策的科学性。数据分析更侧重于通过分析数据的历史分布然后从中得出一些有价值的信息。</p><p>在对比数据分析和数据挖掘时，数据分析则更像是对历史数据的一个统计分析过程，比如我们可以对历史数据进行分析后得到一个粗糙的结论，但当我们想要深入探索为什么会出现这个结论时，就需要进行数据挖掘，探索引起这个结论的种种因素，然后建立起结论和因素之间模型，当有因素有新的值出现时，我们就可以利用这个模型去预测可能产生的结论。</p><p>因此数据分析更像是数据挖掘的一个<strong>中间过程</strong>。</p><p><img src="02.jpg" alt=""></p><h3 id="5-总结"><a href="#5-总结" class="headerlink" title="5.总结"></a>5.总结</h3><p><strong>人工智能与机器学习、深度学习的关系</strong></p><p>严格意义上说，人工智能和机器学习没有直接关系，只不过是机器学习的方法被大量的应用于解决人工智能的问题而已。目前机器学习是人工智能的一种实现方式，也是最重要的实现方式。</p><p>深度学习是机器学习比较火的一个方向，其本身是神经网络算法的衍生，在图像、语音等富媒体的分类和识别上取得了非常好的效果。</p><p><strong>数据挖掘与机器学习的关系</strong></p><p>数据挖掘主要利用机器学习界提供的技术来分析海量数据，利用数据库界提供的技术来管理海量数据。</p><p>机器学习是数据挖掘的一种重要方法，但机器学习是另一门学科，并不从属于数据挖掘，二者相辅相成。</p><p>深度学习、机器学习的发展带了许多实际的商业应用，让虚幻的AI逐步落地，进而影响人类社会发展；</p><p>深度学习、机器学习以及未来的AI技术，将让无人驾驶汽车、更好的预防性治疗技术、更发达智能的疾病治疗诊断系统、更好的人类生活娱乐辅助推荐系统等，逐步融入人类社会的方方面面。</p><p>AI即使是现在，也是未来，不再是一种科幻影像和概念，业界变成了人类社会当下的一种存在，不管人类是否喜欢或者理解，他们都将革命性地改变创造AI的我们人类自身；</p><p><strong>文中若有表述错误的地方欢迎大家留言批评指正。</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;3-深度学习&quot;&gt;&lt;a href=&quot;#3-深度学习&quot; class=&quot;headerlink&quot; title=&quot;3.深度学习&quot;&gt;&lt;/a&gt;3.深度学习&lt;/h3&gt;&lt;p&gt;深度学习的概念源于人工神经网络的研究。含多隐层的多层感知器就是一种深度学习结构。深度学习通过组合低层特征形成
+      
+    
+    </summary>
+    
+      <category term="学习答疑" scheme="http://www.JiShuXuePai.com/categories/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/"/>
+    
+    
+      <category term="python" scheme="http://www.JiShuXuePai.com/tags/python/"/>
+    
+  </entry>
   
   <entry>
     <title>Python与人工智能间有什么关系？Python相关职位的薪资是多少？</title>
@@ -63,6 +88,31 @@
     
     
       <category term="go" scheme="http://www.JiShuXuePai.com/tags/go/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>人工智能、机器学习、数据挖掘以及数据分析有什么联系？（上）</title>
+    <link href="http://www.JiShuXuePai.com/blog/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E3%80%81%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E3%80%81%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E4%BB%A5%E5%8F%8A%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E6%9C%89%E4%BB%80%E4%B9%88%E8%81%94%E7%B3%BB%EF%BC%9F%EF%BC%88%E4%B8%8A%EF%BC%89/"/>
+    <id>http://www.JiShuXuePai.com/blog/学习答疑/学习答疑/人工智能、机器学习、数据挖掘以及数据分析有什么联系？（上）/</id>
+    <published>2018-06-28T01:57:54.000Z</published>
+    <updated>2018-07-05T03:46:55.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>人工智能是目前炙手可热的一个领域，所有的互联网公司以及各路大迦们纷纷表态人工智能将是下一个时代的革命性技术，可与互联网、移动互联网时代的变更相媲美；AlphaGo在围棋领域战胜人类最顶尖的棋手让大众第一次直观的认识到了人工智能的威力和强大，于是大家都不禁在思考到底什么是人工智能， 它将给人类带来怎样的变化和未来?<br><img src="/blog/学习答疑/学习答疑/人工智能、机器学习、数据挖掘以及数据分析有什么联系？（上）/01.jpg" title="Markdown 语法"></p><h3 id="0-人工智能"><a href="#0-人工智能" class="headerlink" title="0.人工智能"></a>0.人工智能</h3><p>人工智能英文缩写为AI，它是研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新的技术科学。人工智能是计算机科学研究领域的一个重要分支，又是众多学科的一个交叉学科，它企图了解智能的实质，并生产出一种新的能以人类智能相似的方式做出反应的智能机器，该领域的研究包括语音识别、图像识别、机器人、自然语言处理、智能搜索和专家系统等等，人工智能可以对人的意识、思维的信息过程的模拟。人工智能包括众多的分支领域，比如大家熟悉的机器学习、自然语言理解和模式识别等。</p><p><img src="02.jpg" alt=""></p><h3 id="1-机器学习"><a href="#1-机器学习" class="headerlink" title="1.机器学习"></a>1.机器学习</h3><p>机器学习属于人工智能研究与应用的一个分支领域。机器学习的研究更加偏向理论性，其目的更偏向于是研究一种为了让计算机不断从数据中学习知识，而使机器学习得到的结果不断接近目标函数的理论。</p><p>机器学习，引用卡内基梅隆大学机器学习研究领域的著名教授Tom Mitchell的经典定义：</p><blockquote><p>如果一个程序在使用既有的经验E(Experience)来执行某类任务T(Task)的过程中被认为是“具备学习能力的”，那么它一定要展现出：利用现有的经验E，不断改善其完成既定任务T的性能(Performance)的特质。</p></blockquote><p><strong>那机器学习与数据挖掘的关系是什么呢？　</strong></p><p>机器学习已经有了十分广泛的应用，例如：数据挖掘、计算机视觉、自然语言处理、生物特征识别、搜索引擎、医学诊断、检测信用卡欺诈、证券市场分析、DNA序列测序、语音和手写识别、战略游戏和机器人运用。在我们当下的生活中，语音输入识别、手写输入识别等技术，识别率相比之前若干年的技术识别率提升非常巨大，达到了将近97%以上，大家可以在各自的手机上体验这些功能，这些技术来自于机器学习技术的应用。</p><p>那机器学习与数据挖掘的联系是什么呢？</p><p>机器学习为数据挖掘提供了理论方法，而数据挖掘技术是机器学习技术的一个实际应用。逐步开发和应用了若干新的分析方法逐步演变而来形成的；这两个领域彼此之间交叉渗透，彼此都会利用对方发展起来的技术方法来实现业务目标，数据挖掘的概念更广，机器学习只是数据挖掘领域中的一个新兴分支与细分领域，只不过基于大数据技术让其逐渐成为了当下显学和主流。</p><p><img src="03.jpg" alt=""></p><h3 id="2-数据挖掘"><a href="#2-数据挖掘" class="headerlink" title="2.数据挖掘"></a>2.数据挖掘</h3><p>数据挖掘一般是指从大量的数据中通过算法搜索隐藏于其中信息的过程。数据挖掘本质上像是机器学习和人工智能的基础，它的主要目的是从各种各样的数据来源中，提取出超集的信息，然后将这些信息合并让你发现你从来没有想到过的模式和内在关系。这就意味着，数据挖掘不是一种用来证明假说的方法，而是用来构建各种各样的假说的方法。数据挖掘不能告诉你这些问题的答案，他只能告诉你，A和B可能存在相关关系，但是它无法告诉你A和B存在什么相关关系。机器学习是从假设空间H中寻找假设函数g近似目标函数f。数据挖掘是从大量的数据中寻找数据相互之间的特性。</p><p>数据挖掘是基于数据库系统的数据发现过程，立足与数据分析技术之上，提供给为高端和高级的规律趋势发现以及预测功能；同时数据量将变得更为庞大，依赖于模式识别等计算机前沿的技术；其还有另外一个名称为商业智能(BI, Business Intelligence)，依托于超大型数据库以及数据仓库、数据集市等数据库技术来完成。</p><p>主要挖掘方法有: 分类 、 估计、预测、相关性分组或关联规则、 聚类、复杂数据类型挖掘(Text, Web ,图形图像，视频，音频等)等技术。</p><p><img src="04.jpg" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;人工智能是目前炙手可热的一个领域，所有的互联网公司以及各路大迦们纷纷表态人工智能将是下一个时代的革命性技术，可与互联网、移动互联网时代的变更相媲美；AlphaGo在围棋领域战胜人类最顶尖的棋手让大众第一次直观的认识到了人工智能的威力和强大，于是大家都不禁在思考到底什么是人工
+      
+    
+    </summary>
+    
+      <category term="学习答疑" scheme="http://www.JiShuXuePai.com/categories/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/"/>
+    
+    
+      <category term="python" scheme="http://www.JiShuXuePai.com/tags/python/"/>
     
   </entry>
   
@@ -447,56 +497,6 @@
     
       <category term="学习答疑" scheme="http://www.JiShuXuePai.com/categories/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/"/>
     
-    
-  </entry>
-  
-  <entry>
-    <title>C语言与C++、C#究竟是什么关系？（附福利）</title>
-    <link href="http://www.JiShuXuePai.com/blog/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/C%E8%AF%AD%E8%A8%80%E4%B8%8EC++%E3%80%81C%20Sharp%E7%A9%B6%E7%AB%9F%E6%98%AF%E4%BB%80%E4%B9%88%E5%85%B3%E7%B3%BB%EF%BC%9F%EF%BC%88%E9%99%84%E7%A6%8F%E5%88%A9%EF%BC%89/"/>
-    <id>http://www.JiShuXuePai.com/blog/学习答疑/学习答疑/C语言与C++、C Sharp究竟是什么关系？（附福利）/</id>
-    <published>2018-06-06T09:11:23.432Z</published>
-    <updated>2018-06-06T09:27:41.726Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>简单来说，C++就像是C语言的亲弟弟，而C Sharp（C#）就是他们二者的远房亲戚（其实它更像是Java的表兄弟）。</strong>这三门语言都是十分优秀的编程语言，也都有很高的运行效率。这三种编程语言的应用范围很广阔，接下来技术学派就分别介绍一下三种语言的来历以及应用领域。</p><img src="/blog/学习答疑/学习答疑/C语言与C++、C%20Sharp究竟是什么关系？（附福利）/01.jpg" title="Markdown 语法"><h3 id="C语言"><a href="#C语言" class="headerlink" title="C语言"></a>C语言</h3><p>C语言诞生在大名鼎鼎的美国贝尔实验室，它的前身是B语言。C语言从诞生之初就获得了广大程序员的青睐，由于其简洁的语法，高效的执行效率（比较接近汇编的性能），它既具有高级语言的特点，又具有汇编语言的特点。在很多领域获得了广泛应用。比如操作系统，图像处理算法，硬件驱动，嵌入式设备编程等等。（底部有彩蛋）</p><p><img src="02.jpg" alt=""></p><h3 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h3><p>尽管C语言已经足够优秀，但它毕竟是一门面向过程的编程语言，不符合人的思维习惯（人脑的思维习惯有点像面向对象）。于是在这种背景下就诞生了更加强大的C++,之所以说C++是C语言的亲弟弟，是因为C++同样诞生在贝尔实验室。C++在C的基础上增加了数据封装，继承，多态等编程特性，同时又全部兼容了C语言，使之成为C++的一个子集。C++是一种最广泛支持范式的编程语言，比较难学，涉及到了指针的概念。指针会比较头疼。当然如果C学的不错，C++上手也会快。但C++不支持垃圾回收机制。C++语言被广泛用在操作系统，大型应用软件的开发中。</p><p><img src="03.png" alt=""></p><h3 id="C-1"><a href="#C-1" class="headerlink" title="C"></a>C</h3><p>C#是由微软公司开发出来用来抗衡Java的一款现代编程语言（具有安全，稳定，简单的特点）。它吸收了很多Java语言的优点，但微软公司为了避免法律纠纷，下意识的将其语法规则向C++看齐（C#其实就是C++++）。C#的语法简单，可以快速上手，开发效率很高，被广泛应用在了各类应用软件，游戏开发之中。</p><p><img src="04.jpg" alt=""></p><p><strong>总结：</strong></p><ol><li>C语言是完全面向过程的语言，用于开发较小规模的程序效率会很高，但是规模较大的程序，就显得代码量臃肿，编写效率就会下降。</li><li>C++是半面相对象，引入了类的封装性、继承性、多态性大大简化程序编写，提到了代码重用率。<br>C语言和C++的关系：C++既是面向过程又是面向对象，而且它还继承了C语言的所有优点，并且对C语言功能做了很多扩充，可以认为C++就是C语言的增强版。</li><li>C#是完全面向对象的语言，简单易学，开发效率非常高。<br>关于这三种语言的关系就介绍这么多，想要阅读这3本书籍的小伙伴，可以点击技术学派头像-右上角-私信我发送“C语言电子书”即可。</li></ol><p>分享 IT 技术和行业经验，请关注-技术学派。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;strong&gt;简单来说，C++就像是C语言的亲弟弟，而C Sharp（C#）就是他们二者的远房亲戚（其实它更像是Java的表兄弟）。&lt;/strong&gt;这三门语言都是十分优秀的编程语言，也都有很高的运行效率。这三种编程语言的应用范围很广阔，接下来技术学派就分别介绍一下三种语
-      
-    
-    </summary>
-    
-      <category term="学习答疑" scheme="http://www.JiShuXuePai.com/categories/%E5%AD%A6%E4%B9%A0%E7%AD%94%E7%96%91/"/>
-    
-    
-      <category term="C" scheme="http://www.JiShuXuePai.com/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>6个最高效的语言处理Python库，你用过几个？</title>
-    <link href="http://www.JiShuXuePai.com/blog/%E6%8F%92%E4%BB%B6%E8%B5%84%E6%BA%90%E5%BA%93/%E6%8F%92%E4%BB%B6%E8%B5%84%E6%BA%90%E5%BA%93/6%E4%B8%AA%E6%9C%80%E9%AB%98%E6%95%88%E7%9A%84%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86Python%E5%BA%93%EF%BC%8C%E4%BD%A0%E7%94%A8%E8%BF%87%E5%87%A0%E4%B8%AA%EF%BC%9F/"/>
-    <id>http://www.JiShuXuePai.com/blog/插件资源库/插件资源库/6个最高效的语言处理Python库，你用过几个？/</id>
-    <published>2018-06-06T08:40:37.798Z</published>
-    <updated>2018-06-06T08:56:35.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近一段时间Python已经成为数据科学行业中大火的编程语言，今天技术学派收集了一些较为高效的语言处理Python库。下面分享给大家。</p><img src="/blog/插件资源库/插件资源库/6个最高效的语言处理Python库，你用过几个？/01.jpg" title="Markdown 语法"><h3 id="1-NLTK"><a href="#1-NLTK" class="headerlink" title="1.NLTK"></a>1.NLTK</h3><p>NLTK是构建Python程序以处理人类语言数据的领先平台。它提供了易于使用的界面，以及用于分类、标记化、词干化、标记、分析和语义推理的一套文本处理库。用于工业强度NLP库的包装器。</p><p><img src="02.jpg" alt=""></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 2.Pattern</span><br><span class="line">Pattern是Python编程语言的Web挖掘模块。它多有用于数据挖掘、自然语言处理、机器学习网络分析和`&lt;canvas&gt;`可视化。</span><br><span class="line"></span><br><span class="line">![](03.jpg)</span><br><span class="line"></span><br><span class="line">````项目地址：https://pypi.org/project/pattern3/3.0.0/</span><br></pre></td></tr></table></figure><h3 id="3-Jieba"><a href="#3-Jieba" class="headerlink" title="3.Jieba"></a>3.Jieba</h3><p>“结巴”中文分词：做最好的 Python 中文分词组件。精确模式，试图将句子最精确地切开，适合文本分析；全模式，把句子中所有的可以成词的词语都扫描出来, 速度非常快，但是不能解决歧义；搜索引擎模式，在精确模式的基础上，对长词再次切分，提高召回率，适合用于搜索引擎分词。</p><p><img src="04.jpg" alt=""></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 4.TextBlob</span><br><span class="line">TextBlob是一个用于处理文本数据的Python库。它提供了一个简单的API用于常见的自然语言处理（NLP）任务，如词性标注，名词短语提取，情感分析，分类，翻译等。</span><br><span class="line"></span><br><span class="line">![](05.png)</span><br><span class="line"></span><br><span class="line">````项目地址：http://textblob.readthedocs.io/en/dev/</span><br></pre></td></tr></table></figure><h3 id="5-SnowNLP"><a href="#5-SnowNLP" class="headerlink" title="5.SnowNLP"></a>5.SnowNLP</h3><p>SnowNLP是一个python写的类库，可以方便的处理中文文本内容，是受到了TextBlob的启发而写的，由于现在大部分的自然语言处理库基本都是针对英文的，于是写了一个方便处理中文的类库，并且和TextBlob不同的是，这里没有用NLTK，所有的算法都是自己实现的，并且自带了一些训练好的字典。注意本程序都是处理的unicode编码，所以使用时请自行decode成unicode。</p><p><img src="06.png" alt=""></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">### 6.TextGrocery</span><br><span class="line">TextGrocery是一个基于LibLinear和结巴分词的短文本分类工具，特点是高效易用，同时支持中文和英文语料。</span><br><span class="line"></span><br><span class="line">![](07.png)</span><br><span class="line"></span><br><span class="line">````项目地址：https://github.com/2shou/TextGrocery</span><br></pre></td></tr></table></figure><p>分享 IT 技术和行业经验，请关注-技术学派。</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;最近一段时间Python已经成为数据科学行业中大火的编程语言，今天技术学派收集了一些较为高效的语言处理Python库。下面分享给大家。&lt;/p&gt;&lt;img src=&quot;/blog/插件资源库/插件资源库/6个最高效的语言处理Python库，你用过几个？/01.jpg&quot; title
-      
-    
-    </summary>
-    
-      <category term="插件资源库" scheme="http://www.JiShuXuePai.com/categories/%E6%8F%92%E4%BB%B6%E8%B5%84%E6%BA%90%E5%BA%93/"/>
-    
-    
-      <category term="python" scheme="http://www.JiShuXuePai.com/tags/python/"/>
     
   </entry>
   
